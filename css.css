@@ -4,7 +4,7 @@ html {
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
 	color: #24292e;
 	background-color: #fff;
@@ -14,6 +14,8 @@ body {
 .content {
 	max-width: 980px;
 	border-bottom: 1px solid #eee;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1 {
@@ -26,4 +28,5 @@ table {
 	border: 1px solid #ccc;
 	background-color: #eee;
 	margin-left: 10px;
+	margin-bottom: 20px;
 }
