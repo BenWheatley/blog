@@ -1,0 +1,28 @@
+html {
+	font-family: sans-serif;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #24292e;
+	background-color: #fff;
+	align-items: center;
+}
+
+.content {
+	max-width: 980px;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eee;
+}
+
+table {
+	border: 1px solid #ccc;
+	background-color: #eee;
+	margin-left: 10px;
+}
