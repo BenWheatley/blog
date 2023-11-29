@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 import errno
@@ -40,7 +43,8 @@ def main(template_path, output_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python script.py template_path output_dir")
+        script_name = os.path.basename(__file__)
+        print(f"Usage: {script_name} template_path output_dir")
         sys.exit(1)
 
     template_path = sys.argv[1]
