@@ -30,3 +30,7 @@ table {
 	margin-left: 10px;
 	margin-bottom: 20px;
 }
+
+.img {
+	max-width: 80%;
+}
