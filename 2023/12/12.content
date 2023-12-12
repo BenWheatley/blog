@@ -1,0 +1,22 @@
+<h1>Analogy: LLMs as CISC, MoE as RISC</h1>
+
+<h2>Background, what's the problem?</h2>
+
+<p>The big thing of 2023 has been ever-larger Large Language Models, each of which gets sold as "can do basically everything" (with small print for all the things it can't do). This works very well, but it also needs hardware in the price range "if you have to ask you can't afford it". So, can we do better?</p>
+
+<p>I think we can do better.</p>
+
+<p>If you'll permit a loose analogy, there are two ways you can design a CPU: a huge number of defined instructions that each perform relatively complex actions (CISC), or a small number of defined instructions each of which performs only a simple instruction. As a child of the 80s-90s, my go-to example of this was how Apple presented the PowerPC chips in its late-90s Macs as being better than Intel chips of the same era and clock speed, because PowerPC was RISC and Intel was CISC. (If you're about to ask "Didn't Apple just switch <em>from</em> Intel chips to their own ones based on ARM cores?", yes, they did. Macs started with Motorola, then PowerPC, then Intel, then their mobile chips got better than Intel chips and they switched Macs to the M-series).</p>
+
+<p>LLMs are very large and complex, and perform a huge number of calculations just to get the next "token" (think "word fragment"), and while these are incredibly impressive relative to the previous state of the art for natural language processing, the previous state of the art was <em>terrible</em>. I see them for all their flaws as well as all their strengths, so anyone who tries to argue with me <em>either</em> that they're "just stochastic parrots" <em>or</em> that they're the final missing puzzle piece for The Singularity — no, they're much better than parrots (and also such clichés are humans acting like stochastic parrots themselves), but also no, they're obviously more book-smart than world-smart (I mean, what did you expect, they're a brain the size of a shrew that was given a subjective experience equivalent to reading random websites for 50,000 years).<p>
+
+<p>So, people know about this already, what are they already doing to reduce this?</p>
+
+<p>There's a thing called "Mixture of Experts" (MoE), but we're still very early days with this for now (not chronologically, it's been around for a while, but it's not well developed). Currently, as I understand it, MoE is a collective of (relatively) smaller models, such that only a few of these models are ever executed. So far, so good. But from what I hear from researchers, it's <em>really hard</em> to divide problems between them, both for inference and for training — this shouldn't be too surprising, the inputs can be <em>anything</em> in the input domain (i.e. "things someone could type" for a pure-text chatbot, or that plus pictures if it's supposed to understand images as well).</p>
+
+<h2>What do I suggest?</h2>
+
+<p>So, that's the statement of where we are and what the problem is; what's my suggestion for a solution, or at least a direction to a soution?</p>
+
+<p>Architecture:</p>
+
