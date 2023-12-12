@@ -20,3 +20,28 @@
 
 <p>Architecture:</p>
 
+<img src="Meta-learning_AI.png" />
+
+<p>
+<ul>
+<li>Controller: Takes the system input, uses it to query the model collection until it finds a model that "knows what to do" with that input, or invokes the model creator when there is none.</li>
+<li>Archive memories: All "important" experiences.</li>
+<li>Model creator: A function which creates new models when no existing model can deal with the input.</li>
+<li>Collection of (relatively) small models — each model consists of:
+    <ul>
+    <li>A meta-model: a fast running test which says, conditional on the current input experience, whether or not the model <em>should</em> be executed.</li>
+    <li>The model itself</li>
+    </ul>
+</li>
+</ul>
+</p>
+
+<p>There are of course many ways to approach each part of this, and which one is most appropriate is an open question.</p>
+
+<p>For example:
+<ul>
+<li>Ut could be possible to take either the <em>any</em> model that can understans the data, or whichever model is most confident, or take many and perform a standard MoE combination of every model which "thinks it knows how to respond". I have yet to explore which would work best.</li>
+<li>At training time (which could be continuous, but doesn't have to be), the controller also needs to have a feedback system which allows whichever model(s) were activated to be improved based on their answer. It may be useful for meta-models which "thought they might know but weren't sure" (i.e. close to the threshold for being included in the set of models which might have answered) also get update.</li>
+<li>It would also be possible for the model creator could itself be a model, whose meta-model is "all the other model's meta-models can't cope with this".</li>
+</ul>
+</p>
