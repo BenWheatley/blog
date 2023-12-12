@@ -40,8 +40,10 @@
 
 <p>For example:
 <ul>
-<li>Ut could be possible to take either the <em>any</em> model that can understans the data, or whichever model is most confident, or take many and perform a standard MoE combination of every model which "thinks it knows how to respond". I have yet to explore which would work best.</li>
-<li>At training time (which could be continuous, but doesn't have to be), the controller also needs to have a feedback system which allows whichever model(s) were activated to be improved based on their answer. It may be useful for meta-models which "thought they might know but weren't sure" (i.e. close to the threshold for being included in the set of models which might have answered) also get update.</li>
+<li>It could be possible to take either <em>any</em> model whose meta-model says it can understand the data, or whichever model's meta-model is most confident, or take many models which "think they know how to respond" and perform a standard MoE combination of those models. I have yet to explore which would work best.</li>
+<li>At training time (which could be continuous, but doesn't have to be), the controller also needs to have a feedback system which allows whichever model(s) were activated to be improved based on their answer. It may be useful for meta-models which "thought they might know but weren't sure" (i.e. close to the threshold for being included in the set of models which might have answered) also get updated.</li>
 <li>It would also be possible for the model creator could itself be a model, whose meta-model is "all the other model's meta-models can't cope with this".</li>
 </ul>
 </p>
+
+<p>Note: at time of writing, this represents "thinks I want to try", I've not written any experiments with this. I intend to start with a toy model, probably the MNIST handwriting set, where each model/meta-model is trying to recognise just one of the digits, and the model creator is a short python script. It would also be possible to explore a similar approach with a much more capable model, such as using a LLM as a controller to query (and via some appropriate API, invoke and use the output of) a database of code functions, and another LLM as a model creator to create new maths functions in some programming language.</p>
