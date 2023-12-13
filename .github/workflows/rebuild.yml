@@ -1,0 +1,21 @@
+name: Run Script Manually
+
+on:
+  workflow_dispatch:
+    inputs:
+      run:
+        description: 'Run the script manually'
+        required: true
+        default: 'yes'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run Python Script
+      run: |
+        python static-site-generator.py
