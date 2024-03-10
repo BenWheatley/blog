@@ -1,0 +1,22 @@
+<h1>Normalised, n-dimensional, utility monster</h1>
+<p>From <a href="https://en.wikipedia.org/wiki/Utility_monster" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Utility_monster</a>:</a></p>
+<blockquote>Utilitarian theory is embarrassed by the possibility of utility monsters who get enormously greater sums of utility from any sacrifice of others than these others lose ... the theory seems to require that we all be sacrificed in the monster's maw, in order to increase total utility.</blockquote>
+<p>How would the problem be affected if all sentient beings have their utility functions normalised into the same range, say -1 to +1, before comparisons are made?</p>
+
+<p>Example 1: 51% (this is not a Brexit metaphor) of a group gained maximum possible normalised utility, +1, from something that caused 49% maximum possible normalised anti-utility, -1. Is that ethical? Really? My mind keeps saying "in that case look for another solution", and so I have to force myself to remember that this is a thought experiment where there is no alternative to do—or—do-not… I think it has to be ethical if there really is no alternative.</p>
+
+<p>Example 2: Some event can cause 1% to experience +1 normalised utility while the other 99% to experience -0.01 normalised utility (totalling -0.99). This is the reverse of the plot of <a href="https://en.wikipedia.org/wiki/The_Beast_Below" target="_blank" rel="noopener">Doctor Who: The Beast Below</a>. Again, my mind wants an alternative, but I think it's valid, that <a href="https://wiki.lesswrong.com/wiki/Shut_up_and_multiply">"shut up and multiply"</a> is correct here.</p>
+
+<hr />
+
+<p>Even if that worked, it's not sufficient.</p>
+
+<p>If you consider utility to be a space, where each sentient being is their own axis, how do you maximise the vector representing <strong>total</strong> utility? If I understand correctly, there <em>isn't</em> a well-defined &gt; or &lt; operator for even two dimensions. Unless you perform some function that collapses all utilities together, you <em>cannot</em> have Utilitarianism for more than just one single sentient being within a set of interacting sentient beings — that function, even if it's just "sum" or "average", <em>is</em> your "ethics": Utilitarianism is no more than "how to not be stupid".</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2018/01/21/normalised-n-dimensional-utility-monster/">Original post: https://kitsunesoftware.wordpress.com/2018/01/21/normalised-n-dimensional-utility-monster/</a></p>
+
+<p>Original post timestamp: Sun, 21 Jan 2018 23:53:51 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/ethics'>ethics</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Philosophy'>Philosophy</a></p>

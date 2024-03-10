@@ -1,0 +1,75 @@
+<h1>Anatomy of a scam, and LiveJournal's lost passwords</h1>
+<p>LiveJournal seems to have leaked plain-text passwords.</p>
+
+<p>I found this out because I've just received three scam emails that are trying to blackmail me for bitcoin worth [$1600, $1100, $1100].</p>
+
+<p>Here is one of the emails; the others look similar, but each one is phrased slightly differently in a way that suggests a template filled with randomly selected phrases:</p>
+
+<code>
+<p>It appears that, («REDACTED BUT ACCURATE»), 's your password. You might not know me and you are probably wondering why you are getting this e-mail, right?</p>
+ 
+<p>in fact, I setup a trojans on the adult vids (adult) web-site and you know what, you visited this website to have fun (you know very well what I mean). When you were watching videos, your internet browser started out functioning like a RDP (Team Viewer) which gave me accessibility of your screen and web cam. and then, my software programs obtained your complete contacts out of your Messenger, Outlook, Facebook, along with emails.</p>
+ 
+<p>What did I really do?</p>
+ 
+<p>I made a double-screen video clip. 1st part shows the video you're watching (you have a good taste haha . . .), and 2nd part shows the recording of your web cam.</p>
+ 
+<p>exactly what should you do?</p>
+ 
+<p>Well, I think, $1100 is really a fair price for your little hidden secret. You'll make the payment by Bitcoin (if you do not know this, search "how to buy bitcoin" in Google).</p>
+ 
+<p>Bitcoin Address: «REDACTED BY ME IN CASE PUBLISHING IT AFFECTS REPORTING TO THE AUTHORITIES»</p>
+<p>(It's case sensitive, so copy and paste it)</p>
+ 
+<p>Very important:</p>
+<p>You've some days to make the payment. (I've a completely unique pixel within this e-mail, and at this moment I am aware that you've read through this email message). If I don't get the BitCoins, I will certainly send out your video recording to all of your contacts including family, coworkers, and so forth. Having said that, if I receive the payment, I'll destroy the video immidiately. If you need evidence, reply with "Yes!" and i'll definitely send out your videos to your 6 contacts. It is a non-negotiable offer, that being said don't waste my personal time and yours by responding to this message.</p>
+
+</code>
+
+<p>Here are some of the headers:</p>
+
+<code>
+<p>X-Spam-Flag: NO</p>
+<p>X-Spam-Score: 3.875</p>
+<p>X-Spam-Level: ***</p>
+<p>X-Spam-Status: No, score=3.875 required=10 tests=[INVALID_MSGID=1.167,</p>
+<p>RCVD_IN_MSPIKE_BL=0.01, RCVD_IN_MSPIKE_L5=2.599, SPF_PASS=-0.001,</p>
+<p>TO_IN_SUBJ=0.1] autolearn=disabled</p>
+</code>
+
+<p>and</p>
+
+<code>
+<p>Content-Transfer-Encoding: 7bit</p>
+<p>Content-Type: text/plain; charset=UTF-8</p>
+</code>
+
+<p>There are several clues here that it's a toothless scam, but I suspect some people will fall for it if I don't blog about it:</p>
+
+<ol>
+	<li>There's duct tape covering my webcam</li>
+	<li>I don't use Outlook</li>
+	<li>There's duct tape covering my webcam</li>
+	<li>I block Facebook on my computer, and only use it on my mobile, because it's a massive time-waster that stops me getting things done</li>
+	<li>Did I mention there's duct tape covering my webcam?</li>
+	<li>I'm not into videos. My teenage years were the dial-up days, where everyone had still pictures or plain text and that was good enough. (<a href="https://en.wikipedia.org/wiki/Four_Yorkshiremen_sketch" target="_blank">Hashtag Four Yorkshiremen Humblebrag</a>). Plus, I'm a furry, so the stuff I like tends to be met with blank stares and the words "I can't even parse this image", not "you have a good taste haha".</li>
+	<li>See #1</li>
+	<li>The email is plain text and cannot contain a tracking pixel</li>
+	<li>There's still duct tape covering my webcam</li>
+</ol>
+
+<p>Now, I'm saying <em>LiveJournal in particular</em> is the source of that leaked password, because that password is one I only ever used for LiveJournal. Never anywhere else. (In case you're wondering, that LiveJournal blog has now been deleted owing to it being totally pointless).</p>
+
+<p>I have confirmed via <a href="https://haveibeenpwned.com/Passwords" target="_blank">Troy Hunt's <em>Have I Been Pwned?</em></a> that the password is in publicly known databases of leaked passwords. To my surprise, <em>Have I Been Pwned?</em> thinks that password is in use in two places, not one. My own list of personal passwords says I only use it in one place, and the nature of the password does not lend itself to reuse (it's what you get if you mash a keyboard at random for 13 characters, not anything easily memorised).</p>
+
+<p>Slightly more worrying is that when I duckduckgo'ed (Google found nothing) for the bitcoin addresses to see if they were known, one gave a single result for the https://www.sec.gov domain, and another gave a single result for https://www.panasonic.com/ — <strong>I have no reason to suspect either of those domains wittingly contained these bitcoin addresses</strong>, but this may be connected to a recent-ish Cryprojacking attack where many reputable websites included a third-party javascript library which had itself been hacked to mine bitcoin on the computers of unsuspecting users of unsuspecting websites.</p>
+
+<p>When I've figured out the appropriate authorities, I'll be reporting these emails to them.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2018/08/09/anatomy-of-a-scam-and-livejournals-lost-passwords/">Original post: https://kitsunesoftware.wordpress.com/2018/08/09/anatomy-of-a-scam-and-livejournals-lost-passwords/</a></p>
+
+<p>Original post timestamp: Thu, 09 Aug 2018 15:24:47 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/bitcoin'>bitcoin</a>, <a href='https://benwheatley.github.io/blog/tags/crime'>crime</a>, <a href='https://benwheatley.github.io/blog/tags/Technology'>Technology</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Scams'>Scams</a>, <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a></p>

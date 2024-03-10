@@ -1,0 +1,73 @@
+<h1>A mole of bytes</h1>
+<img class="alignnone size-full" src="https://kitsunesoftware.files.wordpress.com/2019/07/orders-of-magnitude-data-1-1.png" alt="Graph showing orders of magnitude. Data follows in blog post." width="687" height="546" />
+
+
+
+<p>All values in bits:</p>
+<table dir="ltr" border="1" cellspacing="0" cellpadding="0"><colgroup> <col width="100" /> <col width="100" /></colgroup>
+<tbody>
+<tr>
+<td>Library of Congress</td>
+<td>8.00E+17</td>
+</tr>
+<tr>
+<td>Every phone call in the USA for a year</td>
+<td>2.18E+19</td>
+</tr>
+<tr>
+<td>Google data warehouse estimate 2013</td>
+<td>1.20E+20</td>
+</tr>
+<tr>
+<td>1 Joule at 300 K</td>
+<td>3.50E+20</td>
+</tr>
+<tr>
+<td>1 gram of DNA</td>
+<td>3.40E+21</td>
+</tr>
+<tr>
+<td>Total global digital data in May 2009</td>
+<td>4.70E+21</td>
+</tr>
+<tr>
+<td>total hard drive capacity sold in 2016</td>
+<td>4.80E+21</td>
+</tr>
+<tr>
+<td>Maximum file size in Unix File System</td>
+<td>7.55579E+22</td>
+</tr>
+<tr>
+<td>1 Joule at 1 K</td>
+<td>1.00E+23</td>
+</tr>
+<tr>
+<td>1 mole of graphite at 25 °C</td>
+<td>6.00E+23</td>
+</tr>
+<tr>
+<td>1 mole of bits</td>
+<td>6.02E+23</td>
+</tr>
+<tr>
+<td>1 mole of bytes</td>
+<td>4.81771E+24</td>
+</tr>
+<tr>
+<td>1 mole of liquid water at 25 °C</td>
+<td>7.30E+24</td>
+</tr>
+</tbody>
+</table>
+<p>Source: mostly <a href="https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)</a></p>
+
+<p>Every phone call in the USA for a year: estimate from Brewster Kahle, June 12, 2013, done to check feasibility of news reports of NSA surveillance.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2019/07/11/a-mole-of-bytes/">Original post: https://kitsunesoftware.wordpress.com/2019/07/11/a-mole-of-bytes/</a></p>
+
+<p>Original post timestamp: Thu, 11 Jul 2019 09:41:15 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/Notes'>Notes</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Technology'>Technology</a></p>

@@ -1,0 +1,36 @@
+<h1>The end of human labour is inevitable, here's why</h1>
+<p>OK. So, you might look at state-of-the-art A.I. and say "oh, this uses too much power compared to a human brain" or "this takes too many examples compared to a human brain".</p>
+
+<p>So far, correct.</p>
+
+<p>But there are 7.6 billion humans: if an A.I. watches all of them all of the time (easy to imagine given around 2 billion of us already have <em>two or three</em> competing A.I. in our pockets all the time, forever listening for an activation keyword), then there <em>is</em> an enormous set of examples with which to train the machine mind.</p>
+
+<p>"But," you ask, "what about the power consumption?"</p>
+
+<p>Humans cost a bare minimum of $1.25 per day, even if they're literally slaves and you only pay for food and (minimal) shelter. <a href="http://2.99¢/kWh" target="_blank">Solar power can be as cheap as 2.99¢/kWh</a>.</p>
+
+<p>Combined, that means that any A.I. which uses less than <a href="http://www.wolframalpha.com/input/?i=($1.25%2Fday)+%2F+(2.99%C2%A2%2FkWh)" target="_blank">1.742 kilowatts per human-equivalent-part</a> is beating the cheapest possible human — By way of comparison, Google's <a href="https://en.wikipedia.org/wiki/Tensor_processing_unit" target="_blank">first generation Tensor processing unit</a> uses <a href="https://arxiv.org/pdf/1704.04760.pdf" target="_blank">40 W when busy</a> — in the domain of Go, it's about <a href="https://www.google.de/search?dcr=0&amp;ei=n9YOWpfGIIOVkwWRr5CACw&amp;q=%2833+years+%2F+3+days%29+*+%281.742+kilowatts+%2F+40+watts%29&amp;oq=%2833+years+%2F+3+days%29+*+%281.742+kilowatts+%2F+40+watts%29&amp;gs_l=psy-ab.3...54270.72022.0.73807.15.15.0.0.0.0.154.1573.1j12.13.0....0...1.1j2.64.psy-ab..2.9.1094...33i22i29i30k1j33i160k1j33i21k1.0._Ow881k5oBo" target="_blank">174,969 times as cost efficient</a> as a minimum-cost human, because four of them working together as one can teach itself to play Go better than the best human in… three days.</p>
+
+<p>And don't forget that it's reasonable for A.I. to have <em>as many human-equivalent-parts as there are humans performing whichever <strong>skill</strong> is being fully automated</em>.</p>
+
+<p>Skill. Not sector, not factory, <em>skill</em>.</p>
+
+<p>And when one skill is automated away, when the people who performed that skill go off to retrain on something else, no matter where they are or what they do, there will be an A.I. watching them and learning with them.</p>
+
+<p>Is there a way out?</p>
+
+<p>Sure. All you have to do is make sure you learn a skill nobody else is learning.</p>
+
+<p>Unfortunately, there is a reason why "thinking outside the box" is such a business cliché: humans suck at that style of thinking, even when we know what it is and why it's important. We're too social, we copy each other and create by remixing more than by genuinely innovating, even when we think we have something new.</p>
+
+<p>Computers are, ironically, better than humans at thinking outside the box: two of the issues in <a href="https://arxiv.org/pdf/1606.06565v2.pdf" target="_blank">Concrete Problems in AI Safety</a> are there because machines easily stray outside the boxes we are thinking within when we give them orders. (I suspect that one of the things which forces A.I. to need far more examples to learn things than we humans do is that they have <em>zero</em> preconceived notions, and therefore <em>must</em> be equally open-minded to all possibilities).</p>
+
+<p>Worse, no matter how creative you are, if other humans see you performing a skill that machines have yet to master, those humans will copy you… and then the machines, even today's machines, will rapidly learn from all the enthusiastic humans who are so gleeful about their new trick to stay one step ahead of the machines, the new skill they can point to and say "look, humans are special, computers can't do this" right up until the computers do it.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2017/11/17/the-end-of-human-labour-is-inevitable-heres-why/">Original post: https://kitsunesoftware.wordpress.com/2017/11/17/the-end-of-human-labour-is-inevitable-heres-why/</a></p>
+
+<p>Original post timestamp: Fri, 17 Nov 2017 11:36:34 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/tags/Technology'>Technology</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Futurology'>Futurology</a></p>

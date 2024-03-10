@@ -1,0 +1,26 @@
+<h1>An end to copyright?</h1>
+<p>I suspect that AI generated content is (eventually, not any of the current versions) going to destroy copyright as a concept.</p>
+
+<p>The generally-stated reason for copyright is to incentivise the creation of more works: artificial scarcity, which drives up prices, introduced around the time the printing press was invented (but the idea goes back much further). But, when a creative work can be made for less than the cost of just the food needed to feed a human for just long enough to do no more than merely ask a machine to make it, the economic value disappears and only tradition remains as a reason for copyright. (Trademarks are a totally different thing, consumer protection not creativity, which is why Apple (Computer, the tech giant) coexisted with Apple (Corp and Records, the Beatles' companies) for so long, and also why they fought every time the computer company did more music stuff).</p>
+
+<p>When will this time come, that creativity is no longer economically relevant or seen as worth protecting?</p>
+
+<p>That's hard to predict — for all that DALL•E 2 and Stable Diffusion change things (and GPT-3 for text, and probably something for music but that's not my scene), these AI are not quite at human level yet, and the failure modes can be substantial, and so I don't know how much computing power a genuinely human level creative AI would consume. However, I can do this comparison with the current image generators:</p>
+
+<p>For the AI, maximum power draw of Mac mini M1 times the 90 seconds it takes Stable Diffusion to create an image = 3,510 joules; at $0.1/kWh[1] that's $0.0001</p>
+
+<p>For the human, 10 seconds <em>to type in a prompt</em> times the minimum cost of keeping a human alive (for which I am assuming the $1.90 per day abject poverty threshold) = $0.00022</p>
+
+<p>The cost of the AI (with current generation software and slightly old hardware) doing the creative work is about <em>half</em> the minimum possible cost of getting a human to no more than merely <em>ask</em> the AI to do the creative task. Even though more expensive electricity and including the cost of the hardware can make it the other way around for now, that's a very short way from <em>the absolute cheapest possible human doing no more than asking</em>.</p>
+
+<p>However, all that is assuming this is purely about economics. It may well not be; for example, if art is humanity's version of peacock tails, then the effort is the point, and if so, then even an uploaded brain of some famous and well-regarded artist will be dismissed as "not capable of real art".</p>
+
+<p>[1] Close enough to current US average: <a href="https://www.energybot.com/electricity-rates-by-state.html">https://www.energybot.com/electricity-rates-by-state.html</a></p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2022/10/09/an-end-to-copyright/">Original post: https://kitsunesoftware.wordpress.com/2022/10/09/an-end-to-copyright/</a></p>
+
+<p>Original post timestamp: Sun, 09 Oct 2022 19:33:04 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/tags/economics'>economics</a>, <a href='https://benwheatley.github.io/blog/tags/futurism'>futurism</a>, <a href='https://benwheatley.github.io/blog/tags/Technological Singularity'>Technological Singularity</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Futurology'>Futurology</a>, <a href='https://benwheatley.github.io/blog/categories/Opinion'>Opinion</a>, <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a>, <a href='https://benwheatley.github.io/blog/categories/Technology'>Technology</a>, <a href='https://benwheatley.github.io/blog/categories/Transhumanism'>Transhumanism</a></p>

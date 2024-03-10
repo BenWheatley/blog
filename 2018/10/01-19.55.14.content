@@ -1,0 +1,36 @@
+<h1>Pocket brains</h1>
+<ul>
+	<li>Total iPhone sales between Q4 2017 and Q4 2018: <strong><a href="https://www.statista.com/statistics/263401/global-apple-iphone-sales-since-3rd-quarter-2007/" target="_blank" rel="noopener">217.52 million</a></strong></li>
+	<li>Performance of Neural Engine, component of Apple A11 SoC used in iPhone 8, 8 Plus, and X: <strong><a href="https://en.wikipedia.org/wiki/Apple_A11#Neural_Engine" target="_blank" rel="noopener">600 billion operations per second</a></strong></li>
+	<li>Estimated computational power required to simulate a human brain in real time: <a href="https://en.wikipedia.org/wiki/Computer_performance_by_orders_of_magnitude#Petascale_computing_(1015)" target="_blank" rel="noopener">36.8×10<sup>15</sup></a></li>
+	<li>Total compute power of all iPhones sold between Q4 2017 and Q4 2018, assuming 50% were A11's (I'm not looking for more detailed stats right now): <strong>6525.6×10<sup>15</sup></strong></li>
+	<li>Number of simultaneous, real-time, simulations of complete human brains that can be supported by 2017-18 sales of iPhones: <strong>177</strong></li>
+</ul>
+ 
+<ul>
+	<li>Performance of "Next-generation Neural Engine" in Apple A12 SoC used in Phone XR, XS, XS Max: <strong><a href="https://en.wikipedia.org/wiki/Apple_A12" target="_blank" rel="noopener">5 trillion operations per second</a></strong></li>
+	<li>Assuming next year's sales are unchanged (and given that all current models use this chip and I therefore shouldn't discount by 50% the way I did previously) number of simultaneous, real-time, simulations of complete human brains that can be supported by 2018-19 sales of iPhones: 1.30512×10<sup>21</sup>/36.8×10<sup>15</sup> = <strong>35,465</strong></li>
+</ul>
+ 
+<ul>
+	<li>Speedup required before one iPhone's Neural Engine is sufficient to simulate a human brain in real time: 36.8×10<sup>15</sup>/5×10<sup>12 </sup>= <strong>7,360</strong></li>
+	<li>When this will happen, assuming Moore's Law continues: log<sub>2</sub>(7360)×1.5 = 19.268… years = <strong>January, 2038</strong></li>
+	<li>Reason to <em>not</em> expect this: A12 feature size is 7nm, silicon diameter is ~0.234nm, <strong>size may only reduce by a linear factor of about 30 or an areal factor of about 900 before features are atomic</strong>. (Oh no, you'll have to buy a whole <em>eight</em> iPhones to equal <em>your whole brain</em>).</li>
+</ul>
+ 
+<ul>
+	<li>Purchase cost of existing hardware to simulate one human brain: &lt;7,360×$749 → <strong>&lt;$5,512,640</strong></li>
+	<li>Power requirements of simulating one human brain in real time using existing hardware, assuming the vague estimates of ~5W TDP for an A12 SoC are correct: 7,360×~5W → <strong>~36.8kW</strong></li>
+	<li>Annual electricity bill from simulating one human brain in real time: 36.8kW * 1 year * $0.1/kWh = <strong>32,200 US dollars</strong></li>
+	<li>Reasons to be cautious about previous number: <strong>it ignores the cost of hardware failure, and I don't know the MTBF of an A12 SoC so I can't even calculate that</strong></li>
+	<li>Fermi estimate of MTBF of Apple SoC: between myself, my coworkers, my friends, and my family, I have experience of at least 10 devices, and none have failed before being upgraded over a year later, so assume hardware replacement &lt;10%/year → <strong>&lt;$551,264/year</strong></li>
+	<li>Assuming hardware replacement currently costs $551,264/year, and that Moore's law continues, then expected date that the annual replacement cost of hardware required to simulate a human brain in real time becomes equal to median personal US annual income in 2016 ($31,099): log<sub>2</sub>($551,264/$31,099) = 6.22… years <strong> = late December, 2024</strong></li>
+</ul>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2018/10/01/pocket-brains/">Original post: https://kitsunesoftware.wordpress.com/2018/10/01/pocket-brains/</a></p>
+
+<p>Original post timestamp: Mon, 01 Oct 2018 19:55:14 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/tags/futurism'>futurism</a>, <a href='https://benwheatley.github.io/blog/tags/iPhone'>iPhone</a>, <a href='https://benwheatley.github.io/blog/tags/iPhones'>iPhones</a>, <a href='https://benwheatley.github.io/blog/tags/Moore's Law'>Moore's Law</a>, <a href='https://benwheatley.github.io/blog/tags/Neural Engine'>Neural Engine</a>, <a href='https://benwheatley.github.io/blog/tags/Technological Singularity'>Technological Singularity</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Futurology'>Futurology</a></p>

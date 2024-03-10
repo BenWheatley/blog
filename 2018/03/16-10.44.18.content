@@ -1,0 +1,114 @@
+<h1>Speed of machine intelligence</h1>
+<p>Every so often, someone tries to boast of human intelligence with the story of Shakuntala Devi — the stories vary, but they generally claim she beat the fastest supercomputer in the world in a feat of arithmetic, finding that the 23<sup>rd</sup> root of</p>
+
+<p>916,748,676,920,039,158,098, 660,927,585,380,162,483,106, 680,144,308,622,407,126,516, 427,934,657,040,867,096,593, 279,205,767,480,806,790,022, 783,016,354,924,852,380,335, 745,316,935,111,903,596,577, 547,340,075,681,688,305,620, 821,016,129,132,845,564,805, 780, 158,806,771</p>
+
+<p>was 546,372,891, and taking just 50 seconds to do so compared to the "over a minute" for her computer competitor.</p>
+
+<p>Ignoring small details such as the "supercomputer" being named as a UNIVAC 1101, which wildly obsolete by the time of this event, this story dates to 1977 — and Moore's Law over 41 years has made computers mind-defyingly powerful since then (if it was as simple as doubling in power every 18 months, it would 2<sup>41/1.5</sup> = 169,103,740 times faster, but Wikipedia shows even greater improvements on even shorter timescales going from the Cray X-MP in 1984 to standard consumer CPUs and GPUs in 2017, a factor of 1,472,333,333 improvement at fixed cost in only 33 years).</p>
+
+<p>So, how fast are computers now? Well, here's a small script to find out:</p>
+
+<pre>#!python
+
+<p>from datetime import datetime</p>
+
+<p>before = datetime.now()</p>
+
+<p>q = 916748676920039158098660927585380162483106680144308622407126516427934657040867096593279205767480806790022783016354924852380335745316935111903596577547340075681688305620821016129132845564805780158806771</p>
+
+<p>for x in range(0,int(3.45e6)):</p>
+<p>a = q**(1./23)</p>
+
+<p>after = datetime.now()</p>
+
+<p>print after-before</p>
+</pre>
+
+<p>It calculates the 23<sup>rd</sup> root of that number. It times itself as it does the calculation three million four hundred and fifty thousand times, repeating the calculation just to slow it down enough to make the time reading accurate.</p>
+
+<p>Let's see what how long it takes…</p>
+
+<pre>MacBook-Air:python kitsune$ python 201-digit-23rd-root.py 
+<p>0:00:01.140248</p>
+<p>MacBook-Air:python kitsune$</pre></p>
+
+<p>1.14 seconds — to do the calculation 3,450,000 times.</p>
+
+<p>My MacBook Air is an old model from mid-2013, and I'm already beating by more than a factor of 150 million someone who was (despite the oddities of the famous story) in the Guinness Book of Records for her mathematical abilities.</p>
+
+<p>It gets worse, though. The next thing people often say is, paraphrased, "oh, but it's cheating to program the numbers into the computer when the human had to read it". Obviously the way to respond to that is to have the computer read for itself:</p>
+
+<pre>from sklearn import svm
+<p>from sklearn import datasets</p>
+<p>import numpy as np</p>
+<p>import matplotlib.pyplot as plt</p>
+<p>import matplotlib.cm as cm</p>
+
+<p># Find out how fast it learns</p>
+<p>from datetime import datetime</p>
+<p># When did we start learning?</p>
+<p>before = datetime.now()</p>
+
+<p>clf = svm.SVC(gamma=0.001, C=100.)</p>
+<p>digits = datasets.load_digits()</p>
+<p>size = len(digits.data)/10</p>
+<p>clf.fit(digits.data[:-size], digits.target[:-size])</p>
+
+<p># When did we stop learning?</p>
+<p>after = datetime.now()</p>
+<p># Show user how long it took to learn</p>
+<p>print "Time spent learning:", after-before</p>
+
+<p># When did we start reading?</p>
+<p>before = datetime.now()</p>
+<p>maxRepeats = 100</p>
+<p>for repeats in range(0, maxRepeats):</p>
+<p>for x in range(0, size):</p>
+<p>data = digits.data[-x]</p>
+<p>prediction = clf.predict(digits.data[-x])</p>
+
+<p># When did we stop reading?</p>
+<p>after = datetime.now()</p>
+<p>print "Number of digits being read:", size*maxRepeats</p>
+<p>print "Time spent reading:", after-before</p>
+
+<p># Show mistakes:</p>
+<p>for x in range(0, size):</p>
+<p>data = digits.data[-x]</p>
+<p>target = digits.target[-x]</p>
+<p>prediction = clf.predict(digits.data[-x])</p>
+<p>if (target!=prediction):</p>
+<p>print "Target: "+str(target)+" prediction: "+str(prediction)</p>
+<p>grid = data.reshape(8, 8)</p>
+<p>plt.imshow(grid, cmap = cm.Greys_r)</p>
+<p>plt.show()</pre></p>
+
+<p>This learns to read using a standard dataset of hand-written digits, then reads all the digits in that set a hundred times over, then shows you what mistakes it's made.</p>
+
+<pre>MacBook-Air:AI stuff kitsune$ python digits.py 
+<p>Time spent learning: 0:00:00.225301</p>
+<p>Number of digits being read: 17900</p>
+<p>Time spent reading: 0:00:02.700562</p>
+<p>Target: 3 prediction: [5]</p>
+<p>Target: 3 prediction: [5]</p>
+<p>Target: 3 prediction: [8]</p>
+<p>Target: 3 prediction: [8]</p>
+<p>Target: 9 prediction: [5]</p>
+<p>Target: 9 prediction: [8]</p>
+<p>MacBook-Air:AI stuff kitsune$</p>
+</pre>
+
+<p>0.225 seconds to learn to read, from scratch; then it reads just over 6,629 digits per second. This is comparable with both the speed of a human blink (0.1-0.4 seconds) and also with many of the claims* I've seen about human visual processing time, from retina to recognising text.</p>
+
+<p>The A.I. is <em>not</em> reading perfectly, but looking at the mistakes it does make, several of them are forgivable even for a human. They are hand-written digits, and some of them look, even to me, more like the number the A.I. saw than the number that was supposed to be there — indeed, the <a href="https://papers.nips.cc/paper/656-efficient-pattern-recognition-using-a-new-transformation-distance.pdf" target="_blank">human error rate for similar examples is 2.5%</a>, while this particular A.I. has an error rate of 3.35%.</p>
+
+<p>* I refuse to assert those claims are entirely correct, because I don't have any formal qualification in that area, but I <em>do</em> have experience of people saying rubbish about my area of expertise — hence this blog post. I don't intend to make the same mistake.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2018/03/16/speed-of-machine-intelligence/">Original post: https://kitsunesoftware.wordpress.com/2018/03/16/speed-of-machine-intelligence/</a></p>
+
+<p>Original post timestamp: Fri, 16 Mar 2018 10:44:18 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/Coding'>Coding</a>, <a href='https://benwheatley.github.io/blog/tags/Programming'>Programming</a>, <a href='https://benwheatley.github.io/blog/tags/python'>python</a>, <a href='https://benwheatley.github.io/blog/tags/Science'>Science</a>, <a href='https://benwheatley.github.io/blog/tags/Technology'>Technology</a>, <a href='https://benwheatley.github.io/blog/tags/vision'>vision</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a></p>

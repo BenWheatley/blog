@@ -1,0 +1,33 @@
+<h1>Hᵤ(2, 2) = 4 for all u&gt;0</h1>
+<p>A bit of recreational mathematics. I'd be (pleasantly) shocked if this is novel.</p>
+
+<p>2+2 = 2×2 = 2² = 4 🤔</p>
+
+<p>Hᵤ is the set of hyperoperations, e.g.</p>
+<p>H₁(a, b) = a + b</p>
+<p>H₂(a, b) = a × b</p>
+
+<p>H<sub>u</sub>(a, b) = H<sub>u-1</sub>(a, H<sub>u</sub>(a, b-1)) when u≥3 &amp; b≠0</p>
+<p>∴ H<sub>u</sub>(2, 2) = H<sub>u-1</sub>(2, H<sub>u</sub>(2, 1)) when u≥3</p>
+
+<p>also H<sub>u</sub>(2, 1) = H<sub>u-1</sub>(2, H<sub>u</sub>(2, 0)) when u≥3</p>
+
+<p>also H<sub>u</sub>(2, 0) = 1 when u≥3</p>
+
+<p>∴ H<sub>u</sub>(2, 1) = H<sub>u-1</sub>(2, 1) when u≥3</p>
+<p>∴ H<sub>3</sub>(2, 1) = H<sub>2</sub>(2, 1) = 2</p>
+<p>∴ H<sub>3</sub>(2, 2) = H<sub>2</sub>(2, 2) ⇒ 2² = 2 × 2 = 4</p>
+
+<p>also H<sub>u</sub>(2, 1) = 2 when u≥3</p>
+<p>∴ H<sub>u</sub>(2, 2) = H<sub>u-1</sub>(2, 2) when u≥3</p>
+<p>∴ ∀ u ≥ 3 H<sub>u</sub>(2, 2) = 4</p>
+
+<p>as H₁(2, 2) = 4 and H₂(2, 2) = 4, ∀ u ≥ 1 H<sub>u</sub>(2, 2) = 4</p>
+
+<p>i.e., for any hyperoperation ∘ other than the zeroth (successor) operator, 2 ∘ 2 = 4</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2020/07/27/h%e1%b5%a42-2-4-for-all-u0/">Original post: https://kitsunesoftware.wordpress.com/2020/07/27/h%e1%b5%a42-2-4-for-all-u0/</a></p>
+
+<p>Original post timestamp: Mon, 27 Jul 2020 07:55:11 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/math'>math</a>, <a href='https://benwheatley.github.io/blog/tags/mathematics'>mathematics</a>, <a href='https://benwheatley.github.io/blog/tags/maths'>maths</a>, <a href='https://benwheatley.github.io/blog/tags/recreational mathematics'>recreational mathematics</a></p>

@@ -1,0 +1,12 @@
+<h1>More scam emails</h1>
+<p>As a follow up to a previous email scam (<a href="https://kitsunesoftware.wordpress.com/2018/08/09/anatomy-of-a-scam-and-livejournals-lost-passwords/" target="_blank">https://kitsunesoftware.wordpress.com/2018/08/09/anatomy-of-a-scam-and-livejournals-lost-passwords/</a>), I'm now seeing scam attempts to fake the "from" line of an email to look like it comes from myself, from a hacked account.</p>
+
+<p>It's not different enough from the previous attempts to bother showing the content, and already been discussed by way of other examples on <a href="https://news.ycombinator.com" target="_blank">Hacker News</a>.</p>
+
+<p>The only interesting new point, is that this shows me that my email account's <a href="https://en.wikipedia.org/wiki/Sender_Policy_Framework" target="_blank">Sender Policy Framework</a> settings are not fully active. Apparently it's in a fallback state because my domain hosting is still being transitioned from Retrosnub to Mythic Beasts.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2018/11/29/more-scam-emails/">Original post: https://kitsunesoftware.wordpress.com/2018/11/29/more-scam-emails/</a></p>
+
+<p>Original post timestamp: Thu, 29 Nov 2018 22:10:16 +0000</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Scams'>Scams</a></p>

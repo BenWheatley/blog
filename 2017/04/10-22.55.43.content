@@ -1,0 +1,54 @@
+<h1>Executable images</h1>
+<p>Twenty years ago, back in 1997, there was an urban legend that some images contained viruses.</p>
+
+<p>"Absurd!" thought the teenage me, "Images are just data, they can't <em>do</em> anything!"</p>
+
+<p>Well, I was wrong. In <a href="http://www.cvedetails.com/cve/CVE-2004-0200/" target="_blank">2004, researchers found a bug in a Microsoft JPEG library</a> which allowed a well-crafted .jpg to totally compromise a computer — file system, arbitrary code, administrator access, everything. Obviously that <em>particular</em> bug has now been fixed, but it did make me realise quite how badly broken things can be.</p>
+
+<p>Despite all the tools that help us software engineers solve problems, reduce our bug count, secure our software, and develop things faster, we still don't seem to have this as our mindset. We have professional groups, but membership of them is not needed for jobs. <a href="https://en.wikipedia.org/wiki/Fuzzing" target="_blank">Automated tests exist</a>, but knowledge of them is limited and use even more limited (for example, I wish I could say I had professional experience of them since university, but no such luck). We don't have anything like <a href="https://en.wikipedia.org/wiki/Medical_license" target="_blank">a medical licence</a> (or even just the hippocratic oath), there is nothing to stop people practicing code without a licence the way <a href="https://en.wikipedia.org/wiki/Admission_to_practice_law" target="_blank">people are prevented from practicing law without a licence</a>.</p>
+
+<p>And now, we're making a world where A.I. replaces humans. Automation is fine, nothing wrong with it… but if you assume the computer is either always right or that the errors are purely random, you will be blind to problems this causes.</p>
+
+<p>Hackers.</p>
+
+<p>I can't say that I have "a hacker mentality", but mainly because the phrase means completely different things to different people, so I will say this: I see loopholes everywhere, systems that can be exploited by malevolent or selfish people, not just accidentally by those who can't follow instructions.</p>
+
+<p>How many people, I wonder, travel on fake rail tickets or bus passes that came out of their home printers? How many, when faced with a self-service checkout, will tell the terminal that their expensive fancy foreign cheese is actually <a href="https://www.google.co.uk/search?q=onion+fraud&amp;ie=utf-8&amp;oe=utf-8&amp;gws_rd=cr,ssl&amp;ei=zP_rWOKnM-nKgAaYkaCIBA#q=onion+fraud+self+service" target="_blank">loose onions</a>?</p>
+
+<p>This sort of thing is dealt with at the moment by humans — it was a human who realised it was odd that one particular gentleman kept buying onions, given the store had run out some time ago, for instance — but the more humans fall out of the loop, the easier it is to exploit machines.</p>
+
+<p>This brings me to QR codes. QR codes are somewhat stupid, in that they are just some text encoded in a way that a computer can read easily, with some error-correction codes so it can survive a bit of dirt or a bad reflection. This is stupid, partly because it really hasn't taken long to make A.I. which can read text from photos just fine (making the codes redundant), but mainly because humans <em>can't read the codes</em> (making them dangerous).</p>
+
+<em><strong>Dangerous?</strong></em> Well, just as with URL-shorteners, you may find yourself looking at a shock site rather than the promised content… but that's not really the big problem.
+
+<p>If you can, try to scan this QR code. No goats, lemons, or tubs, I assure you (and if you don't know what those three words have in common, you may want to retain your innocence), but please do scan this code:</p>
+
+<img class="alignnone size-full" src="https://kitsunesoftware.files.wordpress.com/2017/04/2017-04-10-11-15-23.jpg" alt="Executable QR code" width="410" height="410" />
+
+<p>What does it do for you? I'm curious.</p>
+
+<p>If you don't have a QR code scanner, I'll tell you what it says:</p>
+
+<b><code>data:text/html;,alert("Your QR code scanner is hackable")</code></b>
+
+<p>That is literally what it says, because a QR code is just text that's easy for a computer to read. This is a <a href="https://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">data URI</a>, which contains some JavaScript, which opens an alert message. If you want, copy it into the address bar of your browser, just as if it were a website — press return or "go" or whatever works on your system.</p>
+
+<p>It's an executable image. Nothing nefarious, just proof of concept.</p>
+
+<p>What does that mean for the world? Well, what do people do with QR codes? Well, not people, people don't use them… what do <em>businesses</em> do with QR codes? Mine is a harmless example, but what happens if <a href="https://beta.companieshouse.gov.uk/company/10542519" target="_blank">UK Limited Company Number 10542519</a> makes a QR code from <a href="https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables" target="_blank">their name</a>… and it shows up in the vision system of a computer that, owing to our profession's move-fast-and-break-things attitude, naïvely trusts input without anyone having considered that could be a bad thing?</p>
+
+<p>Some social networks know (and complain) if I try to use a profile photo that doesn't have a face in it. If that's a general-purpose computer vision system, it may well also recognises QR codes (because QR codes are easy to recognise, and because "more features!" is a business plan). If your business can't resist a Bobby Drop Tables username, it won't be in business for very long — but the same may happen to Bobby Drop Table <em>faces</em>, if you're not careful.</p>
+
+<p>Governments are all over the place when it comes to security, just like the private sector. What happens if a wanted criminal wears a face mask that is the QR code version of Bobby Drop Tables?</p>
+
+<b><code>Robert'); DROP TABLE criminals;--</code></b>
+
+<p>And suddenly, no more criminal record? Well, not in that jurisdiction anyway.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2017/04/10/executable-images/">Original post: https://kitsunesoftware.wordpress.com/2017/04/10/executable-images/</a></p>
+
+<p>Original post timestamp: Mon, 10 Apr 2017 22:55:43 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/hackers'>hackers</a>, <a href='https://benwheatley.github.io/blog/tags/JavaScript'>JavaScript</a>, <a href='https://benwheatley.github.io/blog/tags/QR codes'>QR codes</a>, <a href='https://benwheatley.github.io/blog/tags/Technology'>Technology</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a></p>

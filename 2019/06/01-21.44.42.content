@@ -1,0 +1,12 @@
+<h1>Berlin public transport map</h1>
+<a href="https://github.com/BenWheatley/SwiftMapper/blob/master/README.md" target="_blank" rel="noopener">Today I wrote a mapping utility for OpenStreetMap XML data</a> and used it to render all <code>railways=*</code> and <code>public_transport=*</code> nodes close to Berlin.
+
+<img class="alignnone size-full" src="https://kitsunesoftware.files.wordpress.com/2019/06/berlin-public-transport-infrastructure.png" alt="Berlin-public-transport-infrastructure.png" width="1440" height="900" />
+
+<p><a href="https://kitsunesoftware.wordpress.com/2019/06/01/berlin-public-transport-map/">Original post: https://kitsunesoftware.wordpress.com/2019/06/01/berlin-public-transport-map/</a></p>
+
+<p>Original post timestamp: Sat, 01 Jun 2019 21:44:42 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/Berlin'>Berlin</a>, <a href='https://benwheatley.github.io/blog/tags/Coding'>Coding</a>, <a href='https://benwheatley.github.io/blog/tags/Programming'>Programming</a>, <a href='https://benwheatley.github.io/blog/tags/Technology'>Technology</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Maps'>Maps</a>, <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a></p>

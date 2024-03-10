@@ -1,0 +1,110 @@
+<h1>LaMDA, Turing Test, sentience</h1>
+<p>A chatbot from Google called LaMDA made the headlines last weekend. It seems it convinced Blake Lemoine (someone <em>at</em> Google) that it was sentient. While, like the majority of real AI researchers[0], I do not actually think it is sentient, the transcripts make it plain why it caused this belief.</p>
+
+<p>When Alan Turing originally described the Imitation Game (what is now called the Turing Test), he did not at any point write "the imitation game is a test for sentience". What he did write was: </p>
+
+
+<blockquote class="block-quote"><p>…the question, ‘Can machines think?’ should be replaced by ‘Are there imaginable digital computers which would do well in the imitation game?’ If we wish we can make this superficially more general and ask ‘Are there discrete state machines which would do well?’ But in view of the universality property we see that either of these questions is equivalent to this, ‘Let us fix our attention on one particular digital computer <em>C.</em> Is it true that by modifying this computer to have an adequate storage, suitably increasing its speed of action, and providing it with an appropriate programme, <em>C</em> can be made to play satisfactorily the part of A in the imitation game, the part of B being taken by a man?’</p><cite>End of section 5, A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, <em>Mind</em>, Volume LIX, Issue 236, October 1950, Pages 433–460, <a href="https://doi.org/10.1093/mind/LIX.236.433" target="_blank" rel="noreferrer noopener">https://doi.org/10.1093/mind/LIX.236.433</a></cite></blockquote>
+
+
+<p>And later, in the section about potential criticisms of and potential arguments against the imitation game, listed the argument from consciousness, itself in the form of a quotation from Professor Jefferson's Lister Oration for 1949:</p>
+
+
+<blockquote class="block-quote"><p>Not until a machine can write a sonnet or compose a concerto because of thoughts and emotions felt, and not by the chance fall of symbols, could we agree that machine equals brain—that is, not only write it but know that it had written it. No mechanism could feel (and not merely artificially signal, an easy contrivance) pleasure at its successes, grief when its valves fuse, be warmed by flattery, be made miserable by its mistakes, be charmed by sex, be angry or depressed when it cannot get what it wants.</p><cite>Off-print, 'The mind of mechanical man', The Lister Oration delivered at the Royal College of Surgeons of England on 9 June 1949 from the British Medical Journal, (Vol. 1, 25 June, 1949)</cite></blockquote>
+
+
+<p>Which Turing argues against partly on the grounds of it leading to solipsism (which I consider a weak argument)[2], and partly because it isn't important to the question of intelligence (which I agree with):</p>
+
+
+<blockquote class="block-quote"><p>I do not wish to give the impression that I think there is no mystery about consciousness. There is, for instance, something of a paradox connected with any attempt to localise it. But I do not think these mysteries necessarily need to be solved before we can answer the question with which we are concerned in this paper.</p><cite>A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE</cite></blockquote>
+
+
+<p>And indeed, I think that the argument from consciousness, if assumed to be correct and applied in reverse, is a potential reason why saw Blake Lemoine might have believed LaMDA was sentient: the AI can talk eloquently as if it has feelings, and by so doing, it creates the illusion of sentience.</p>
+
+<p>However, for a chatbot like LaMDA, the skill it's <em>engineered</em> to be good at is <em>specifically</em> creating the <em>impression</em> in the user that the system is intelligent, but it does not follow that it even has human-like <em>linguistic</em> skills (it might or might not, that research has not AFAICT been published), and it also doesn't imply sentience. By analogy, if you watch a film on a TV, both the content and the device have been <em>specifically engineered</em> to create a sense of reality, but even if the film is called a "true story" (or you're watching a "reality show"), not only is it mostly the work of artisans crafting what they want you to experience, but also the events you witness <em>definitely</em> aren't happening behind the sheet of glass on your living room wall, and putting the film on loop doesn't give the characters in the film a subjective experience of Groundhog Day (even if the film was literally Groundhog Day, the <em>characters</em> are not real and have no subjective experiences at all).</p>
+
+
+<h2>Intelligence vs. Sentience</h2>
+
+
+<p>Given how poorly defined "sentience" is (whatever definition you've got in mind right now, there will be someone you know who strongly disagrees with it), it's very tempting to ignore that and just focus on the much easier question of intelligence. Tempting, but only marginally better, as the history of AI is one of people saying "this isn't intelligent, it can't do X", followed by a new AI which can do X, and then people (sometimes the exact same people!) saying "this isn't intelligent, it can't do Y":</p>
+
+
+<div class="block-group"><p>Critic: Computers will never be able to play chess, chess requires imagination.</p>
+
+<p>Deep Blue: *wins*</p>
+
+<p>Critic: Of course it can win at chess, but that's not real intelligence, it's just searching through all the moves. To show real intelligence, it would have to be able to play Go, which has far too many possible moves to merely search through.</p>
+
+<p>AlphaGo: *wins*</p>
+
+<p>Critic: But music…</p>
+
+<p>WaveNet: *exists*</p>
+
+<p>Critic: But art…</p>
+
+<p>DALL•E: *exists*</p>
+
+<p>Critic: But jokes…</p>
+
+<p>GPT-3: <a href="https://news.ycombinator.com/item?id=31788976" target="_blank" rel="noreferrer noopener">What's up with all these different flavours of cat food?</a></p></div>
+
+
+<p>…and so on. Ironically, this was something Turing was already aware of and discussed in the same paper, albeit with not quite the same examples.</p>
+
+<p>Personally, I take the view that, regardless of how you define intelligence, when it comes to all bar one of the issues at stake, you might as well be asking if a submarine swims: an AI that can create music is an employment risk for musicians and an economic opportunity for people who need music, regardless of how you see <a href="https://en.wikipedia.org/wiki/Chinese_room">John Searle's Chinese Room thought experiment</a>. Likewise, it makes no difference — either positive or negative — to the economics of music if such an AI can only do music, or if it's also good at sculpture, can pass an exam on the topic of French history written in Chinese, or can plan a route through a city.</p>
+
+<p>Now, there is one issue where the definition of intelligence matters, and that's where the definition of intelligence is merely "is this entirely at the level of an adult human: yes/no?" <em>and</em> this somehow also simultaneously matches the definition of consciousness. Myself, I don't think these are the same things: I would say that a dog is probably conscious, but definitely not adult-human-level intelligence[1]. Conversely, there are many AI which demonstrate human-level intelligence or super-human intelligence, (Deep Blue/Stockfish, and AlphaGo/AlphaZero all demonstrably so by beating the most competent humans in the world in Chess and Go respectively), but I have no particular reason to think they might be sentient.</p>
+
+<p>However, unlike intelligence, I would argue that <em>sentience</em> is a real issue, precisely because it's where the inner world matters. Or at least, it may matter depending on what definition you use — as I wrote earlier, whatever definition you have in mind right now, you know someone who will object to it. Sentience <em>could</em> be merely the ability to sense things (this is the origin of the word), but that would include all things with sensory input from jellyfish and keyboards all the way up to humans. Sometimes sentience is used to mean "self-awareness", but that's either trivial to implement (if the AI is an agent, include a model of the agent in the agent's model of the world), or leads to people saying "no, I didn't mean that" and then totally failing to describe what they <em>did</em> mean (sometimes while calling you an idiot because they think it's self-evident). Sometimes people define sentience as "consciousness", which is even worse because of confusion with the opposite state "unconscious" referring both to processes below the level of introspection (subconscious) and the state of catatonia, though it does at least lead to the possibility of using "introspection" as a possible detail, even if that's not only trivial in AI, but something actively used to improve the quality of answers given in current state of the art language models, e.g.:</p>
+
+
+<blockquote class="block-quote"><p><strong>(c) Zero-shot</strong></p><p>Q: A juggler can juggle 16 balls. Half of the balls are golf balls, and half of the golf balls are blue. How many blue golf balls are there?</p><p>A: The answer (arabic numerals) is</p><p><em>(Output) 8 ❌</em></p><p><strong>(d) Zero-shot-CoT (Ours)</strong></p><p>Q: A juggler can juggle 16 balls. Half of the balls are golf balls, and half of the golf balls are blue. How many blue golf balls are there?</p><p>A: Let’s think step by step.</p><p><em>(Output) There are 16 balls in total. Half of the balls are golf balls. That means that there are 8 golf balls. Half of the golf balls are blue. That means that there are 4 blue golf balls. ✅</em></p><cite>Large Language Models are Zero-Shot Reasoners, Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa, <strong><a href="https://arxiv.org/abs/2205.11916">arXiv:2205.11916</a> [cs.CL]</strong></cite></blockquote>
+
+
+<p>Then you have definitions like <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Phaneron" target="_blank">phanera</a> or <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Qualia" target="_blank">qualia</a> (I'm not sure what the difference is supposed to be), but those seem to me to merely be inventing new names for the same thing, and in my opinion are only helpful insofar as they prevent the confusion inherent in the other meanings, as they don't help us actually determine whether a system — be that system a natural human brain, a lab rat, or a computer — possesses it.</p>
+
+<p>It may be that qualia really can be done with somewhere between one and all of the suggested concrete definitions, in which case it will be very easy to make a conscious AI (and we may have already done so, but note that even then the language models only introspect when we specifically ask them to), however we just don't understand the question well enough yet to tell one way or the other.</p>
+
+
+<h2>Why the question of consciousness even matters</h2>
+
+
+<p>Of course, this only matters if it makes a difference. I assert that the following scenarios are representative, and therefore the question does matter:</p>
+
+
+<div class="block-columns">
+<div class="block-column" style="flex-basis:100%;">
+<figure class="block-table is-style-regular"><table class="has-fixed-layout"><tbody><tr><td>If…</td><td>AI is conscious</td><td>AI is not conscious</td></tr><tr><td>We think AI is conscious</td><td>Somewhere between "AI as pets" and "AI keeping us as pets" (probably: I'm much more optimistic about the alignment problem if an AI is conscious).</td><td>Humans upload their minds, possibly well before natural old age or illness, and literally nobody notices that they've died.</td></tr><tr><td>We think AI is not conscious</td><td>The term "zombie" was created by slaves in the Caribbean who were afraid that even death would not free them from their servitude. This would be the genuine existence of AI which were conscious but which we denied.</td><td>Either fully automated luxury space communism, or we all get eaten by a paperclip factory, depending on how well we do with the alignment problem.</td></tr></tbody></table></figure>
+</div>
+</div>
+
+
+
+<h2>Footnotes</h2>
+
+
+<p>[0] I only dabble, I am not a proper researcher.</p>
+
+<p>[1] Dogs would be intelligent by the standard I've given in this blog post, as they're faster learners and have better coordination than many of the AI which I'm also calling intelligent, but they're definitely not at the level of adult humans cognition in general — the most developed aspect of their intelligence seems to be their ability to read human emotions, which they only do about as well as a human teenager, and for language, I think the record is a dog who recognised about a thousand words while humans need more than that in secondary languages just to get by as tourists — thought I wouldn't be surprised if it turns out they can out-reason us about smells or canine (and prey animal) body language.</p>
+
+<p>[2] It didn't fit with the flow of the post, but here's a comparison of the original paper with GPT-3:</p>
+
+
+<blockquote class="block-quote"><p>I am sure that Professor Jefferson does not wish to adopt the extreme and solipsist point of view. Probably he would be quite willing to accept the imitation game as a test. The game (with the player B omitted) is frequently used in practice under the name of viva voce to discover whether some one really understands something or has ‘learnt it parrot fashion’. Let us listen in to a part of such a viva voce:</p><p>Interrogator: In the first line of your sonnet which reads ‘Shall I compare thee to a summer's day’, would not ‘a spring day’ do as well or better?</p><p>Witness:</p></blockquote>
+
+
+
+<figure class="block-table"><table><tbody><tr><td>GPT-3</td><td>Original</td></tr><tr><td>It's the sonnet, not me.<br><br>Interrogator: But your sonnet, Mr. Witness, is, I understand, to be about your wife's beauty. Now, tell me, Mr. Witness, what do you find wrong with my suggestion.<br><br>Witness: Spring days are not as beautiful as summer days.<br><br>Interrogator: I am not asking about that. I am asking about the word ‘spring’ in the phrase ‘Shall I compare thee to a spring day’.<br><br>Witness:  Oh, I see. It doesn't rhyme with anything.<br><br>The interrogator has succeeded in showing that the witness does not understand the sonnet, but has merely learnt it by rote. The interrogator might next try to show that the witness cannot write a sonnet himself, and this would be unfair, because no one except a poet could write a good sonnet. The better strategy for the interrogator would be to select a poem which is, on the face of it, less likely to be the work of a poet, and then to show that the witness cannot even interpret it. This is what the machine will try to do.<br><br>The game will proceed somewhat as follows</td><td>It wouldn’t scan.<br><br>Interrogator: How about ‘a winter's day’ That would scan all right.<br><br>Witness: Yes, but nobody wants to be compared to a winter's day.<br><br>Interrogator: Would you say Mr. Pickwick reminded you of Christmas?<br><br>Witness: In a way.<br><br>Interrogator: Yet Christmas is a winter's day, and I do not think Mr. Pickwick would mind the comparison.<br><br>Witness: I don’t think you’re serious. By a winter's flay one means a typical winter's day, rather than a special one like Christmas.<br><br>And so on. What would Professor Jefferson say if the sonnet-writing machine was able to answer like this in the viva voce? I do not know whether he would regard the machine as ‘merely artificially signalling’ these answers, but if the answers were as satisfactory and sustained as in the above passage I do not think he would describe it as ‘an easy contrivance’. This phrase is, I think, intended to cover such devices as the inclusion in the machine of a record of someone reading a sonnet, with appropriate switching to turn it on from time to time.</td></tr></tbody></table></figure>
+
+
+<p>It certainly amuses me, though I can't think of any particularly important point to make from it.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2022/06/18/lamda-turing-test-sentience/">Original post: https://kitsunesoftware.wordpress.com/2022/06/18/lamda-turing-test-sentience/</a></p>
+
+<p>Original post timestamp: Sat, 18 Jun 2022 18:00:15 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/tags/consciousness'>consciousness</a>, <a href='https://benwheatley.github.io/blog/tags/GPT-3'>GPT-3</a>, <a href='https://benwheatley.github.io/blog/tags/LaMDA'>LaMDA</a>, <a href='https://benwheatley.github.io/blog/tags/openai'>openai</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Minds'>Minds</a>, <a href='https://benwheatley.github.io/blog/categories/Opinion'>Opinion</a>, <a href='https://benwheatley.github.io/blog/categories/Philosophy'>Philosophy</a>, <a href='https://benwheatley.github.io/blog/categories/Software'>Software</a>, <a href='https://benwheatley.github.io/blog/categories/Technology'>Technology</a>, <a href='https://benwheatley.github.io/blog/categories/Transhumanism'>Transhumanism</a></p>

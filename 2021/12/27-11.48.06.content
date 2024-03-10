@@ -1,0 +1,33 @@
+<h1>Arguments, hill climbing, the wisdom of the crowds</h1>
+<p>You ever had an argument which seems to go nowhere, where <i>both</i> sides act like their position is self-evident and obvious, that the other person "is clearly being deliberately obtuse"? I hope that's common, and not just one of my personal oddities. Ahem.</p>
+<p>In the current world of machine learning (yes these two things are connected), one of the well-known methods is a thing called "hill climbing". You have some relationship between two things, and you want to learn the relationship between them — the function — so that you can maximise the thing you want to have more of (fun), or minimise the thing you want less of (pain). This function might have any shape and might represent any relationship. If you were to plot the whole thing on graph paper, it would be easy to see where the best place was:</p>
+
+<figure class="block-image size-large"><img src="https://benwheatley.github.io/blog/2021/12/screenshot-2021-12-27-at-11.24.55.png?w=357" alt=""  /><figcaption>A graph of an upside-down parabola with a peak at (x, y) = (1, 1)</figcaption></figure>
+
+<p>But in the real world, data collection is expensive and you can't just plot a graph and look at the whole thing and call it a day. When you can't look at all possible solutions, then instead of merely guessing where the best might be, you might want to follow a standard method, and this is where "hill climbing" comes in. With the hill climbing method, you start with some measurement, then you measure what's around that point, and take a "step" in the "best" (for the thing you care about) direction. Say you start at x = 0 on the graph above, you look at x = 0.1 and x = -0.1, you see that x = 0.1 is best and use that as your next measurement. If you imagine the graph is a hill, you are climbing to the top of that hill (sometimes the description is reversed and you're trying to get to the bottom of the valley, but that doesn't change anything important).</p>
+<p>There's a problem with this, though. <a href="https://www.google.com/maps/@50.4606958,-116.2403681,3a,75y,170.24h,83.42t/data=!3m7!1e1!3m5!1sWRNMLmQo7UwcsVyfcxaDQg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DWRNMLmQo7UwcsVyfcxaDQg%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D171.67827%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?hl=en" target="_blank" rel="noopener">Hills don't usually look so simple</a>, so let's make the graph more complicated:</p>
+
+<figure class="block-image size-large"><img src="https://benwheatley.github.io/blog/2021/12/screenshot-2021-12-27-at-11.36.46.png?w=486" alt=""  /><figcaption>A more complicated function with two peaks; the peak bellow 0 is bigger than the peak above 0</figcaption></figure>
+
+<p>In this case, starting hill climbing at x = 0 will always give you the smaller of the two peaks. And of course in the real world things are even more complicated than this, with countless peaks and valleys, and if your goal is Everest, you will definitely fail to reach that peak using this algorithm if you start anywhere in the Americas, Australia, Antarctica, or any island.</p>
+
+<p>There are a lot of different ways to upgrade hill climbing to avoid this problem. One in particular is called either "random-restart hill climbing" or "shotgun hill climbing". It's a simple, and surprisingly effective, method: do normal hill climbing many times with random starting values, pick the best.</p>
+
+<p>In a flash of insight this morning while pouring milk into my cereal, I realised that this could be an explanation for both how those annoying arguments happen (because we're on different metaphorical hills in our models of reality or language) and may also contribute to why the wisdom of the crowds can be so effective (because everyone's on a random hill and the crowd can pick the best).</p>
+
+<p>This doesn't diminish the usual problems with wisdom of the crowd — when there is an actual right answer, experts do better and everyone else just dilutes rather than reinforces; if the crowd is allowed to deliberate rather than all voting independently, then the crowd follows a charismatic leader and you get groupthink — and it comes with a testable prediction: things which can help you randomise-and-restart can help you make better models of reality, so long as you can ignore the old mental model right up until it is time to compare the new and old models:</p>
+
+<ol>
+<li>Every language you learn should make it easier to learn more; and 5 hours of nothing-but-$new_language should be better for learning the structure of the language than 10 minutes of $new_language every day for a month, because 10 minute blocks are short enough to keep thinking <em>in</em> $old_language <em>about</em> $new_language.</li>
+<li>Any psychotropic substance which lets you restart from scratch but without deleting old memories (temporarily suppressing them is fine) would be a nootropic.</li>
+<li>If it's possible to delete a <a href="https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)" target="_blank" rel="noopener">cognitive anchor</a>, doing so would lead to modelling reality better.</li>
+</ol>
+<p>My German is nowhere near as good as I want it to be, so I'm going to try #1 for a bit, the intention is 5 hours once per month, which is going to be in addition to all my various 10 minute per day vocabulary memorisation apps (memorising doesn't require understanding, and I need both).</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2021/12/27/arguments-hill-climbing-the-wisdom-of-the-crowds/">Original post: https://kitsunesoftware.wordpress.com/2021/12/27/arguments-hill-climbing-the-wisdom-of-the-crowds/</a></p>
+
+<p>Original post timestamp: Mon, 27 Dec 2021 11:48:06 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/AI'>AI</a>, <a href='https://benwheatley.github.io/blog/tags/arguments'>arguments</a>, <a href='https://benwheatley.github.io/blog/tags/hill climbing'>hill climbing</a>, <a href='https://benwheatley.github.io/blog/tags/machine learning'>machine learning</a>, <a href='https://benwheatley.github.io/blog/tags/theory of mind'>theory of mind</a>, <a href='https://benwheatley.github.io/blog/tags/wisdom of the crowds'>wisdom of the crowds</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Minds'>Minds</a>, <a href='https://benwheatley.github.io/blog/categories/Philosophy'>Philosophy</a>, <a href='https://benwheatley.github.io/blog/categories/Psychology'>Psychology</a></p>

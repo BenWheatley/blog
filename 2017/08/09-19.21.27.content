@@ -1,0 +1,22 @@
+<h1>Would this be a solution to the problem of literal-Genie omniscient AIs?</h1>
+<p>[stupivalent: neither malevolent nor benevolent, just doing exactly what it was told without awareness that what you said isn't what you meant]</p>
+
+<p>Imagine an AI that, as per [<a target="_blank" href="https://www.youtube.com/watch?v=tcdVC4e6EV4">Robert Mile's youtube videos</a>], has a perfect model of reality, that has absolutely no ethical constraints, and that is given the instruction "collect as many stamps as possible".</p>
+
+<p>Could the bad outcome be prevented if the AI was built to always add the following precondition, regardless of what it was tasked by a human to achieve?</p>
+
+<blockquote>"Your reward function is measured in terms of how well the person who gave you the instruction <em>would have</em> reacted if they had heard, at the moment they gave you the instruction, what you were proposing to do."</blockquote>
+
+<p>One might argue that Robert Miles' stamp collector AI is a special case, as it is presupposed to model reality perfectly. I think such an objection is unreasonable: models don't have to be perfect to cause the problems he described, and models don't have to be perfect to at least try to predict what someone would have wanted.</p>
+
+<p>How do you train an AI to figure out what people will and won't approve of? I'd conjecture having the AI construct stories, tell those stories to people, and learn through story-telling what people consider to be "happy endings" and "sad endings". Well, construct and read, but it's much harder to teach a machine to read than it is to teach it to write — we've done the latter, the former might be <a href="https://en.wikipedia.org/wiki/AI-complete" target="_blank">Turing-complete</a>.</p>
+
+<p>Disclaimer: I have an A-level in philosophy, but it's not a good one. I'm likely to be oblivious to things that proper philosophers consider common knowledge. I've also been spending most of the last 18 months writing a novel and only covering recent developments in AI in my spare time.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2017/08/09/would-this-be-a-solution-to-the-problem-of-literal-genie-omniscient-ais/">Original post: https://kitsunesoftware.wordpress.com/2017/08/09/would-this-be-a-solution-to-the-problem-of-literal-genie-omniscient-ais/</a></p>
+
+<p>Original post timestamp: Wed, 09 Aug 2017 19:21:27 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/Technological Singularity'>Technological Singularity</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/AI'>AI</a></p>
