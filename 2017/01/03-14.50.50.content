@@ -1,7 +1,9 @@
 <h1>Megastructures</h1>
 <p>Megastructures are big. Really big. You just won't believe how vastly, hugely, mind-bogglingly big they are. I mean, you may think you live in a big city, but that's just peanuts to even the smallest megastructure.</p>
 
-<p>https://www.youtube.com/watch?v=JvKSRKT0nzM</p>
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/watch?v=JvKSRKT0nzM"
+  frameborder="0"></iframe>
 
 <p>Three of the more famous megastructures:</p>
 <ul>
