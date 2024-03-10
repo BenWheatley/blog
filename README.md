@@ -1,4 +1,4 @@
-I want to make my existing blog available in github. More readable, and (unlike wordpress), no tracking and therefore no annoying GDPR popup. I'm starting with new posts, will see about importing old ones later.
+I want to make my existing blog available in github. More readable, and (unlike wordpress), no tracking and therefore no annoying GDPR popup. I've written a bulk importer, which kinda works but is a bit flakey, so I'll be tidying these up for style and for content lost in transition.
 
 [Licence: Attribution-NonCommercial-NoDerivs 4.0 International](LICENSE)
 
