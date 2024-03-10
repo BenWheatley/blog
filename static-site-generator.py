@@ -6,12 +6,13 @@ import sys
 import errno
 from datetime import datetime
 
-def main(template_path, output_dir):
+def main(template_path, output_dir, verbose = False):
     # Read the template file
     with open(template_path, 'r') as template_file:
         template_content = template_file.read()
     
-    print(f"{'-' * 80}\nBegin output\n{'-' * 80}")
+    if verbose:
+        print(f"{'-' * 80}\nBegin output\n{'-' * 80}")
     
     # Iterate through content files
     for subdir, _, files in os.walk(output_dir):
@@ -21,17 +22,18 @@ def main(template_path, output_dir):
                 
                 # Extract date information from the filename
                 _, year_str, month_str, _ = content_file_path.split(os.sep)
-                day_str = (file.split('.'))[0]
+                file_base_name = os.path.splitext(os.path.basename(content_file_path))[0]
                 
                 # Create the result string
                 with open(content_file_path, 'r') as content_file:
                     result = template_content.replace('<div class="content"></div>', f'<div class="content">{content_file.read()}</div>')
                 
                 # Print date, hyphens, and result
-                print(f"{year_str}-{month_str}-{day_str}\n{'-' * 80}\n{result}\n{'-' * 80}")
+                if verbose:
+                    print(f"{year_str}-{month_str}-{file_base_name}\n{'-' * 80}\n{result}\n{'-' * 80}")
                 
                 # Create or warn about existing HTML file
-                html_output_path = os.path.join(output_dir, f"{year_str}/{month_str}/{day_str}.html")
+                html_output_path = os.path.join(output_dir, f"{year_str}/{month_str}/{file_base_name}.html")
                 if not os.path.exists(html_output_path):
                     try:
                         os.makedirs(os.path.dirname(html_output_path))

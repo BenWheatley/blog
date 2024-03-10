@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../../css.css"/ ></head><body>
+
+<div class="content"><h1>No, a black hole can’t be used as a rocket</h1>
+<p>With a headline like that, I need to introduce some concepts.</p>
+
+<p>First, a <strong>black hole</strong>: if you have enough stuff in a small enough volume, the outside is causally disconnected from the inside. This is normally phrased as “nothing, not even light, can escape”, but that’s a little misleading because…</p>
+
+<p>Second: Black holes emit <strong>Hawking radiation</strong>. The exact mechanism is not important, what you need to know is (1) that it behaves exactly like the black hole is a hot object (the scientific term is “black body radiation”, the hotter it gets the brighter and bluer the light), (2) that it gets hotter as it shrinks, and (3) that it shrinks because it’s emitting light.</p>
+
+<p>(The reason we can’t see black holes despite their Hawking radiation, is that the converse of #2 is that bigger ones are colder — at the size of all the black holes we know about, they are actually colder than the cosmic microwave background of deep space).</p>
+
+<p>Light has momentum. Not <em>much</em> momentum compared to the energy — burn 9 litres of oil, gather all the light emitted together, it will have the same momentum as an apple tossed lightly — but it does have <em>some</em>. This means you can use it to propel a space ship! The idea is easy enough: shine or reflect light one way, you go the other. However, the idea of rockets is equally straightforward, and yet <em>building</em> them isn’t.</p>
+
+<figure class="block-image size-large"><img src="https://benwheatley.github.io/blog/2022/05/img_0402.jpg?w=828" alt=""  /><figcaption>Deliberately crude drawing of photon thruster (top) and de Laval rocket nozzle (bottom) to illustrate that science is easy part of rockets, it’s the engineering which is hard.</figcaption></figure>
+
+<p>Because Hawking radiation goes up as black holes get smaller, even without knowing the maths you can clearly see that at some level the Hawking radiation is sufficient to move whatever you want it to.</p>
+
+<figure class="block-image size-large"><img src="https://benwheatley.github.io/blog/2022/05/img_0403.jpg?w=474" alt=""  /><figcaption>The maths of Hawking radiation</figcaption></figure>
+
+<p>Indeed, the “sweet spot” is black hole weighing 606,000 metric tons, which initially has a power output of 160 petawatts, and has a 3.5-year lifespan before all its mass turns into Hawking radiation. With such a power output, the black hole could accelerate to 10% the speed of light in 20 days, assuming 100% conversion of energy into kinetic energy and no payload. (<a rel="noreferrer noopener" href="https://arxiv.org/abs/0908.1803" target="_blank">arXiv:0908.1803</a> [gr-qc])</p>
+
+<p>Now for the problems.</p>
+
+<p>First, 160 petawatts is roughly the same as the power of all the sunlight falling on the planet Earth. Because that’s not exact and the Earth is (nearly) a sphere rather than a disk, this means you’d have to put the black hole in the middle of a <a rel="noreferrer noopener" href="http://www.wolframalpha.com/input/?i=160%20PW%2F%281%20kw%2Fm%5E2%29" target="_blank"><s>7136</s> 3568 km radius sphere</a> for your spaceship to only be getting as warm from it as you get from direct sunlight at ground level on a sunny day. Assuming you only have a half-sphere, this means your mirror has to weigh <a rel="noreferrer noopener" href="http://www.wolframalpha.com/input/?i=606000%20tons%20%2F%208%C3%9710%5E7%20square%20kilometers" target="_blank">6.8 milligrams per square meter</a> if you don’t want the ship to out-mass the black hole. If this mirror was made from aluminium, it would have to be <a rel="noreferrer noopener" href="http://www.wolframalpha.com/input/?i=6.872%20milligrams%20per%20square%20meter%20%2F%20density%20aluminium" target="_blank">25 nanometers thick</a>.</p>
+
+<p>You might be thinking at this point, “why do you want to be that far away, it’s a shiny mirror, it isn’t going to get that hot?”. Unfortunately, the effective temperature of the radiation means that no known material will act like a mirror, because…</p>
+
+<p>Second, such a black hole would have a <a href="https://en.m.wikipedia.org/wiki/Schwarzschild_radius">Schwarzschild radius</a> of 0.9 <a href="https://en.m.wikipedia.org/wiki/Metre#SI_prefixed_forms_of_metre">attometers</a>, which means the Hawking radiation is identical to a black body with a temperature of <a rel="noreferrer noopener" href="http://www.wolframalpha.com/input/?i=black%20hole%20temperature%20606000%20tons" target="_blank">223 trillion Kelvin</a>, which in turn means <a rel="noreferrer noopener" href="http://www.wolframalpha.com/input/?i=2.232%C3%9710%5E14%20kelvins&amp;assumption=%22ClashPrefs%22%20-%3E%20%22%22&amp;assumptionsversion=2" target="_blank">most of the photons of light in the Hawking radiation have enough energy to not just cause spontaneous positron-electron pair production, but also proton-antiproton pair production</a>[*]. This means your spaceship has to be made out of something other than normal matter, which is a fairly big problem all by itself — at this level even if you stabilised tau particles and used them instead of electrons, not only will it still not solve your problems (the Hawking radiation will make tau-anti-tau pairs too) — but even then, because of tau particles’ greater mass giving them more compact wave functions compared to electrons, you would increase the density of your mirror so much it would exceed the mass of the black hole. Particles massive enough to not be evaporated by the matter-antimatter creation due to the light hitting them would always make the mirror significantly more massive than the black hole itself unless the black hole was significantly cooler, but that in turn requires it to be more massive.</p>
+
+<p>To get down to photons that “only” photo-ionise normal matter (about 6eV), you need a black body to be “only” about 70,000 K. That in turn means the black hole is now about 1766 trillion tons, and has a power output of 114 microwatts.</p>
+
+<p>For both these reasons, black hole engines make mere antimatter rockets look safe and (given that even with Clarktech materials the minimum possible mass of everything else is so high), efficient.</p>
+
+<p>* As an aside, I think the photons being at this energy level implies that it’s no longer appropriate to assume the black hole is o<em>nly </em>emitting photons, but most discussion of Hawking radiation don’t go into that depth and I don’t have the physics degree I’d need to start combining the relevant equations.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2022/05/14/no-a-black-hole-cant-be-used-as-a-rocket/">Original post: https://kitsunesoftware.wordpress.com/2022/05/14/no-a-black-hole-cant-be-used-as-a-rocket/</a></p>
+
+<p>Original post timestamp: Sat, 14 May 2022 17:06:59 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/Futurology'>Futurology</a>, <a href='https://benwheatley.github.io/blog/tags/megastructures'>megastructures</a>, <a href='https://benwheatley.github.io/blog/tags/physics'>physics</a>, <a href='https://benwheatley.github.io/blog/tags/rockets'>rockets</a>, <a href='https://benwheatley.github.io/blog/tags/space'>space</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Science'>Science</a></p>
+</div>
+
+</body>
+</html>

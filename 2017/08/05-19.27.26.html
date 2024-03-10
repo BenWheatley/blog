@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../../css.css"/ ></head><body>
+
+<div class="content"><h1>Railgun notes #2</h1>
+<p>[Following <a href="https://kitsunesoftware.wordpress.com/2017/04/10/railgun-notes/">previous railgun notes</a>, which has been updated with corrections]</p>
+
+<strong>Force:</strong>
+<code>F = B·I·l
+<p>B = 1 tesla</p>
+
+<p>I: Current = Voltage / Resistance</p>
+<p>l: Length of armature in meters</p>
+
+<p>F = 1 tesla · V/R · l</p>
+<p>F = m · a</p>
+<p>∴ a = (1 tesla · V/R · l) / m</code></p>
+
+<strong>Using liquid mercury, let cavity be 1cm square, consider section 1cm long:</strong>
+<code>∴ l = 0.01 m
+<p>Resistivity: 961 nΩ·m</p>
+<p>∴ Resistance R = ((961 nΩ·m)*0.01m)/(0.01m^2) = 9.6×10^-7 Ω</p>
+<p>Volume: 1 millilitre</p>
+<p>∴ Mass m = ~13.56 gram = 1.356e-2 kg</p>
+<p>∴ a = (1 tesla · V/(9.6×10^-7 Ω) · (0.01 m)) / (1.356e-2 kg)</code></p>
+
+<strong>Let target velocity = Escape velocity = 11200 m/s = 1.12e4 m/s:</strong>
+<code>Railgun length s = 1/2 · a · t^2
+<p>And v = a · t</p>
+<p>∴ t = v / a</p>
+<p>∴ s = 1/2 · a · (v / a)^2</p>
+<p>∴ s = 1/2 · a · v^2 / a^2</p>
+<p>∴ s = 1/2 · v^2 / a</p>
+<p>∴ s = 1/2 · ((1.12e4 m/s)^2) / ((1 tesla · V/(9.6×10^-7 Ω) · (0.01 m)) / (1.356e-2 kg))</code></p>
+
+<strong>@250V:</strong> <code>s = 0.3266 m</code> (matches previous result)
+
+<strong>@1V:</strong> <code>s = 81.65 m
+<p>I = V/R = 1V / 9.6×10^-7 Ω = 1.042e6 A</p>
+<p>P = I · V = 1V · 1.042e6 A = 1.042e6 W</code></p>
+
+<strong>Duration between rails:</strong>
+<code>t = v / a
+<p>∴ t = (1.12e4 m/s) / a</p>
+<p>∴ t = (1.12e4 m/s) / ( (1 tesla · V/(9.6×10^-7 Ω) · (0.01 m)) / (1.356e-2 kg) )</code></p>
+<p>(Different formula than before, but produces same values)</p>
+<strong>@1V:</strong> <code>t = 0.01458 seconds</code>
+
+<strong>Electrical energy usage:</strong> E = P · t
+<strong>@1V:</strong> <code>E = 1.042e6 W · 0.01458 seconds = 1.519e4 joules</code>
+
+<strong>Kinetic energy:</strong> <code>E = 1/2 · m · v^2 = 8.505e5 joules</code>
+
+<p>Kinetic energy out shouldn't exceed electrical energy used, so <strong>something has gone wrong</strong>.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2017/08/05/railgun-notes-2/">Original post: https://kitsunesoftware.wordpress.com/2017/08/05/railgun-notes-2/</a></p>
+
+<p>Original post timestamp: Sat, 05 Aug 2017 19:27:26 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/math'>math</a>, <a href='https://benwheatley.github.io/blog/tags/physics'>physics</a>, <a href='https://benwheatley.github.io/blog/tags/railgun'>railgun</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Science'>Science</a>, <a href='https://benwheatley.github.io/blog/categories/Technology'>Technology</a></p>
+</div>
+
+</body>
+</html>

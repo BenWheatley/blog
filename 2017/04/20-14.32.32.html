@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="../../css.css"/ ></head><body>
+
+<div class="content"><h1>Can a Casimir cavity be used to construct true negative mass metamaterials?</h1>
+<h2>Abstract</h2>
+<p>Probably not.</p>
+
+
+<h2>Introduction</h2>
+<p>There is a general interest in using Casimir cavities to provide the negative mass densities required for the construction of advanced spacetime metrics including the Alcubierre drive.</p>
+
+<p>According to <a href="https://ntrs.nasa.gov/search.jsp?R=20010091016" target="_blank" rel="noopener noreferrer">equation 28 of "Antimatter Production at a Potential Boundary" (LaPointe, 2001)</a>, the vacuum energy between two plates compared to the external vacuum field is:</p>
+<blockquote><a name="f1"></a>ΔE<sub>vac</sub> = - (π²/720) × (<em>ħcL</em>²/<em>z</em>³)</blockquote>
+<p>Where <em>ħ</em> is the reduced plank constant (approx. 1e-34 J.s); <em>c</em> the speed of light (approx. 3e8m/s); <em>L</em> the side-length (assumes square plates); <em>z</em> is the plate separation.</p>
+
+<p>Considering plausible manufacturing to begin with, let us assume plate separation of 200nm (i.e. near ultraviolet, or 2e-7m) as many substances have difficulty being reflective at shorter wavelengths (which would invalidate the assumptions behind the Casimir equation).</p>
+
+<p>Also assume a plate side length of 2 meters.</p>
+
+<p>Therefore:</p>
+<blockquote>ΔE<sub>vac</sub> = - (π²/720) × (ħc(2m)²/(200nm)³)
+<p>= -2.1669…e-7 J</blockquote></p>
+<em>E = mc²</em> gives the relationship between mass and energy; rearrange to <em>m = E/c²</em> and substitute:
+<blockquote>m = -2.1669…e-7 / c²
+<p>= -2.411…e-24 kg</blockquote></p>
+<p>As this is about the mass of minus 1,500 protons, we can see that a practical Casimir cavity made of simple materials will never have an overall negative mass.</p>
+
+<p>However, it is also reasonable to assume we can solve current engineering problems; therefore let us reduce the plate separation to the atomic radius of Niobium, 0.145nm and repeat:</p>
+<blockquote>- (π²/720) × (ħc(2m)²/(0.145nm)³)
+<p>= -569 J</p>
+<p>= -6.331e-15 kg</p>
+<p>= -3.813e12 unified atomic mass units</blockquote></p>
+<p>Assuming this cavity is made from 1-atom-thick layers of niobium (and that a naïve calculation of density still works, and assuming room-temperature density instead of the density at the superconducting critical temperature of 9.3 K), the mass of the cavity would be:</p>
+<blockquote>2 × 2m × 2m × 0.145nm × 8,570 kg/m³
+<p>= 9.941e-6 kg</blockquote></p>
+<p>This is a ratio of -6.369e-10 kilograms (of vacuum energy) per kilogram (of cavity mass).</p>
+
+<p>So, even for extreme conventional parameters, we cannot make a bulk negative-mass object from normal atoms. This also explains why large lumps of metal don't suspiciously change weight when they are reshaped, nor when impurities are added, even though different amounts of zero-point energy should be excluded from their volumes: even the biggest weight-change one can expect is close to 1 part per billion, which is unlikely to be noticeable (and certainly not suspicious) after any reshaping work.</p>
+
+<p>But what if we don't limit ourselves to normal atoms? It's not as outlandish as it first appears: there is a process called <a href="https://en.wikipedia.org/wiki/Muon-catalyzed_fusion">muon-catalysed fusion</a>, where muons — which are about 207 times the mass of electrons — replace one of the electrons in a hydrogen molecule, allowing them to get much closer to the nucleus than an electron would, and in turn allowing the atoms to get closer to each other.</p>
+
+<p>To say this is difficult is an understatement (there is a reason why our homes are not powered by µCf reactors), but it's not <em>unphysical</em>. In principle, such a thing could be built, if only we knew how.</p>
+
+<p>Now, one may reasonably pause for concern: if muons are <em>more massive</em> than electrons, how can that help make the whole thing <em>less massive</em>?</p>
+
+<p>The answer is that it is down to the cube in the denominator: Make the least massive part 207 times more massive, so the vacuum energy excluding parts are 196 times closer, so they are now excluding 196³ = 7,529,536 times more vacuum energy.</p>
+
+<p>Unfortunately, the atoms are 196 times closer in the plane, not just between (1-atom-thick) sheets, so the mass of a 1m² sheet (1-atom-thick) is 196² = 38,416 times the mass it was before (while also being 196 times thinner). An alternative perspective is that for a fixed cavity mass, the length of the sides (<em>L</em>) of the cavity reduces by a factor of 196, reducing the excluded energy:</p>
+<blockquote>L' = L/196
+<p>∴ ΔE<sub>vac</sub>' = ΔE<sub>vac</sub>/196²</p>
+<p>= ΔE<sub>vac</sub>/38,416</blockquote></p>
+<p>In each case, the overall improvement is directly proportional to the reduction in atom separation, not the cube. Noting this, given that we want to solve for plate separation <em>z</em> where:</p>
+<blockquote>m = -ΔE<sub>vac</sub></blockquote>
+<p>In order to find the maximum plate separation such that we produce a negative mass metamaterial, we can simply multiply by minus the ratio of vacuum energy to cavity mass calculated above: -6.369e-10 kilograms per kilogram.</p>
+<blockquote>z' = z × -(-6.369e-10 kilograms per kilogram)
+<p>= 0.145nm × 6.369e-10</p>
+<p>= 9.235e-20 meters</blockquote></p>
+<p>This compares unfavourably with the standard proton radius of (8.8±0.1) × 10⁻¹⁶ meters, however this may be of relevance with regard to quark matter.</p>
+<h2>Conclusion</h2>
+<p>Proton-based matter cannot be used to construct planar Casimir cavities that exclude more than their own mass in vacuum energy.</p>
+
+<p>Non-planar cavities, exotic baryons, and relativistic effects have not yet been investigated.</p>
+
+<p><a href="https://kitsunesoftware.wordpress.com/2017/04/20/can-a-casimir-cavity-be-used-to-construct-true-negative-mass-metamaterials/">Original post: https://kitsunesoftware.wordpress.com/2017/04/20/can-a-casimir-cavity-be-used-to-construct-true-negative-mass-metamaterials/</a></p>
+
+<p>Original post timestamp: Thu, 20 Apr 2017 14:32:32 +0000</a></p>
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags/antigravity'>antigravity</a>, <a href='https://benwheatley.github.io/blog/tags/Casimir cavity'>Casimir cavity</a>, <a href='https://benwheatley.github.io/blog/tags/exotic matter'>exotic matter</a>, <a href='https://benwheatley.github.io/blog/tags/math'>math</a>, <a href='https://benwheatley.github.io/blog/tags/metamaterials'>metamaterials</a>, <a href='https://benwheatley.github.io/blog/tags/negative mass'>negative mass</a>, <a href='https://benwheatley.github.io/blog/tags/physics'>physics</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories/Science'>Science</a></p>
+</div>
+
+</body>
+</html>
