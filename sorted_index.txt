@@ -1,9 +1,20 @@
 
+## 2024
+
+### March
+
+* [11 - A Brilliant end](2024/03/11-12.00.16.html)
+
 ## 2023
+
+### December
+
+* [12 - Analogy: LLMs as CISC, MoE as RISC](2023/12/12.html)
 
 ### November
 
 * [19 - The conservative-radical split over AI](2023/11/19-19.53.55.html)
+* [18 - The conservative-radical split over AI](2023/11/18.html)
 
 ### February
 
@@ -21,7 +32,7 @@
 
 ### September
 
-* [19 - Not a Singularity but an Event Horizon](2022/09/20-18.35.10.html)
+* [20 - Not a Singularity but an Event Horizon](2022/09/20-18.35.10.html)
 
 ### June
 
@@ -38,6 +49,10 @@
 
 * [27 - Arguments, hill climbing, the wisdom of the crowds](2021/12/27-11.48.06.html)
 
+### November
+
+* [11 - Blasphemy, LARPing, mandatory vaccination](2021/11/11-14.32.26.html)
+
 ### July
 
 * [31 - How big might real wormholes be?](2021/07/31-13.37.34.html)
@@ -45,7 +60,6 @@
 
 ### June
 
-* [14 - Blasphemy, LARPing, mandatory vaccination](2021/06/11-14.32.26.html)
 * [14 - Why do some people hate masks?](2021/06/14-21.59.37.html)
 
 ### May
@@ -73,9 +87,9 @@
 
 ### June
 
-* [28 - Trek head-cannon](2020/06/27-22.51.46.html)
+* [27 - Trek head-cannon](2020/06/27-22.51.46.html)
 * [10 - Post-scarcity](2020/06/10-20.30.07.html)
-* [10 - Hypocrisy](2020/06/09-22.21.25.html)
+* [09 - Hypocrisy](2020/06/09-22.21.25.html)
 
 ### May
 
@@ -94,6 +108,7 @@
 ### January
 
 * [16 - The worst form of government except for all the others](2020/01/16-15.06.16.html)
+* [08 - Morality, thy discount is hyperbolic](2020/01/08-21.46.38.html)
 * [08 - Screenshot 2020-01-08 at 21.41.24](2020/01/08-20.42.06.html)
 
 ## 2019
@@ -148,9 +163,15 @@
 * [21 - None](2018/12/21-09.27.02.html)
 * [12 - Brexit RPG](2018/12/12-21.27.56.html)
 
+### November
+
+* [29 - More scam emails](2018/11/29-22.10.16.html)
+* [01 - SMS hyperlinks](2018/11/01-21.32.50.html)
+
 ### October
 
 * [26 - None](2018/10/26-21.05.33.html)
+* [22 - Brexit as an example of failure to comprehend conditional probabilities](2018/10/22-09.05.45.html)
 * [16 - Self-teaching | Selbstlernen](2018/10/16-17.00.58.html)
 * [01 - Pocket brains](2018/10/01-19.55.14.html)
 * [01 - Falsifiability](2018/10/01-18.46.42.html)
@@ -158,15 +179,18 @@
 ### September
 
 * [22 - Thought crime in 2084](2018/09/22-22.10.09.html)
+* [21 - One person's nit is another's central pillar](2018/09/21-11.29.23.html)
+* [18 - Baysean Brexit](2018/09/18-09.25.28.html)
+* [16 - Attention ec — ooh, a squirrel](2018/09/16-18.46.48.html)
 
 ### August
 
 * [31 - Voting: do or do not?](2018/08/31-08.43.55.html)
 * [31 - Social media compulsion](2018/08/31-11.34.47.html)
+* [28 - Open borders](2018/08/28-11.02.41.html)
 * [26 - Mathematical Universe v. Boltzmann Brains](2018/08/26-08.28.24.html)
-* [09 - More scam emails](2018/08/29-22.10.16.html)
+* [11 - A.I. safety with Democracy?](2018/08/11-18.39.44.html)
 * [09 - Anatomy of a scam, and LiveJournal's lost passwords](2018/08/09-15.24.47.html)
-* [05 - Baysean Brexit](2018/08/18-09.25.28.html)
 * [05 - Dynamic range of Bayesian thought](2018/08/05-05.24.51.html)
 
 ### July
@@ -186,6 +210,9 @@
 
 ### March
 
+* [16 - blah](2018/03/16-12.46.30.html)
+* [16 - Paradoxical feeling](2018/03/16-12.46.50.html)
+* [16 - Open Street Map public transport zones](2018/03/16-12.46.59.html)
 * [16 - Speed of machine intelligence](2018/03/16-10.44.18.html)
 
 ### February
@@ -194,8 +221,6 @@
 * [06 - Nietzsche, Facebook, and A.I.](2018/02/06-12.21.48.html)
 * [05 - Kessler-resistant real-life force-fields?](2018/02/05-11.16.43.html)
 * [02 - <strike>Cherry-manning?</strike> Nut picking](2018/02/02-22.40.37.html)
-* [02 - One person's nit is another's central pillar](2018/02/21-11.29.23.html)
-* [02 - Open borders](2018/02/28-11.02.41.html)
 
 ### January
 
@@ -203,7 +228,6 @@
 * [31 - How might she see the world?](2018/01/31-11.19.41.html)
 * [29 - Utility function of meetings](2018/01/29-13.27.12.html)
 * [27 - Must we laugh to change our mind?](2018/01/27-15.04.31.html)
-* [21 - Morality, thy discount is hyperbolic](2018/01/08-21.46.38.html)
 * [21 - Normalised, n-dimensional, utility monster](2018/01/21-23.53.51.html)
 
 ## 2017
@@ -217,7 +241,6 @@
 * [27 - Irish border, WTO rules, Brexit](2017/11/27-14.10.14.html)
 * [26 - You won't believe how fast transistors are](2017/11/26-22.25.50.html)
 * [21 - Hyperinflation in the attention economy: what succeeds adverts?](2017/11/21-22.11.35.html)
-* [21 - Attention ec — ooh, a squirrel](2017/11/16-18.46.48.html)
 * [19 - If I'm right about this, it's luck, not skill.](2017/11/19-16.02.25.html)
 * [18 - Musk City, Antarctica](2017/11/18-19.07.03.html)
 * [17 - The end of human labour is inevitable, here's why](2017/11/17-11.36.34.html)
@@ -229,6 +252,7 @@
 ### August
 
 * [09 - Would this be a solution to the problem of literal-Genie omniscient AIs?](2017/08/09-19.21.27.html)
+* [05 - Railgun notes #2](2017/08/05-19.27.26.html)
 
 ### July
 
@@ -252,7 +276,6 @@
 * [20 - Can a Casimir cavity be used to construct true negative mass metamaterials?](2017/04/20-14.32.32.html)
 * [10 - Executable images](2017/04/10-22.55.43.html)
 * [10 - Railgun notes](2017/04/10-18.16.20.html)
-* [10 - Railgun notes #2](2017/04/05-19.27.26.html)
 
 ### January
 
@@ -260,22 +283,17 @@
 
 ## 2016
 
-### December
-
-* [28 - A.I. safety with Democracy?](2016/12/11-18.39.44.html)
-
 ### November
 
 * [10 - The passage of time](2016/11/10-21.39.45.html)
 
 ### May
 
-* [09 - Brexit as an example of failure to comprehend conditional probabilities](2016/05/22-09.05.45.html)
 * [09 - EU](2016/05/09-20.40.01.html)
 
 ### April
 
-* [10 - The Singularity is Dead, Long Live The Singularity](2016/04/12-00.31.55.html)
+* [12 - The Singularity is Dead, Long Live The Singularity](2016/04/12-00.31.55.html)
 * [08 - The near future](2016/04/08-12.40.20.html)
 
 ### March

@@ -10,20 +10,28 @@ month_names = ["January", "February", "March", "April", "May", "June", "July", "
 for root, dirs, files in os.walk('./'):
     for file in files:
         if file.endswith('.html'):
-            with open(os.path.join(root, file), 'r') as f:
+            path = os.path.join(root, file)
+            with open(path, 'r') as f:
                 content = f.read()
-                date_match = re.search(r'(\d{4}/\d{2}/\d{2})', content)
+                date_match = re.search(r'(\d{4}/\d{2}/\d{2})', path)
                 title_match = re.search(r'<h1>(.+?)</h1>', content)
-                categories_match = re.search(r'<p>Categories: (.+?)</p>', content)
-                tags_match = re.search(r'<p>Tags: (.+?)</p>', content)
+                
                 categories_here = []
+                categories_match = re.search(r'<p>Categories: (.+?)</p>', content)
                 if categories_match:
                     categories_here = categories_match.group(1).split(', ')
                     categories.update(categories_here)
+                else:
+                    print(f"didn't find categories for {path}")
+                
                 tags_here = []
+                tags_match = re.search(r'<p>Tags: (.+?)</p>', content)
                 if tags_match:
                     tags_here = tags_match.group(1).split(', ')
                     tags.update(tags_here)
+                else:
+                    print(f"didn't find tags for {path}")
+                
                 if date_match and title_match:
                     date = date_match.group(1)
                     title = title_match.group(1)
