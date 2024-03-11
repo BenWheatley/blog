@@ -4,6 +4,7 @@ I want to make my existing blog available in github. More readable, and (unlike 
 
 
 
+
 ## 2024
 
 ### March
@@ -215,9 +216,7 @@ I want to make my existing blog available in github. More readable, and (unlike 
 
 ### March
 
-* [16 - blah](2018/03/16-12.46.30.html)
 * [16 - Paradoxical feeling](2018/03/16-12.46.50.html)
-* [16 - Open Street Map public transport zones](2018/03/16-12.46.59.html)
 * [16 - Speed of machine intelligence](2018/03/16-10.44.18.html)
 
 ### February
