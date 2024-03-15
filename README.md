@@ -2,9 +2,6 @@ I want to make my existing blog available in github. More readable, and (unlike 
 
 [Licence: Attribution-NonCommercial-NoDerivs 4.0 International](LICENSE)
 
-
-
-
 ## 2024
 
 ### March
@@ -115,7 +112,6 @@ I want to make my existing blog available in github. More readable, and (unlike 
 
 * [16 - The worst form of government except for all the others](2020/01/16-15.06.16.html)
 * [08 - Morality, thy discount is hyperbolic](2020/01/08-21.46.38.html)
-* [08 - Screenshot 2020-01-08 at 21.41.24](2020/01/08-20.42.06.html)
 
 ## 2019
 
