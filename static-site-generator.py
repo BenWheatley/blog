@@ -6,7 +6,7 @@ import sys
 import errno
 from datetime import datetime
 
-def main(template_path, output_dir, verbose = False):
+def main(template_path, output_dir, verbose = False, force_update = False):
     # Read the template file
     with open(template_path, 'r') as template_file:
         template_content = template_file.read()
@@ -34,7 +34,10 @@ def main(template_path, output_dir, verbose = False):
                 
                 # Create or warn about existing HTML file
                 html_output_path = os.path.join(output_dir, f"{year_str}/{month_str}/{file_base_name}.html")
-                if not os.path.exists(html_output_path):
+                file_exists = os.path.exists(html_output_path)
+                if file_exists:
+                    print("\033[91mWarning: The file {} already exists.\033[0m".format(html_output_path), file=sys.stderr)
+                if (not file_exists) or force_update:
                     try:
                         os.makedirs(os.path.dirname(html_output_path))
                     except OSError as e:
@@ -42,8 +45,6 @@ def main(template_path, output_dir, verbose = False):
                             raise
                     with open(html_output_path, 'w') as html_file:
                         html_file.write(result)
-                else:
-                    print("\033[91mWarning: The file {} already exists.\033[0m".format(html_output_path), file=sys.stderr)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -62,4 +63,4 @@ if __name__ == "__main__":
         print(f"Error: Output directory {output_dir} not found.")
         sys.exit(1)
     
-    main(template_path, output_dir)
+    main(template_path, output_dir, force_update = True)
