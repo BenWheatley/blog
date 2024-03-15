@@ -47,3 +47,5 @@
 </p>
 
 <p>Note: at time of writing, this represents "things I want to try", I've not written any experiments with this. I intend to start with a toy model, probably the MNIST handwriting set, where each model/meta-model is trying to recognise just one of the digits, and the model creator is a short python script. It would also be possible to explore a similar approach with a much more capable model, such as using a LLM as a controller to query (and via some appropriate API, invoke and use the output of) a database of code functions, and another LLM as a model creator to create new maths functions in some programming language.</p>
+
+<hr />

@@ -1,7 +1,8 @@
 <h1>None</h1>
 <p>It's far from a groundbreaking invention, but there's something very satisfying about this way of finding the smallest value in a Swift array of Integers:</p>
 <pre><span style="color:#993366;"><strong>var</strong></span> minimum = someArray.reduce(<span style="color:#800080;">Int</span>.max, min)</pre>
- 
+
+<hr />
 
 <p><a href="https://kitsunesoftware.wordpress.com/2018/10/26/1410/">Original post: https://kitsunesoftware.wordpress.com/2018/10/26/1410/</a></p>
 

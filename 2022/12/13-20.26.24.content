@@ -13,6 +13,8 @@
 
 <p>- written by ChatGPT, lightly edited and Zalgo-ed by me, and based on a classic StackOverflow post: https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags (Licensed under CC BY-SA 2.5 if I’m reading StackOverflow’s T&amp;Cs correctly).</p>
 
+<hr />
+
 <p><a href="https://kitsunesoftware.wordpress.com/2022/12/13/agi-to-match-open-tags-except-xhtml-self-contained-tags/">Original post: https://kitsunesoftware.wordpress.com/2022/12/13/agi-to-match-open-tags-except-xhtml-self-contained-tags/</a></p>
 
 <p>Original post timestamp: Tue, 13 Dec 2022 20:26:24 +0000</a></p>
