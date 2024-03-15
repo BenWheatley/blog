@@ -8,6 +8,8 @@ Blogging in github means I can skip all the annoying cruft by the usual blogging
 
 I've written a bulk importer, which kinda worked but is a bit flakey, so I may still need to tidy up the old ones for style and for content lost in transition.
 
+And I still need to generate an index table for the categories and tags…
+
 [Licence: Attribution-NonCommercial-NoDerivs 4.0 International](LICENSE)
 
 
