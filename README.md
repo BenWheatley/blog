@@ -2,7 +2,7 @@
 
 ## Motivation
 
-I've wanted to make my existing blog available in github, but didn't have time until recently.
+I've wanted to make my existing blog available in github for ages now, but didn't have time until recently.
 
 Blogging in github means I can skip all the annoying cruft that makes things worse in the name of Resume-driven development by the usual blogging platforms, and that I can completely skip all tracking cookies etc. just by not using them in the first place and therefore don't need that annoying GDPR popup.
 
