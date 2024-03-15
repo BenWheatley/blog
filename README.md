@@ -1,4 +1,12 @@
-I want to make my existing blog available in github. More readable, and (unlike wordpress), no tracking and therefore no annoying GDPR popup. I've written a bulk importer, which kinda works but is a bit flakey, so I'll be tidying these up for style and for content lost in transition.
+## [[ If you want to read the blog rather than look at the source code, click here ]](https://benwheatley.github.io/blog/)
+
+## Motivation
+
+I've wanted to make my existing blog available in github, but didn't have time until recently.
+
+Blogging in github means I can skip all the annoying cruft that makes things worse in the name of Resume-driven development by the usual blogging platforms, and that I can completely skip all tracking cookies etc. just by not using them in the first place and therefore don't need that annoying GDPR popup.
+
+I've written a bulk importer, which kinda worked but is a bit flakey, so I may still need to tidy up the old ones for style and for content lost in transition.
 
 [Licence: Attribution-NonCommercial-NoDerivs 4.0 International](LICENSE)
 
