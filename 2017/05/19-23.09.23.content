@@ -1,15 +1,15 @@
 <h1>Just because you can, doesn't mean you should</h1>
 <p>Python lets programmers redefine initializers at runtime. Don't do that.</p>
 
-<img class="alignnone size-full" src="screen-shot-2017-05-19-at-19-07-53.png" alt="Screen Shot 2017-05-19 at 19.07.53" width="334" height="196" />
+<img class="alignnone size-full" src="screen-shot-2017-05-19-at-19-07-53.png" alt="Screen Shot 2017-05-19 at 19.07.53" style="aspect-ratio: 334/196;" />
 
 <p>The C preprocessor lets programmers redefine "true". Don't do that.</p>
 
-<img class="alignnone size-full" src="screen-shot-2017-05-19-at-17-11-35.png" alt="Screen Shot 2017-05-19 at 17.11.35" width="334" height="299" /></td></tr>
+<img class="alignnone size-full" src="screen-shot-2017-05-19-at-17-11-35.png" alt="Screen Shot 2017-05-19 at 17.11.35" style="aspect-ratio: 334/299;" /></td></tr>
 
 <p>Swift lets programmers use very foolish variable names. This may be the lesser sin, but still, don't do that.</p>
 
-<img class="alignnone size-full" src="screen-shot-2017-05-19-at-17-07-26.png" alt="Screen Shot 2017-05-19 at 17.07.26" width="347" height="316" />
+<img class="alignnone size-full" src="screen-shot-2017-05-19-at-17-07-26.png" alt="Screen Shot 2017-05-19 at 17.07.26" style="aspect-ratio: 347/316;" />
 
 <p>Given python has a reputation for relatively defect-free code, it's remarkable how few guards it has for enforcing good code — no type safety, no access modifiers, only enforced indentation.</p>
 

@@ -13,18 +13,18 @@
 
 <pre>#!python
 
-<p>from datetime import datetime</p>
+from datetime import datetime
 
-<p>before = datetime.now()</p>
+before = datetime.now()
 
-<p>q = 916748676920039158098660927585380162483106680144308622407126516427934657040867096593279205767480806790022783016354924852380335745316935111903596577547340075681688305620821016129132845564805780158806771</p>
+q = 916748676920039158098660927585380162483106680144308622407126516427934657040867096593279205767480806790022783016354924852380335745316935111903596577547340075681688305620821016129132845564805780158806771
 
-<p>for x in range(0,int(3.45e6)):</p>
-<p>a = q**(1./23)</p>
+for x in range(0,int(3.45e6)):
+a = q**(1./23)
 
-<p>after = datetime.now()</p>
+after = datetime.now()
 
-<p>print after-before</p>
+print after-before
 </pre>
 
 <p>It calculates the 23<sup>rd</sup> root of that number. It times itself as it does the calculation three million four hundred and fifty thousand times, repeating the calculation just to slow it down enough to make the time reading accurate.</p>
@@ -32,8 +32,8 @@
 <p>Let's see what how long it takes…</p>
 
 <pre>MacBook-Air:python kitsune$ python 201-digit-23rd-root.py 
-<p>0:00:01.140248</p>
-<p>MacBook-Air:python kitsune$</pre></p>
+0:00:01.140248
+MacBook-Air:python kitsune$</pre>
 
 <p>1.14 seconds — to do the calculation 3,450,000 times.</p>
 
@@ -42,63 +42,63 @@
 <p>It gets worse, though. The next thing people often say is, paraphrased, "oh, but it's cheating to program the numbers into the computer when the human had to read it". Obviously the way to respond to that is to have the computer read for itself:</p>
 
 <pre>from sklearn import svm
-<p>from sklearn import datasets</p>
-<p>import numpy as np</p>
-<p>import matplotlib.pyplot as plt</p>
-<p>import matplotlib.cm as cm</p>
+from sklearn import datasets
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 
-<p># Find out how fast it learns</p>
-<p>from datetime import datetime</p>
-<p># When did we start learning?</p>
-<p>before = datetime.now()</p>
+# Find out how fast it learns
+from datetime import datetime
+# When did we start learning?
+before = datetime.now()
 
-<p>clf = svm.SVC(gamma=0.001, C=100.)</p>
-<p>digits = datasets.load_digits()</p>
-<p>size = len(digits.data)/10</p>
-<p>clf.fit(digits.data[:-size], digits.target[:-size])</p>
+clf = svm.SVC(gamma=0.001, C=100.)
+digits = datasets.load_digits()
+size = len(digits.data)/10
+clf.fit(digits.data[:-size], digits.target[:-size])
 
-<p># When did we stop learning?</p>
-<p>after = datetime.now()</p>
-<p># Show user how long it took to learn</p>
-<p>print "Time spent learning:", after-before</p>
+# When did we stop learning?
+after = datetime.now()
+# Show user how long it took to learn
+print "Time spent learning:", after-before
 
-<p># When did we start reading?</p>
-<p>before = datetime.now()</p>
-<p>maxRepeats = 100</p>
-<p>for repeats in range(0, maxRepeats):</p>
-<p>for x in range(0, size):</p>
-<p>data = digits.data[-x]</p>
-<p>prediction = clf.predict(digits.data[-x])</p>
+# When did we start reading?
+before = datetime.now()
+maxRepeats = 100
+for repeats in range(0, maxRepeats):
+for x in range(0, size):
+data = digits.data[-x]
+prediction = clf.predict(digits.data[-x])
 
-<p># When did we stop reading?</p>
-<p>after = datetime.now()</p>
-<p>print "Number of digits being read:", size*maxRepeats</p>
-<p>print "Time spent reading:", after-before</p>
+# When did we stop reading?
+after = datetime.now()
+print "Number of digits being read:", size*maxRepeats
+print "Time spent reading:", after-before
 
-<p># Show mistakes:</p>
-<p>for x in range(0, size):</p>
-<p>data = digits.data[-x]</p>
-<p>target = digits.target[-x]</p>
-<p>prediction = clf.predict(digits.data[-x])</p>
-<p>if (target!=prediction):</p>
-<p>print "Target: "+str(target)+" prediction: "+str(prediction)</p>
-<p>grid = data.reshape(8, 8)</p>
-<p>plt.imshow(grid, cmap = cm.Greys_r)</p>
-<p>plt.show()</pre></p>
+# Show mistakes:
+for x in range(0, size):
+data = digits.data[-x]
+target = digits.target[-x]
+prediction = clf.predict(digits.data[-x])
+if (target!=prediction):
+print "Target: "+str(target)+" prediction: "+str(prediction)
+grid = data.reshape(8, 8)
+plt.imshow(grid, cmap = cm.Greys_r)
+plt.show()</pre>
 
 <p>This learns to read using a standard dataset of hand-written digits, then reads all the digits in that set a hundred times over, then shows you what mistakes it's made.</p>
 
 <pre>MacBook-Air:AI stuff kitsune$ python digits.py 
-<p>Time spent learning: 0:00:00.225301</p>
-<p>Number of digits being read: 17900</p>
-<p>Time spent reading: 0:00:02.700562</p>
-<p>Target: 3 prediction: [5]</p>
-<p>Target: 3 prediction: [5]</p>
-<p>Target: 3 prediction: [8]</p>
-<p>Target: 3 prediction: [8]</p>
-<p>Target: 9 prediction: [5]</p>
-<p>Target: 9 prediction: [8]</p>
-<p>MacBook-Air:AI stuff kitsune$</p>
+Time spent learning: 0:00:00.225301
+Number of digits being read: 17900
+Time spent reading: 0:00:02.700562
+Target: 3 prediction: [5]
+Target: 3 prediction: [5]
+Target: 3 prediction: [8]
+Target: 3 prediction: [8]
+Target: 9 prediction: [5]
+Target: 9 prediction: [8]
+MacBook-Air:AI stuff kitsune$
 </pre>
 
 <p>0.225 seconds to learn to read, from scratch; then it reads just over 6,629 digits per second. This is comparable with both the speed of a human blink (0.1-0.4 seconds) and also with many of the claims* I've seen about human visual processing time, from retina to recognising text.</p>

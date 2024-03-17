@@ -1,7 +1,7 @@
 <h1>Berlin public transport map</h1>
-<a href="https://github.com/BenWheatley/SwiftMapper/blob/master/README.md" target="_blank" rel="noopener">Today I wrote a mapping utility for OpenStreetMap XML data</a> and used it to render all <code>railways=*</code> and <code>public_transport=*</code> nodes close to Berlin.
+<p><a href="https://github.com/BenWheatley/SwiftMapper/blob/master/README.md" target="_blank" rel="noopener">Today I wrote a mapping utility for OpenStreetMap XML data</a> and used it to render all <code>railways=*</code> and <code>public_transport=*</code> nodes close to Berlin.</p>
 
-<img src="berlin-public-transport-infrastructure.png" alt="Berlin-public-transport-infrastructure.png" width="1024" height="640" />
+<img src="berlin-public-transport-infrastructure.png" alt="Berlin-public-transport-infrastructure.png" style="aspect-ratio: 1024/640; width: min(100%, 1024px);" />
 
 <hr />
 
