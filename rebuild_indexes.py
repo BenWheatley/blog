@@ -44,7 +44,7 @@ for root, dirs, files in os.walk('./'):
 sorted_entries = sorted(entries, key=lambda x: x['date'], reverse=True)
 
 # Writing the sorted index to a file
-with open('index.md', 'w') as output_file_md, open("index.html", "w") as output_file_html, open("template.html", "r") as template_file:
+with open('index.md', 'w') as output_file_md, open("index.html", "w") as output_file_html, open("home_template.html", "r") as template_file:
     current_year = ""
     current_month = ""
     output_html = ""
