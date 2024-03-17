@@ -44,19 +44,39 @@ for root, dirs, files in os.walk('./'):
 sorted_entries = sorted(entries, key=lambda x: x['date'], reverse=True)
 
 # Writing the sorted index to a file
-with open('sorted_index.txt', 'w') as output_file:
+with open('index.md', 'w') as output_file_md, open("index.html", "w") as output_file_html, open("template.html", "r") as template_file:
     current_year = ""
     current_month = ""
+    output_html = ""
+    outside_of_a_list = True
+    fresh_start = True
     for entry in sorted_entries:
         year, month, date = entry['date'].split("/")
+        if not fresh_start and (year != current_year or month != current_month):
+            output_html += "</ul>\n"
+        fresh_start = False
         if year != current_year:
             current_year = year
-            output_file.write(f"\n## {current_year}\n")
+            output_file_md.write(f"\n## {current_year}\n")
+            output_html += (f"\n<h2>{current_year}</h2>\n")
+            outside_of_a_list = True
         if month != current_month:
             current_month = month
-            output_file.write(f"\n### {month_names[int(current_month)-1]}\n\n")
+            month_string = month_names[int(current_month)-1]
+            output_file_md.write(f"\n### {month_string}\n\n")
+            output_html += (f"\n<h3>{month_string}</h3>\n\n")
+            outside_of_a_list = True
+        if outside_of_a_list:
+            outside_of_a_list = False
+            output_html += "<ul>\n"
         link = entry['link']
-        output_file.write(f"* [{date} - {entry['title']}]({link})\n")
+        title = entry['title']
+        output_file_md.write(f"* [{date} - {title}]({link})\n")
+        output_html += (f"<li><a href='{link}'>{date} - {title}</a></li>\n")
+    output_html += "</ul>\n"
+    template_content = template_file.read()
+    html_out = template_content.replace('<div class="content"></div>', f'<div class="content">{output_html}</div>')
+    output_file_html.write(html_out)
 
 # Writing unique categories and tags to files
 with open('categories.txt', 'w') as categories_file:
