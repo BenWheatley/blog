@@ -14,7 +14,6 @@
 ### November
 
 * [19 - The conservative-radical split over AI](2023/11/19-19.53.55.html)
-* [18 - The conservative-radical split over AI](2023/11/18.html)
 
 ### February
 
@@ -159,17 +158,16 @@
 ### December
 
 * [23 - A life's work](2018/12/23-10.00.13.html)
-* [21 - None](2018/12/21-09.27.02.html)
+* [21 - Word avalanche](2018/12/21-09.27.02.html)
 * [12 - Brexit RPG](2018/12/12-21.27.56.html)
 
 ### November
 
 * [29 - More scam emails](2018/11/29-22.10.16.html)
-* [01 - SMS hyperlinks](2018/11/01-21.32.50.html)
 
 ### October
 
-* [26 - None](2018/10/26-21.05.33.html)
+* [26 - Finding the smallest value in a Swift array of Integers](2018/10/26-21.05.33.html)
 * [22 - Brexit as an example of failure to comprehend conditional probabilities](2018/10/22-09.05.45.html)
 * [16 - Self-teaching | Selbstlernen](2018/10/16-17.00.58.html)
 * [01 - Pocket brains](2018/10/01-19.55.14.html)
@@ -209,7 +207,6 @@
 
 ### March
 
-* [16 - Paradoxical feeling](2018/03/16-12.46.50.html)
 * [16 - Speed of machine intelligence](2018/03/16-10.44.18.html)
 
 ### February
@@ -244,7 +241,7 @@
 
 ### September
 
-* [15 - None](2017/09/15-22.58.06.html)
+* [15 - Being embarrassed by your old work is a sign you've learned things](2017/09/15-22.58.06.html)
 
 ### August
 
