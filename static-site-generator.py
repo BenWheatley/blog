@@ -5,6 +5,7 @@ import os
 import sys
 import errno
 from datetime import datetime
+import argparse
 
 def main(template_path, output_dir, verbose = False, force_update = False):
     # Read the template file
@@ -47,13 +48,15 @@ def main(template_path, output_dir, verbose = False, force_update = False):
                         html_file.write(result)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        script_name = os.path.basename(__file__)
-        print(f"Usage: {script_name} template_path output_dir")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Process content files with a template.")
+    parser.add_argument("--template", default="template.html", help="Path to the template file")
+    parser.add_argument("--output", default=".", help="Output directory")
+    parser.add_argument("--force-update", action="store_true", help="Force update HTML files if they already exist")
+    parser.add_argument("--verbose", action="store_true", help="Verbose output")
+    args = parser.parse_args()
     
-    template_path = sys.argv[1]
-    output_dir = sys.argv[2]
+    template_path = args.template
+    output_dir = args.output
     
     if not os.path.isfile(template_path):
         print(f"Error: Template file {template_path} not found.")
@@ -63,4 +66,4 @@ if __name__ == "__main__":
         print(f"Error: Output directory {output_dir} not found.")
         sys.exit(1)
     
-    main(template_path, output_dir, force_update = True)
+    main(template_path, output_dir, verbose = args.verbose, force_update = args.force_update)
