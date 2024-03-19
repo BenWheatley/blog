@@ -3,6 +3,7 @@
 
 ### March
 
+* [19 - Newspapers, copyright, artists, and GenAI](2024/03/19-14.53.05.content.html)
 * [11 - A Brilliant end](2024/03/11-12.00.16.html)
 
 ## 2023
