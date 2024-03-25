@@ -94,25 +94,26 @@ with open('index.md', 'w') as output_file_md, open("index.html", "w") as output_
     html_out = template_content.replace('<div class="content"></div>', f'<div class="content">{output_html}</div>')
     output_file_html.write(html_out)
 
-def create_collection(file_name, data):
-    with open(f"{file_name}.md", "w") as index_file_md, open(f"{file_name}.html", "w") as index_file_html:
-        for link in data:
+def create_collection(file_name, data, html_template_file_name):
+    with open(f"{file_name}.md", "w") as index_file_md, open(f"{file_name}.html", "w") as index_file_html, open(html_template_file_name, "r") as html_template_file:
+        index_content_html = ""
+        sorted_links = sorted(data.keys(), key=lambda x: x.lower())
+        for link in sorted_links:
             search_result = re.search(r'>(.*)<', link)
             if not search_result:
                 continue
             keyword = search_result.group(1)
             index_file_md.write(f"\n### {keyword}\n\n")
-            index_file_html.write(f"<h3 id='{keyword}'>{keyword}</h3>\n\n<ul>\n")
+            index_content_html += f"<h3 id='{keyword}'>{keyword}</h3>\n\n<ul>\n"
             for item in data[link]:
                 index_file_md.write(f"* {item[1]}\n")
-                index_file_html.write(f"<li>{item[0]}</li>\n")
-            index_file_html.write(f"</ul>\n\n")
+                index_content_html += f"<li>{item[0]}</li>\n"
+            index_content_html += f"</ul>\n\n"
+        template_content = html_template_file.read()
+        html_out = template_content.replace('<div class="content"></div>', f'<div class="content">{index_content_html}</div>')
+        index_file_html.write(html_out)
 
 # Writing unique categories and tags to files
-with open('categories.txt', 'w') as categories_file:
-    categories_file.write('\n'.join(sorted(categories)))
-    create_collection(file_name = "categories", data = categories)
+create_collection(file_name = "categories", data = categories, html_template_file_name = "categories_template.html")
 
-with open('tags.txt', 'w') as tags_file:
-    tags_file.write('\n'.join(sorted(tags)))
-    create_collection(file_name = "tags", data = tags)
+create_collection(file_name = "tags", data = tags, html_template_file_name = "tags_template.html")
