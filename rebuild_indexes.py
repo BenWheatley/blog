@@ -5,8 +5,8 @@ import os
 import re
 
 entries = []
-categories = set()
-tags = set()
+categories = {}
+tags = {}
 
 month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
@@ -19,28 +19,41 @@ for root, dirs, files in os.walk('./'):
                 date_match = re.search(r'(\d{4}/\d{2}/\d{2})', path)
                 title_match = re.search(r'<h1>(.+?)</h1>', content)
                 
-                categories_here = []
-                categories_match = re.search(r'<p>Categories: (.+?)</p>', content)
-                if categories_match:
-                    categories_here = categories_match.group(1).split(', ')
-                    categories.update(categories_here)
-                else:
-                    print(f"didn't find categories for {path}")
-                
-                tags_here = []
-                tags_match = re.search(r'<p>Tags: (.+?)</p>', content)
-                if tags_match:
-                    tags_here = tags_match.group(1).split(', ')
-                    tags.update(tags_here)
-                else:
-                    print(f"didn't find tags for {path}")
-                
                 if date_match and title_match:
                     date = date_match.group(1)
                     title = title_match.group(1)
                     year, month, _ = date.split("/")
                     filename = file
                     link = f"{year}/{month}/{filename}"
+                    
+                    html_link = f"<a href='{link}'>{title} ({date})</a>"
+                    md_link = f"[{title} ({date})]({link})"
+                    index_link = (html_link, md_link)
+                    
+                    categories_here = []
+                    categories_match = re.search(r'<p>Categories: (.+?)</p>', content)
+                    if categories_match:
+                        categories_here = categories_match.group(1).split(', ')
+                        for category in categories_here:
+                            if category in categories:
+                                categories[category] += [index_link]
+                            else:
+                                categories[category] = [index_link]
+                    else:
+                        print(f"didn't find categories for {path}")
+                    
+                    tags_here = []
+                    tags_match = re.search(r'<p>Tags: (.+?)</p>', content)
+                    if tags_match:
+                        tags_here = tags_match.group(1).split(', ')
+                        for tag in tags_here:
+                            if tag in tags:
+                                tags[tag] += [index_link]
+                            else:
+                                tags[tag] = [index_link]
+                    else:
+                        print(f"didn't find tags for {path}")
+                    
                     entries.append({'link': link, 'date': date, 'title': title, 'categories': categories_here, 'tags': tags_here})
 
 # Sorting entries chronologically
@@ -81,13 +94,25 @@ with open('index.md', 'w') as output_file_md, open("index.html", "w") as output_
     html_out = template_content.replace('<div class="content"></div>', f'<div class="content">{output_html}</div>')
     output_file_html.write(html_out)
 
+def create_collection(file_name, data):
+    with open(f"{file_name}.md", "w") as index_file_md, open(f"{file_name}.html", "w") as index_file_html:
+        for link in data:
+            search_result = re.search(r'>(.*)<', link)
+            if not search_result:
+                continue
+            keyword = search_result.group(1)
+            index_file_md.write(f"\n### {keyword}\n\n")
+            index_file_html.write(f"<h3 id='{keyword}'>{keyword}</h3>\n\n<ul>\n")
+            for item in data[link]:
+                index_file_md.write(f"* {item[1]}\n")
+                index_file_html.write(f"<li>{item[0]}</li>\n")
+            index_file_html.write(f"</ul>\n\n")
+
 # Writing unique categories and tags to files
 with open('categories.txt', 'w') as categories_file:
     categories_file.write('\n'.join(sorted(categories)))
+    create_collection(file_name = "categories", data = categories)
 
 with open('tags.txt', 'w') as tags_file:
     tags_file.write('\n'.join(sorted(tags)))
-
-def create_view_list(from_keyword, model_type_name, model_list):
-    with open(f'{model_type_name}/{from_keyword}', 'w') as list_file:
-        list_file.write("example data") # All blog posts that match
+    create_collection(file_name = "tags", data = tags)
