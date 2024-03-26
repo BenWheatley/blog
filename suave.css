@@ -62,8 +62,6 @@ h3 + p::first-letter {
 
 a {
     text-decoration: none;
-    font-family: Ariel, sans-serif;
-    text-shadow: 0px 0px 2px white;
 }
 
 table {
@@ -79,4 +77,19 @@ img {
     margin: 5px;
     border: 1px solid #0004;
     background: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "❧";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
+	padding-bottom: 0.5em;
 }
