@@ -46,32 +46,47 @@ h3 {
 a {
     text-decoration: none;
     color: white;
+    background: #00f8;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    word-break: break-all;
 }
 
 a:visited {
     color: grey;
 }
 
-a:before {
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
     background: blue;
-    width: 14px;
-    height: 14px;
+    width: 30px;
+    height: 20px;
     display: inline-block;
+    margin-bottom: -3px;
+    margin-left: -38px;
     margin-right: 5px;
     content: '';
     border-right: 2px solid blue;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px 10px 10px 0px;
 }
 
-a:after {
+ol {
+    list-style-type: lower-greek;
+}
+
+ol li::before {
     background: blue;
-    width: 14px;
-    height: 14px;
+    width: 1px;
+    height: 20px;
     display: inline-block;
-    margin-left: 5px;
     content: '';
-    border-right: 2px solid blue;
-    border-radius: 0px 10px 10px 0px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+    border-right: 1px solid blue;
 }
 
 table {
