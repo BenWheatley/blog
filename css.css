@@ -34,3 +34,11 @@ table {
 img {
 	max-width: 80vw;
 }
+
+pre {
+	background: black;
+	color: white;
+	margin: 5px;
+	overflow-x: scroll;
+	padding: 5px;
+}

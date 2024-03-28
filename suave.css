@@ -20,8 +20,8 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 2em;
-    padding-left: 1em;
     background: linear-gradient(to bottom, #ffe, #bba);
     border-radius: 10px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
@@ -50,10 +50,6 @@ p, li {
     text-justify: inter-character;
     word-break: break-word;
     hyphens: auto;
-}
-
-a {
-    word-break: break-all;
 }
 
 h1 + p::first-letter,
@@ -100,4 +96,12 @@ ul li::before {
 
 li {
 	padding-bottom: 0.5em;
+}
+
+pre {
+    background: white;
+    margin: 5px;
+    overflow-x: scroll;
+    padding: 5px;
+    border: 1px solid grey;
 }

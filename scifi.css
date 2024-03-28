@@ -18,39 +18,37 @@ body {
     margin-right: auto;
 }
 
+h1, h2, h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    transform: skew(-10deg);
+    font-variant: small-caps;
+    transform: skew(-10deg);
+    color: black;
+}
+
 h1 {
     font-size: 2em;
     background: #FC0;
-    color: black;
-    padding-left: 25px;
-    margin: 25px;
-    transform: skew(-10deg);
 }
 
 h2 {
-    background: #0AA;
-    padding-left: 10px;
-    transform: skew(-10deg);
-    color: black;
+    background: red;
 }
 
 h3 {
-    background: #00F;
-    color: white;
-    padding-left: 20px;
-    margin-left: 20px;
+    background: mediumpurple;
     width: 10em;
-    transform: skew(-10deg);
 }
 
 a {
     text-decoration: none;
     color: white;
-    background: #00f8;
+    background: #00fa;
     border-radius: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-    word-break: break-all;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a:visited {
@@ -79,14 +77,13 @@ ol {
 }
 
 ol li::before {
-    background: blue;
+    background: hsl(194, 100%, 39%);
     width: 1px;
     height: 20px;
     display: inline-block;
     content: '';
     margin-bottom: -5px;
     margin-right: 5px;
-    border-right: 1px solid blue;
 }
 
 table {
@@ -102,4 +99,14 @@ img {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+}
+
+pre {
+	background: black;
+	color: #0f0;
+	margin: 5px;
+	overflow-x: scroll;
+	padding: 5px;
+	border: 5px solid green;
+	border-radius: 10px;
 }
