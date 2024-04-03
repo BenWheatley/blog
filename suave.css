@@ -10,6 +10,7 @@ body {
     background-color: white;
     align-items: center;
     background: #FAF9F6;
+    position: relative;
 }
 
 .content {
@@ -56,12 +57,19 @@ h1 + p::first-letter,
 h2 + p::first-letter,
 h3 + p::first-letter {
     initial-letter: 2.5;
+    -webkit-initial-letter: 2.5;
     margin: 3px;
     border: 1px solid #0008;
     background: linear-gradient(to bottom, #ffc, #bb8);
     border-radius: 3px;
     padding: 5px;
     box-shadow: inset 2px 2px 3px 0px #0008;
+}
+
+h1 + p::first-line,
+h2 + p::first-line,
+h3 + p::first-line {
+    font-variant: small-caps;
 }
 
 a {
@@ -75,12 +83,19 @@ table {
     margin-bottom: 20px;
 }
 
-img {
+iframe, img {
     max-width: 80vw;
     padding: 5px;
     margin: 5px;
     border: 1px solid #0004;
     background: white;
+}
+
+iframe {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {

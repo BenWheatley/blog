@@ -93,12 +93,26 @@ table {
     margin-bottom: 20px;
 }
 
-img {
+iframe, img {
     max-width: 80vw;
+}
+
+img {
     border: 5px solid #00c;
-    border-radius: 5px;
-    padding: 5px;
     margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+iframe {
+    width: calc(100% - 20px);
+    display: flex;
+    border: 20px solid #FC0;
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 pre {
