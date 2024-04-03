@@ -35,6 +35,14 @@ img {
 	max-width: 80vw;
 }
 
+iframe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
 pre {
 	background: black;
 	color: white;
