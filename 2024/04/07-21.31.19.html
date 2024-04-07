@@ -96,7 +96,7 @@ if not finished, go to #marker</pre>
 <li>R: Router, to allow the UI to transition between different views</li>
 </ul>
 
-<p>This is too many parts, and the divisions don't represent the real logical splits: The Presenter and the Interactor both alter data, but are not themselves part of the data model; the Presenter is taking on two responsibilities but then forwarding both to other units; the Router is doing <em>purely</em> view-related tasks and could be part of the View (for example, when using Xcode to make UIKit/Interface Builder based apps, this would be a "<a href="https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html">segue</a>"); and the Interactor is doing things to the Entity which should all be methods <em>on the Entity itself</em> in any language which supports this — it's the fundamental thing which defines the "Object" in "Object Oriented programming.</p>
+<p>This is too many parts, and the divisions don't represent the real logical splits: The Presenter and the Interactor both alter data, but are not themselves part of the data model; the Presenter is taking on two responsibilities but then forwarding both to other units; the Router is doing <em>purely</em> view-related tasks and could be part of the View (for example, when using Xcode to make UIKit/Interface Builder based apps, this would be a "<a href="https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html">segue</a>"); and the Interactor is doing things to the Entity which should all be methods <em>on the Entity itself</em> in any language which supports this — it's the fundamental thing which defines the "Object" in "Object Oriented programming".</p>
 
 <h3>Analytics</h3>
 
