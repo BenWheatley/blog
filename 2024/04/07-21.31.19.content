@@ -1,0 +1,218 @@
+<h1>The More they Overthink the Plumbing…</h1>
+
+<p>There are many lines in Star Trek which have stuck with me over the years; recently, it's been this line from Scotty when explaining how he sabotaged a ship that was trying to chase them: <q>The more they overthink the plumbing, the easier it is to gum up the pipes</q>.</p>
+
+<h2>History</h2>
+
+<p>This feels very pertinent to software engineering, where we have been building ever taller towers of abstraction, many of which make things worse.</p>
+
+<h3>The very beginning</h3>
+
+<p>At the base, computers are electronics, complex circuits with voltages propagating through them. They're not even really <em>digital</em> electronics — transistors are fundamentally analog devices, that can be used as amplifiers, it's just that if you abstract things in the right way, you can treat it as "close enough" to discrete on-or-off to perform Boolean logic. This is genuinely useful, because while it is possible to perform computations in the analog domain, it's <em>really hard</em> to do this with sufficient reliability for anything complex… but even so, we may well find that very large neural networks are somewhat resilient to these imperfections just as our messy wet chemical brains are somewhat resilient to all the things going on in and around them.</p>
+
+<p>Next level up, Boolean logic. On-vs.-off, 1-vs.-0, isn't enough, so we bunch several together to make base-2 numbers. That's great, and lets us represent natural integers, which themselves can be treated as if they were letters or symbols by way of a simple look-up table (which is basically how ASCII and its early competitors happened), or instructions for the CPU to follow. A few extensions also allow you to do negative numbers or floating point and decimal numbers (related but subtly different). All good stuff, though you do sometimes surprise people with 1/10th being a recurring fraction in base-2, so you shouldn't use this system for anything involving <em>money</em>.</p>
+
+<h3>Structures</h3>
+
+<p>Next level up, structures. Arrays are one of the foundational examples — you have a sequence of some length, call it <code>n</code>, that you're treating conceptually as a single thing. They might be numbers (income in each day) or they might be letters (to form a string of text). There were two common ways to do this when I was a kid: (1) to begin with a number saying how long this list is, followed by that many items; (2) to begin with the content, and to assume the list has a subsequent item until you encounter a special symbol that says "stop". Given my experience in Mac OS classic, the former was called a "Pascal string" and the latter a "C string", named after what the Pascal and C languages did.</p>
+
+<p>Each of these approaches had weaknesses: C strings often didn't get their final "terminating" character created or checked leading to corruption of system memory; while Pascal strings had to have their size known in advance and thus led to using too much memory (by 1980s and 1990s standards where my first two home computers came with 64 kB and 8 MB of RAM respectively), and/or leaving them unable to cope with long bits of text (which is still a problem for some combinations of names and forms of national ID). There are ways around this with more complex structures such as <a href="https://en.wikipedia.org/wiki/Linked_list">linked lists</a> and <a href="https://en.wikipedia.org/wiki/Tree_(data_structure)">trees</a> — I'm not actually sure how any given modern language handles strings internally, in part because they may have more than one string-like data structure and each may do things differently to give different performance trade-offs.</p>
+
+<p>The structures can get more complex. Before I go down that path too far, I will also say that simple concepts like "time" and "a string of letters" can each be far more complex than it first seems: time comes with time zones, which can vary with little warning, and leap-<em>seconds</em> due to the rotation of the planet varying very slightly from one year to the next; and at the speed current computers operate at, I've even seen people care about light cones (to determine if a stock transaction on an exchange was suspicious do to it being created before information reached it from some other exchange) and GPS famously requires accounting for time dilation due to time dilation from both special relativity (speed-related) and general relativity (gravitational potential related). Strings aren't much better, as the original approach was to match what the keyboards on teleprinters used (with separate "newline" (<code>\n</code>) and "carriage return" (<code>\r</code>) symbols, <a href="https://en.wikipedia.org/wiki/Newline">where Mac OS classic ended each line of text with <code>\r></code>, Unix (and modern Mac OS)with <code>\n</code>, and Windows with <code>\r\n</code>, and several other choices for systems you might have never heard of</a>. And then we noticed that most of the world, even most of Europe, doesn't use just the symbols on a US/UK keyboard, and came up with a bunch of different encodings before finally settling on Unicode… which itself took a few attempts to find a representation everyone could agree on which (for the moment) is utf-8 — a variable length system which would be a bit much to describe here, but put simply: if you want to reverse a string, in ASCII you just reverse the sequence of bytes and you're done, but if you do that in UTF-8 you probably no longer have something that's even possible to display; even if you reverse the "code points" (the next layer of abstraction up) you're probably doing it wrong, as that switches the flags for Canada (CA) and the Ascension Islands (AC).</p>
+
+<h3>Algorithms and control flow</h3>
+
+<p>Structures were great, and did a lot for us. Indeed, we still find them all over the place as a fundamental concept. At this point I should divert from the data to the algorithms, as they too were given layers of abstraction: initially, algorithms were fixed as circuits; then we found ways to make circuits change other circuits, first mechanically (by rotating a drum with wires on them) and then electrically (with valves, relays, and transistors). The <a href="https://en.wikipedia.org/wiki/Turing_machine">Turing machine</a> was a formalisation of this abstraction.</p>
+
+<p>Load instruction, execute (perform) instruction; load, execute; repeat. Nice and easy. Conditional instructions? A <code>branch</code> command: if <code>${some condition is true}</code> then the next instruction you should load is at memory address <code>${xyz}</code>, otherwise continue as normal. Nice and easy, good abstraction, the <code>if</code> statement is still with us. Loops?</p>
+
+<pre>#marker
+load, execute
+load, execute
+load, execute
+if not finished, go to #marker</pre>
+
+<p>Nice and easy, that's a <code>do-while</code> loop; there's several others I won't bore you with, they're still fairly common.</p>
+
+<p>Next level of abstraction: functions. If you're doing one thing often, you probably only want to write it once and then re-use it in many places. We did this by borrowing an idea from maths, called a function. A function takes "arguments" as inputs, and then returns a value. Good stuff, nice and easy. Each instruction on a basic CPU is a little function, and more complex CPUs have "microcode" which is basically some built-in functions. Good stuff.</p>
+
+<h3>Objects</h3>
+
+<p>Why this diversion from data to processing? Because the next level of abstraction combines them both. "Object-oriented" code takes some data structure and combines it with the functions that are good for that data structure into a "class": for example, you might have a <code>String</code> class which has functions — in this context generally called "methods" — which perform operations on that string such as "make this uppercase" or "reverse this"; this is very useful, because it means a user of this doesn't need to think too hard about the underlying data structure — to go back to the previous point about the change from ASCII to UFT-8, I simply don't need to care if a modern <code>String</code> is using UTF-8 or ASCII, nor do I need to care about the rules for multiple bytes into code points, nor do I need to care about the rules for combining multiple code points into a single printable character, if I want to reverse a string, I can look for an existing <code>reverse()</code> method and I'm done.</p>
+
+<p>They're really neat and useful. Indeed, objects were really popular for a long time, and although they have recently fallen out of fashion they are still widely available in modern languages. It will take a few more layers of abstraction to really say <em>why</em> they're no longer fashionable.<p>
+
+<p>Next layer of abstraction: subclassing. Classes make it easier to divide code into logically relevant areas — string things in the string class, number things in a number class, network things in a network class, and so on. But things often also form hierarchies — say you're making an action video game in this paradigm (modern game development favours a different approach), and you want all the entities in your game to have a number of hitpoints, and that if depleted they will be destroyed. Great, so do you copy-paste a bunch of <strikethrough>structures</strikethrough> classes that each has a <code>hitpoints</code> property and a <code>hitWith(damage)</code> function? No! You have a parent class <code>GameEntity</code> with those things, and all your game's entities — chests/crates, the player, the enemies, exploding barrels — are made to "inherit" from this. Nice. Makes things logical and easy… except when it doesn't.</p>
+
+<p>There are three big ways for this to cause complexity, the first two are easy to explain even though they can be a pain to resolve: multiple inheritance (if you've got two "parent" classes with a method of the same name, which one does the child class inherit from?); unclear hierarchies (is a square a special type of rectangle where the orthogonal sides are equal, or is a rectangle a special type of square where the sides can be different lengths?).</p>
+
+<p>The third problem is <em>typing</em> — and no, I don't mean in the sense of what my fingers are currently doing on the keyboard. Each class (and structure, and also the "primitive" types the CPU uses such as "16 bit unsigned integer" and "64 bit floating point number") can be said to be "types", and each function and method will expect specific types on both input and output. But if you have a collection of <code>GameEntity</code> objects, you need something a bit more general, as any single <code>GameEntity</code> might be a <code>Player</code> or a <code>Crate</code> or a <code>Enemy</code> or an <code>ExplodingBarrel</code>, so you need a way to operate on both the higher-level concept of a <code>GameEntity</code> without erasing all the information about the specific detailed type. Unfortunately, this description just gave you the example where it's fairly easy, and everyone can see what's going on. This is very useful, and sometimes even mandatory — we <em>want</em> to have a generalised concept of a collection of objects without having to make special cases for both <code>integers</code> and <code>GameEntity</code> — the <em>problem</em> is that it's almost impossible to gauge the correct level of abstraction: often we either spend a huge effort to make something worth with any possible type when in practice there will be exactly one (it happens!) or we assume it will always be one of a small set of possible classes and make it too narrow.</p>
+
+<p>These issues, combined with a few other more subtle issues, have led modern development to favour composition over inheritance: where related things are combined within some structure (or class) rather than inherited from a parent class — a <code>Player</code> (etc.) done this way would indeed have a property <em>named</em> "hitpoints", but that <code>hitpoints</code> property would be a class (rather than a primitive number) which would handle all the complexities and hide it from the <code>Player</code>.</p>
+
+<h3>Design patterns</h3>
+
+<p>Next level of abstraction: Design patterns. These come at two levels, code — for example, how are new objects created, how is the data presented to a different system expecting a specific format, etc. — and architectural. There's a lot of different ways to do this, each better or worse suited for a specific task, but you can imagine this as filling a similar role to classes, but one layer up: a good way to organise the code, all the things related to one task are found in one place. When I began iOS development, the standard architecture for apps was <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html">MVC: Model View Controller</a>. The model is the data (perhaps a database on your device, perhaps a connection to an API on the internet); the View is your actual user interface; the Controller is the bit which glues the two together.</p>
+
+<p>And this is where I get confused.</p>
+
+<p>Apparently, lots of developers kept putting "too much" into the Controller.</p>
+
+<p>(As an aside: I'm genuinely not sure what "too much" means — I've worked with code that clearly hit this category as there were 1,000 lines inside a single if-statement; but I've also seen some developers hold the opinion that anything more than 3 lines of code in a method is too many lines).</p>
+
+<p>Too much into the Controller? The glue which combines the model with the view? OK, lets say this is so: what's the solution? There are several, because of course there are. Apple's replacement for MVC is MVVM: Model-View-ViewModel, where the ViewModel is a transformation of the Model to be specifically what the View needs to know about, and the glue (that was formerly the point of the Controller) is supposed to be automated. (This automation is what "Reactive" means in the context of UI development).</p>
+
+<p>Don't get me wrong: if automation can be made to work, that's good. It's the point of computers, it's why they're everywhere. Even though the magic words to bind a value to a view are hard to remember, this is <em>not</em> the problem.</p>
+
+<p>There are two problems here, one is fundamental, the other purely in how the magic binding works. The fundamental problem is now we have both an automated connection (View-ViewModel) <em>and</em> a manual connection (Model-ViewModel). No, just no. This gives us all the downsides of both. The implementation problem is that all this magic binding requires a lot of behind-the-scenes complexity of exactly the same kind which led to classes and inheritance becoming huge headaches that we all moved away from as much as possible (this also impacts web development, where Meta's <a href="https://en.wikipedia.org/wiki/React_(software)">React.js</a> framework seems to be very popular).</p>
+
+<h3>Testing</h3>
+
+<p>Even the problems with magic bindings hasn't dissuaded people from going further. However, the next level of complexity needs another diversion, this time to testing.</p>
+
+<p>Testing is hard. It's very easy to write code and think "that looks fine", when it isn't. Even getting humans to try to use your code only reveals some of the issues, though even this is much better than just taking a developer's word for it. One of the things we do to account for this difficulty is automated tests. You'll spot the first problem immediately: we write programs to test programs. How do we know the tests are correct? We don't.</p>
+
+<p>There's one school of thought which says we should write the tests first, before any other code. Running these tests <em>must</em> produce at least one fail, because the code does nothing; then you add code until the tests pass. This mindset is hard to get into.</p>
+
+<p>Another school of thought is that we should aim to cover 100% of our code with tests. I prefer this one over writing the tests first and the code later, partly because of how I approach development in general (I develop an understanding of the problem as I write the code), and partly because I think this is a tighter constraint than writing the tests first (there are probably more possible tests than you can immediately think of).</p>
+
+<p>Now, why is this relevant? Well: how do you architect those tests? If you want to test a payment system, you don't want <em>every single run of every single test</em> of your system to end up triggering a real payment — these things <em>should</em> run multiple times per day per developer, more likely multiple times per hour per developer.</p>
+
+<p>This leads to breaking down methods and functions into smaller and smaller units that do less and less stuff, and which "inject" the things they depend on as arguments. (This is called "dependency injection"). Dependency injection is a nice solution to an abstraction which isn't nice but is kinda necessary.</p>
+
+<h3>Baroque architectures</h3>
+
+<p>Now it's time to fold this diversion back into the previous topic of architectural design patterns: that <em>some</em> of these tests are better done with very narrow scope has led to people saying that <em>all</em> code needs to be architected with that kind of division in mind. As I wrote earlier, I've seen some developers hold that more than 3 lines of code in a function is too many lines — it seems absurd, but this is why they call for it. Unfortunately, it doesn't just <em>seem</em> absurd, it <em>is</em> absurd: breaking things down to that level means that there's more glue than function, and the glue is harder to test, is harder to follow and understand, and is harder to change.</p>
+
+<p>For a specific example of this, consider the VIPER architectural design patterns:</p>
+
+<ul>
+<li>V: View</li>
+<li>I: Interactor, provides model ("entity") data relevant to the presenter, along with any methods for manipulating the data</li>
+<li>P: Presenter, prepares the model for display, forwards user input to router or Interactor</li>
+<li>E: Entity, the data itself</li>
+<li>R: Router, to allow the UI to transition between different views</li>
+</ul>
+
+<p>This is too many parts, and the divisions don't represent the real logical splits: The Presenter and the Interactor both alter data, but are not themselves part of the data model; the Presenter is taking on two responsibilities but then forwarding both to other units; the Router is doing <em>purely</em> view-related tasks and could be part of the View (for example, when using Xcode to make UIKit/Interface Builder based apps, this would be a "<a href="https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html">segue</a>"); and the Interactor is doing things to the Entity which should all be methods <em>on the Entity itself</em> in any language which supports this — it's the fundamental thing which defines the "Object" in "Object Oriented programming.</p>
+
+<h3>Analytics</h3>
+
+<p>And one final, extra, point: Analytics. You all know the annoying popups for consent to track you. Why do companies bother with them, when all users hate them? Because analytics reveal what users do, which parts of the app they engage with, what they have difficulty with — something you may not know as a normal user, is that they can easily track how far you scroll down the screen, which buttons you tap on, and exactly where your finger (or mouse) pressed (or clicked) on the screen. This is sold as "helping developers discover when buttons are too small to click on" and similar. That said, even though I am a developer, I am just as confused as everyone else about why on earth some websites have 1200 "partners" to "help" them analyse all this.</p>
+
+<p>This website you're reading now (unless someone copy-pasted it), didn't show you a pop-up. This is due to the simple trick of… not tracking anything. I have no idea how many of you are reading this. I don't know your age demographics (which YouTube apparently says, but I've not looked into that despite having a YouTube account). I don't know, or care, how far you scrolled.</p>
+
+<p>But at the time of writing, this attitude seems to be rare; me, some other random bloggers, HackerNews, and possibly GitHub.</p>
+
+<h2>The Problem</h2>
+
+<p>It's all just too much. There's far too many things in software for any single developer to know it all; because it can't be known, we keep re-inventing the wheel, and each re-invented wheel has to re-learn the lessons of all the predecessors; this happens at multiple levels of abstraction all at the same time, so we get web frameworks that use JavaScript to handle loading of links and the display of images even though those things are built into the pre-JavaScript standard of HTML; and we have websites with so much excess *stuff* bundled with them that users would genuinely be better off if the site was a static image.</p>
+
+<p>The thing is, I've seen complaints like this from day one:</p>
+
+<ul>
+
+<li>The "<a href="https://en.wikipedia.org/wiki/Software_crisis">Software Crisis</a>" of the 1960s and 1970s, where software projects were over-budget, late, inefficient, filled with bugs, often did not meet requirements, unmanageable and code difficult to maintain, and sometimes just never in a deliverable state. The extra abstractions since then are, in  a big way, (partial) solutions to these issues. (We also saw changes to how projects are managed, the scope of which is outside my experience: I've only ever known "agile").</li>
+
+<li>"No compiler is as efficient as hand-crafted assembly", which was actually true when I first encountered it.</li>
+
+<li>"<a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a> takes ages to compile", can be true if you're not careful, thanks to it using <a href="https://en.wikipedia.org/wiki/Template_metaprogramming">template metaprogramming</a> as the mechanism for allowing generic types, such as a <em>generic</em> list whose elements may be of type <code>int</code> <em>or</em> <code>GameEntity</code> or whatever, and that this approach happens to be <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a> and therefore <a href="https://en.wikipedia.org/wiki/Halting_problem">you can't always tell in advance if the process will even stop</a>.</li>
+
+<li>"Object oriented code is bad because of the complex class hierarchies!" They say, pointing at examples such as <a href="https://github.com/microsoft/referencesource/blob/master/System.ServiceModel/System/ServiceModel/MessageSecurityVersion.cs"><code>WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10MessageSecurityVersion</code></a> which is more the fault of a corporate policy on names than object oriented programming itself.</li>
+
+</ul>
+
+<p>So, am I just being an old man shaking their fist at a cloud? I think it all comes down to the outcomes: If the code is performant, if it's cheap to produce, if it's not prone to errors, does it really matter what's going on inside? The problem is only if one or more of those are absent or insufficient.</p>
+
+<p>Well, looking at the apps and services around me, I don't think we have a fantastic state of affairs in <em>any</em> of those things:</p>
+
+<ul>
+
+<li>User experiences in modern systems <a href="https://danluu.com/input-lag/">are measurably slower today than the 1980s</a> despite modern systems being 6 orders of magnitude more computing power. This is <a href="https://news.ycombinator.com/item?id=21833897">directly related to the abstractions we find useful</a>.</li>
+
+<li>Apps are more expensive than ever, judging by the size of dev teams and salaries.</li>
+
+<li>Apps are as buggy as ever, judging by how many App Store update notes are some variant of "bug fixes" (possibly with cringe-inducing attempt at cute phrasing).</li>
+
+</ul>
+
+<p>Now, one might argue these are unavoidable costs created by "doing it right". When I was at university, there was "programming in the large vs. programming in the small" (when Java was popular despite having exactly the complex class names and hierarchies previously mentioned) was analogised with the difference between building a bridge with a few planks of wood vs. building a suspension bridge — A suspension bridge over a small ditch looks silly, a few planks of wood over <a href="https://en.wikipedia.org/wiki/Golden_Gate">the Golden Gate</a> won't even support itself let alone traffic — and indeed there have been many changes moving from software of the 1990s (that you buy once from a physical store, it runs on one machine which has one user, there are no security requirements, and you get to print system requirements on the side of the box it's sold in and it's the user's problem not the developers if the user doesn't have a 640x480 monitor that supports 256 colours, and it will be used in an office with constant lighting) and today (where you're expected to ship regular updates to justify the monthly subscription plan you're selling it on, and the users have a huge range of display sizes and orientations which are expected to be able to change dynamically during use, and the app has to switch between bright and dark modes depending on the time of day, and we have rules requiring support of people with various disabilities).</p>
+
+<p>The converse point is another anecdote from university. We were doing practice interview questions, and I was forced to justify what I meant by having written "committed to quality" — the me from 20 years ago just thought this meant "be as good as possible", but the pannelist (who had actual experience hiring people) had a better model. His example was to compare a fancy car (Porche, I think was his choice) with a go-kart: which is better? The Porche, obviously. But what if you're a kid who just wants to get down a hill? You don't have a driving licence or even lessons, you're definitely not insured, you just want to have fun. You can't — don't know how and are not allowed — to use the Porche. Now? Now <em>the best</em> is the go-kart.</p>
+
+
+<h2>What to change?</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Don%27t_throw_the_baby_out_with_the_bathwater">Don't throw the baby out with the bathwater.</a> Be mindful of <a href="https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence">Chesterton's fence</a>.</p>
+
+<p>The fences were made for a reason: software is easy to do wrong. The bathwater isn't the mere existence of abstractions, it's that there are too many at every level, and that even when they are very useful in specific cases, they are <a href="https://en.wikipedia.org/wiki/Cargo_cult_programming">cargo-culted</a> as <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">silver bullets</a>.</p>
+
+<h3><a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">You aren't gonna need it</a></h3>
+
+<p>You, specifically, <em>almost certainly</em> don't need:</p>
+
+<ul>
+
+<li>A fancy design pattern such as VIPER. Sure, it does the things it says it does, but it's <em>slow</em> to develop for, and leads to more <a href="https://en.wikipedia.org/wiki/Glue_code">glue code</a> than <a href="https://en.wikipedia.org/wiki/Business_logic">business logic</a>. Instead, use the simplest architecture for your platform — for <a href="https://en.wikipedia.org/wiki/Cocoa_Touch">UIKit</a> that would be <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a>, for <a href="https://en.wikipedia.org/wiki/SwiftUI">SwiftUI</a> it would be <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM</a>, for a game I'm told that's <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>.</li>
+
+<li>Third-party libraries (and, unless you're able to get a <a href="https://en.wikipedia.org/wiki/Service-level_agreement">service-level agreement</a> whose terms you agree with, third-party APIs). <em>Not even one</em>: sure, theoretically there are some exceptions, but treat each library you depend on like you would a 3rd party vendor who is charging you the equivalent of 10 hours a week of dev time <em>only the bill comes due at the most annoying time possible and isn't nicely spread over the year</em> — these libraries might even do what you want them to do, but you're now responsible for any bugs, security issues, incompatibility with the <em>next</em> version of the system you support, and when the library has its own dependencies, each one brings with it the same problems again… and what you wanted probably isn't too hard to do yourself because 80% of the things were already given to you in the operaring system's built-in library. 3rd party libraries are the <a href="https://lucumr.pocoo.org/2024/3/26/rust-cdo/">collateralized debt obligation</a> of technical debt, and to be avoided for <a href="https://en.wikipedia.org/wiki/Collateralized_debt_obligation#Crash">similar reasons</a>. This includes AI (and I don't just mean an LLM when I say AI): AI are neat, but unless you're a research organisation with a very unusual task to automate, you don't need one; and worse, they an even bigger problem than normal 3rd party libraries when it comes to you being held responsible for their flaws without having any power to fix them.</li>
+
+<li>Anything involving the word "<a href="https://en.wikipedia.org/wiki/Reactive_programming">reactive</a>". Sure, it works, it does the thing — but the "magic" which is supposed to make life easier can be done incorrectly <em>just as easily</em> as forgetting a very simple code pattern in a non-reactive UI. It is the <em>illusion</em> of useful.</li>
+
+<li>User analytics. No, really! I'm not using them on this blog as I write this, and you don't need to either. They give you a pretty graph to look at, but <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart's law</a> applies: Whenever a measure becomes a target, it stops being a good measure. Put it another way, you care about business goals? How many users click on some button, isn't that. Even when the button happens to be labelled "pay now", you care about the payment, not the button. You <em>do not need</em> the invasive user-tracking that led to the EU creating the GDPR that you're trying to get around because you chose a non-compliant popup that doesn't have a single huge "just no" button. Even if you have a safety-critical component to your system — you make self-driving cars or a successor to <a href="https://en.wikipedia.org/wiki/Therac-25">Therac-25</a>, you can track the safety issue itself without tracking a user!</li>
+
+<li>Any "Big Data" solution. The data you have is not "big". A million rows in your database? That's <em>small</em> data; 2 million chess games? Processed <a href="https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html">235x faster with command line tools</a> from <a href="https://en.wikipedia.org/wiki/AWK">1977</a> and <a href="https://en.wikipedia.org/wiki/Grep">1973</a>(!) than with Big Data tools like Amazon Elastic Map Reduce and Hadoop. 4 gigabyte AI model? Still not "big", could use my phone for that; <a href="https://en.wikipedia.org/wiki/Wikipedia:Database_download">Downloading and processing the current text of all pages on the English Wikipedia?</a> One single developer's computer — in the form of a side-project that runs in the background while they do something else; etc. — if it even fits on one machine, it's small data. Don't even try to use a Big Data approach until you can't buy a single hard drive big enough for it.</li>
+
+</ul>
+
+<h3>What to keep?</h3>
+
+<p>Based on my experience, the following are all genuinely useful, and should not be dropped:</p>
+
+<ul>
+
+<li>Whichever language is the <a href="https://en.wikipedia.org/wiki/Focal_point_(game_theory)">Schelling point</a> for your domain. iOS? Swift. Web? JavaScript. etc. — all modern languages have enough abstraction to get done all the things you need for whatever your business logic is.</li>
+
+<li>Both automated and manual tests. The former is like a spell-checker (which won't spot it when you mix up "loose" and "lose" as I often do), the latter like a proof-reader. Automated tests don't cover everything, but they do save the time of the expensive human who helps with what the automation misses.</li>
+
+<li>Any simple design pattern. Doesn't seem to matter so much which one so long as it is simple. I've seen code with no design pattern (an entire pantheon of <a href="https://en.wikipedia.org/wiki/God_object">god classes</a>, a thousand lines inside an <code>if</code> block), and it's almost (but not quite!) as bad as having an <em>over-complex</em> design pattern like VIPER — I assume there's <em>some</em> scale at which VIPER is the right answer, but I've never seen it.</li>
+
+<li>Version control. It <em>is</em> possible to get away without it… if you only have one developer. You don't want to have only one developer.</li>
+
+<li>Code review. I'm not convinced it really helps improve the code (too many people go <a href="https://en.wiktionary.org/wiki/LGTM">"looks good to me!"</a> without analysing the changes deeply enough to spot defects), but it <em>is</em> a low-cost way to spread knowledge between team members.</li>
+
+<li>An issue tracker. Again, doesn't matter which — I've worked with literal post-it notes on a wall, and this is fine; conversely, while it's popular to hate JIRA, I'm fine with that too. It really doesn't matter to us software developers, so if you're a manager picking one, go for whatever you like.</li>
+
+</ul>
+
+<h3>Has anyone been here before?</h3>
+
+<p>Yes! When I was at university, we were taught about "<a href="https://en.wikipedia.org/wiki/Extreme_programming">extreme programming</a>":</p>
+
+<ul>
+
+<li>Pair programming</li>
+
+<li>Extensive code review</li>
+
+<li>Unit testing of all code</li>
+
+<li>Not programming features until they are actually needed</li>
+
+<li>Code simplicity and clarity</li>
+
+<li>Expecting changes in the customer's requirements as time passes and the problem is better understood</li>
+
+<li>Frequent communication with the customer and among programmers</li>
+
+</ul>
+
+<p>As with all trendy philosophies, even groups that say they follow it tend to only follow only about half of the things it calls for.</p>
+
+<p>Let's bring back <a href="https://en.wikipedia.org/wiki/Extreme_programming">XP</a>. (No, not <a href="https://en.wikipedia.org/wiki/Windows_XP">that one</a>).</p>
+
+<hr />
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags.html#Coding'>Coding</a>, <a href='https://benwheatley.github.io/blog/tags.html#Opinion'>Opinion</a>, <a href='https://benwheatley.github.io/blog/tags.html#Programming'>Programming</a>, <a href='https://benwheatley.github.io/blog/tags.html#software engineers'>software engineers</a>, <a href='https://benwheatley.github.io/blog/tags.html#Technology'>Technology</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories.html#Opinion'>Opinion</a>, <a href='https://benwheatley.github.io/blog/categories.html#Professional'>Professional</a>, <a href='https://benwheatley.github.io/blog/categories.html#Technology'>Technology</a></p>

@@ -204,6 +204,7 @@
 
 ### Coding
 
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Being embarrassed by your old work is a sign you've learned things (2017/09/15)](2017/09/15-22.58.06.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
@@ -631,6 +632,7 @@
 ### Opinion
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Mistakes (2020/05/31)](2020/05/31-20.56.15.html)
 
 ### outside context problem
@@ -705,6 +707,7 @@
 
 ### Programming
 
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Being embarrassed by your old work is a sign you've learned things (2017/09/15)](2017/09/15-22.58.06.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
@@ -844,6 +847,7 @@
 
 ### software engineers
 
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
 
 ### space
@@ -920,6 +924,7 @@
 
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Executable images (2017/04/10)](2017/04/10-22.55.43.html)
 * [The end of human labour is inevitable, here's why (2017/11/17)](2017/11/17-11.36.34.html)
 * [Berlin public transport map (2019/06/01)](2019/06/01-21.44.42.html)

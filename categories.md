@@ -92,6 +92,7 @@
 
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
 * [Oh no (2019/10/25)](2019/10/25-16.51.33.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
@@ -154,6 +155,7 @@
 
 ### Professional
 
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Finding the smallest value in a Swift array of Integers (2018/10/26)](2018/10/26-21.05.33.html)
 * [Utility function of meetings (2018/01/29)](2018/01/29-13.27.12.html)
 
@@ -232,6 +234,7 @@
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Railgun notes (2017/04/10)](2017/04/10-18.16.20.html)
 * [You won't believe how fast transistors are (2017/11/26)](2017/11/26-22.25.50.html)

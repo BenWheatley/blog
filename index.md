@@ -1,6 +1,11 @@
 
 ## 2024
 
+### April
+
+* [07 - Eiron Merton](2024/04/07-12.47.14.html)
+* [07 - The More they Overthink the Plumbing…](2024/04/07-21.31.19.html)
+
 ### March
 
 * [23 - Timeline of the near future](2024/03/23-17.24.34.html)
@@ -221,7 +226,6 @@
 ### January
 
 * [31 - Alzheimer's](2018/01/31-11.26.08.html)
-* [31 - How might she see the world?](2018/01/31-11.19.41.html)
 * [29 - Utility function of meetings](2018/01/29-13.27.12.html)
 * [27 - Must we laugh to change our mind?](2018/01/27-15.04.31.html)
 * [21 - Normalised, n-dimensional, utility monster](2018/01/21-23.53.51.html)
