@@ -4,6 +4,8 @@
 
 <p>There are many lines in Star Trek which have stuck with me over the years; recently, it's been this line from Scotty when explaining how he sabotaged a ship that was trying to chase them: <q>The more they overthink the plumbing, the easier it is to gum up the pipes</q>.</p>
 
+<p>TL;DR for the lazy: XP good, make code as simple as possible, avoid 3rd party libs and APIs, here's why and how we got here.</p>
+
 <h2>History</h2>
 
 <p>This feels very pertinent to software engineering, where we have been building ever taller towers of abstraction, many of which make things worse.</p>
@@ -102,13 +104,13 @@ if not finished, go to #marker</pre>
 
 <p>And one final, extra, point: Analytics. You all know the annoying popups for consent to track you. Why do companies bother with them, when all users hate them? Because analytics reveal what users do, which parts of the app they engage with, what they have difficulty with — something you may not know as a normal user, is that they can easily track how far you scroll down the screen, which buttons you tap on, and exactly where your finger (or mouse) pressed (or clicked) on the screen. This is sold as "helping developers discover when buttons are too small to click on" and similar. That said, even though I am a developer, I am just as confused as everyone else about why on earth some websites have 1200 "partners" to "help" them analyse all this.</p>
 
-<p>This website you're reading now (unless someone copy-pasted it), didn't show you a pop-up. This is due to the simple trick of… not tracking anything. I have no idea how many of you are reading this. I don't know your age demographics (which YouTube apparently provides, but I've not looked into that despite having a YouTube account). I don't know, or care, how far you scrolled.</p>
+<p>This website you're reading now (unless someone copy-pasted it), didn't show you a pop-up. This is due to the simple trick of… not tracking anything. I have no idea how many of you are reading this. I don't know your age demographics (which YouTube apparently provides, but I've not looked into that despite having a YouTube account). I don't know, or care, how far you scrolled. I don't know which countries you're all from, which my previous blogging platform, wordpress, told me.</p>
 
-<p>But at the time of writing, this attitude seems to be rare; me, some other random bloggers, HackerNews, and possibly GitHub.</p>
+<p>But at the time of writing, this attitude seems to be rare: me, some other random bloggers, HackerNews, and possibly GitHub.</p>
 
 <h2>The Problem</h2>
 
-<p>It's all just too much. There's far too many things in software for any single developer to know it all; because it can't be known, we keep re-inventing the wheel, and each re-invented wheel has to re-learn the lessons of all the predecessors; this happens at multiple levels of abstraction all at the same time, so we get web frameworks that use JavaScript to handle loading of links and the display of images even though those things are built into the pre-JavaScript standard of HTML; and we have websites with so much excess *stuff* bundled with them that users would genuinely be better off if the site was a static image.</p>
+<p>It's all just too much: there's far too many things in software for any single developer to know it all; because it can't be known, we keep re-inventing the wheel, and each re-invented wheel has to re-learn the lessons of all the predecessors; this happens at multiple levels of abstraction all at the same time, so we get web frameworks that use JavaScript to handle loading of links and the display of images even though those things are built into the pre-JavaScript standard of HTML; and we have websites with so much excess <em>stuff</em> bundled with them that users would genuinely be better off if the site was a static image.</p>
 
 <p>The thing is, I've seen complaints like this from day one:</p>
 
@@ -138,10 +140,17 @@ if not finished, go to #marker</pre>
 
 </ul>
 
-<p>Now, one might argue these are unavoidable costs created by "doing it right". When I was at university, there was "programming in the large vs. programming in the small" (when Java was popular despite having exactly the complex class names and hierarchies previously mentioned) was analogised with the difference between building a bridge with a few planks of wood vs. building a suspension bridge — A suspension bridge over a small ditch looks silly, a few planks of wood over <a href="https://en.wikipedia.org/wiki/Golden_Gate">the Golden Gate</a> won't even support itself let alone traffic — and indeed there have been many changes moving from software of the 1990s (that you buy once from a physical store, it runs on one machine which has one user, there are no security requirements, and you get to print system requirements on the side of the box it's sold in and it's the user's problem not the developers if the user doesn't have a 640x480 monitor that supports 256 colours, and it will be used in an office with constant lighting) and today (where you're expected to ship regular updates to justify the monthly subscription plan you're selling it on, and the users have a huge range of display sizes and orientations which are expected to be able to change dynamically during use, and the app has to switch between bright and dark modes depending on the time of day, and we have rules requiring support of people with various disabilities).</p>
+<p>Now, one might argue these are unavoidable costs created by "doing it right". When I was at university, there was "programming in the large vs. programming in the small" (when Java was popular despite having exactly the complex class names and hierarchies previously mentioned) was analogised with the difference between building a bridge with a few planks of wood vs. building a suspension bridge — A suspension bridge over a small ditch looks silly, a few planks of wood over <a href="https://en.wikipedia.org/wiki/Golden_Gate">the Golden Gate</a> won't even support itself let alone traffic.</p>
 
-<p>The converse point is another anecdote from university. We were doing practice interview questions, and I was forced to justify what I meant by having written "committed to quality" — the me from 20 years ago just thought this meant "be as good as possible", but the pannelist (who had actual experience hiring people) had a better model. His example was to compare a fancy car (Porche, I think was his choice) with a go-kart: which is better? The Porche, obviously. But what if you're a kid who just wants to get down a hill? You don't have a driving licence or even lessons, you're definitely not insured, you just want to have fun. You can't — don't know how and are not allowed — to use the Porche. Now? Now <em>the best</em> is the go-kart.</p>
+<p>Likewise from the perspective of user expectations, there have been many changes in the transition from software of the 1990s, where you buy software once from a physical store, it runs on one machine which has one user, there are no security requirements, and you get to print system requirements on the side of the box it's sold in and it's the user's problem not the developers if the user doesn't have a 640x480 monitor that supports 256 colours, and it will be used in an office with constant lighting; to today, where you're expected to ship regular updates to justify the monthly subscription plan you're selling it on, and the users have a huge range of display sizes and orientations which are expected to be able to change dynamically during use, and the app has to switch between bright and dark modes depending on the time of day, and we have rules requiring support of people with various disabilities.</p>
 
+<p>The converse point is another anecdote from university, when we were doing practice interview questions, and I was forced to justify what I meant by having written "committed to quality"; the me from 20 years ago just thought this meant "be as good as possible", but the pannelist (who had actual experience hiring people) had a better model: his example was to ask me:</p>
+
+<p>"Which is better, a Porche or a go-kart?"</p>
+<p>"The Porche, obviously"</p>
+<p>"But what if you're a kid who just wants to get down a hill? You don't have a driving licence or even lessons, you're definitely not insured, you just want to have fun. You can't — don't know how and are not allowed — to use the Porche. Now? Now <em>the best</em> is the go-kart".</p>
+
+<p>(All paraphrased, of course. Couldn't afford to record these sessions back in 2003 or so).</p>
 
 <h2>What to change?</h2>
 
