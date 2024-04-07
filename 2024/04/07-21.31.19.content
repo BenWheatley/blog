@@ -106,7 +106,7 @@ if not finished, go to #marker</pre>
 
 <h2>The Problem</h2>
 
-<p>It's all just too much. There's far too many things in software for any single developer to know it all; because it can't be known, we keep re-inventing the wheel, and each re-invented wheel has to re-learn the lessons of all the predecessors; this happens at multiple levels of abstraction all at the same time, so we get web frameworks that use JavaScript to handle loading of links and the display of images even though those things are built into the pre-JavaScript standard of HTML; and we have websites with so much excess *stuff* bundled with them that users would genuinely be better off if the site was a static image.</p>
+<p>It's all just too much: there's far too many things in software for any single developer to know it all; because it can't be known, we keep re-inventing the wheel, and each re-invented wheel has to re-learn the lessons of all the predecessors; this happens at multiple levels of abstraction all at the same time, so we get web frameworks that use JavaScript to handle loading of links and the display of images even though those things are built into the pre-JavaScript standard of HTML; and we have websites with so much excess <em>stuff</em> bundled with them that users would genuinely be better off if the site was a static image.</p>
 
 <p>The thing is, I've seen complaints like this from day one:</p>
 
