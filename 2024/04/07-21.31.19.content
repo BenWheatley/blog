@@ -120,7 +120,7 @@ if not finished, go to #marker</pre>
 
 <li>"<a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a> takes ages to compile", can be true if you're not careful, thanks to it using <a href="https://en.wikipedia.org/wiki/Template_metaprogramming">template metaprogramming</a> as the mechanism for allowing generic types, such as a <em>generic</em> list whose elements may be of type <code>int</code> <em>or</em> <code>GameEntity</code> or whatever, and that this approach happens to be <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a> and therefore <a href="https://en.wikipedia.org/wiki/Halting_problem">you can't always tell in advance if the process will even stop</a>.</li>
 
-<li>"Object oriented code is bad because of the complex class hierarchies!" They say, pointing at examples such as <a href="https://github.com/microsoft/referencesource/blob/master/System.ServiceModel/System/ServiceModel/MessageSecurityVersion.cs"><code>WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10MessageSecurityVersion</code></a> which is more the fault of a corporate policy on names than object oriented programming itself.</li>
+<li>"Object oriented code is bad because of the complex class hierarchies!" They say, pointing at examples such as <a href="https://github.com/microsoft/referencesource/blob/master/System.ServiceModel/System/ServiceModel/MessageSecurityVersion.cs"><code style="overflow-wrap: break-word;">WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10MessageSecurityVersion</code></a> which is more the fault of a corporate policy on names than object oriented programming itself.</li>
 
 </ul>
 
