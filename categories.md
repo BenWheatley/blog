@@ -133,6 +133,7 @@
 
 ### Politics
 
+* [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [Andrew Neil interviews Theresa Maykov-bot (2017/05/23)](2017/05/23-13.23.15.html)
 * [Irish border, WTO rules, Brexit (2017/11/27)](2017/11/27-14.10.14.html)
 * [Oh no (2019/10/25)](2019/10/25-16.51.33.html)

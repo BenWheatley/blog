@@ -3,6 +3,7 @@
 
 ### April
 
+* [24 - Spendable votes](2024/04/24-10.42.51.html)
 * [07 - Eiron Merton](2024/04/07-12.47.14.html)
 * [07 - The More they Overthink the Plumbing…](2024/04/07-21.31.19.html)
 

@@ -259,6 +259,7 @@
 
 ### Democracy
 
+* [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [The worst form of government except for all the others (2020/01/16)](2020/01/16-15.06.16.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 * [Voting: do or do not? (2018/08/31)](2018/08/31-08.43.55.html)
@@ -397,6 +398,7 @@
 
 ### government
 
+* [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [The worst form of government except for all the others (2020/01/16)](2020/01/16-15.06.16.html)
 
 ### GPT-3
@@ -678,6 +680,7 @@
 
 ### Politics
 
+* [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
@@ -992,6 +995,7 @@
 
 ### voting
 
+* [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [Voting: do or do not? (2018/08/31)](2018/08/31-08.43.55.html)
 
 ### wild speculation
