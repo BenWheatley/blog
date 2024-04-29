@@ -3,6 +3,7 @@
 
 ### April
 
+* [29 - Binary humans, nuanced AI](2024/04/29-14.44.44.html)
 * [24 - Spendable votes](2024/04/24-10.42.51.html)
 * [07 - Eiron Merton](2024/04/07-12.47.14.html)
 * [07 - The More they Overthink the Plumbing…](2024/04/07-21.31.19.html)
@@ -140,7 +141,6 @@
 
 * [30 - Sapiens Plurum contest entry](2019/07/30-16.27.32.html)
 * [12 - History, according to the British](2019/07/12-10.51.01.html)
-* [11 - Orders of magnitude (Data)](2019/07/11-09.49.35.html)
 * [11 - A mole of bytes](2019/07/11-09.41.15.html)
 
 ### June

@@ -29,6 +29,7 @@
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [The end of human labour is inevitable, here's why (2017/11/17)](2017/11/17-11.36.34.html)
 * [Why do people look by touching? (2017/07/27)](2017/07/27-16.12.35.html)
@@ -66,6 +67,7 @@
 ### Artificial intelligence
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### Asperger’s
@@ -84,6 +86,7 @@
 
 ### Bayesian
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 * [Dynamic range of Bayesian thought (2018/08/05)](2018/08/05-05.24.51.html)
 
@@ -308,6 +311,7 @@
 
 ### ethics
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
 * [Normalised, n-dimensional, utility monster (2018/01/21)](2018/01/21-23.53.51.html)
 
@@ -369,6 +373,7 @@
 ### future of humanity
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [Morality, thy discount is hyperbolic (2020/01/08)](2020/01/08-21.46.38.html)
 
 ### futurism
@@ -587,6 +592,7 @@
 
 ### misaligned incentives
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### Moore's Law
@@ -639,10 +645,12 @@
 
 ### outside context problem
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [Morality, thy discount is hyperbolic (2020/01/08)](2020/01/08-21.46.38.html)
 
 ### paperclip optimiser
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### parody
@@ -756,12 +764,14 @@
 
 ### rationality
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 
 ### reasoning
 
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 
 ### reblogging
@@ -916,6 +926,7 @@
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
