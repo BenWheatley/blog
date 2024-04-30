@@ -2,6 +2,7 @@
 ### AI
 
 * [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Speed of machine intelligence (2018/03/16)](2018/03/16-10.44.18.html)
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
@@ -72,6 +73,7 @@
 ### Minds
 
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
@@ -112,6 +114,7 @@
 ### Philosophy
 
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Dot product morality (2019/05/25)](2019/05/25-15.09.10.html)
 * [Memetic monocultures (2019/12/30)](2019/12/30-18.46.50.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
@@ -162,6 +165,7 @@
 
 ### Psychology
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Why do some people hate masks? (2021/06/14)](2021/06/14-21.59.37.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 * [Hypothesise first, test later (2020/03/02)](2020/03/02-09.29.34.html)

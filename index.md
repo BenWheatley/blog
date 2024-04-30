@@ -3,6 +3,7 @@
 
 ### April
 
+* [30 - Unthinkable thoughts](2024/04/30-13.54.02.html)
 * [29 - Binary humans, nuanced AI](2024/04/29-14.44.44.html)
 * [24 - Spendable votes](2024/04/24-10.42.51.html)
 * [07 - Eiron Merton](2024/04/07-12.47.14.html)
