@@ -8,6 +8,14 @@
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
 * [Unfortunate personhood tests for A.I. (2018/06/21)](2018/06/21-10.13.56.html)
 
+### cryptocurrency
+
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
+
+### cryptography
+
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
+
 ### Fiction
 
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
@@ -137,6 +145,7 @@
 ### Politics
 
 * [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [Andrew Neil interviews Theresa Maykov-bot (2017/05/23)](2017/05/23-13.23.15.html)
 * [Irish border, WTO rules, Brexit (2017/11/27)](2017/11/27-14.10.14.html)
 * [Oh no (2019/10/25)](2019/10/25-16.51.33.html)
