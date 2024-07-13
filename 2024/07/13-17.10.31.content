@@ -15,7 +15,7 @@
 
 <p>Specifically, aim for less than 10 lines, and "as few arguments as possible, ideally none".</p>
 
-<p>I am not a fan of this. There is no single ideal size for a function, it can be one line or one thousand. In fact, I've seen code which genuinely had a thousand(!) lines inside an <code>if {}</code> block, and the code was easier to read in that form than it would have been if the <code>if</code> had been split up this way. Don't get me wrong, that thousand line <code>if {}</code> block was still really bad code for other reasons, it's just that splitting it up this way would have made it worse, not better.</p>
+<p>I am not a fan of this. There is no single ideal size for a function, it can be one line or one thousand. In fact, I've seen code which genuinely had a thousand(!) lines inside an <code>if {}</code> block, and the code was easier to read in that form than it would have been if the <code>if</code> had been split up this way. Don't get me wrong, that thousand line <code>if {}</code> block was still really bad code for other reasons, it's just that splitting it up this way would have made it worse, not better, as it would have become ten lines where each was a call to a function that was itself ten lines that were each function calls to a third layer of ten-line functions that, honestly, quite a few of those were themselves also function calls.</p>
 
 <p>And if your functions have no arguments, they must be acting purely by side-effects, which makes it harder to figure out what they do and which other parts of the codebase they influence.</p>
 
