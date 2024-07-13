@@ -21,13 +21,20 @@
 
 <p><strong>Alphabetti-spaghetti code</strong> sounds like a good name for anything involving a RegEx.</p>
 
+<blockquote>
+<p><code>[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?</code></p>
+<footer>— Regular expression, <cite><a href="https://en.wikipedia.org/w/index.php?title=Regular_expression&oldid=1230862099">Wikipedia</a></cite></footer>
+</blockquote>
+
 <p><strong>Mystery sausage code</strong> would be a good name for neural networks: a mixture of unknown origin whose contents are homogenised to the point of being indeterminable. You're never quite sure what goes into them, you're never sure if they're safe, and if you're not careful about your suppliers you might find you're being fed one even when you were expecting something of higher quality.</p>
 
-<p><strong>Spicy code</strong> covers up an incredibly basic rote task with a fancy <code>import</code>ed extra, akin to how the difference between making Mexican and Indian cuisine can be as little as "which spice kit did I add to my mix of onion, tomato, and peppers, which I then serve with rice?"</p>
+<p><strong>Spicy code</strong> covers up an incredibly basic rote task with a fancy <code>import</code>ed extra, akin to how the difference between making Mexican and Indian cuisine can be as little as "which spice mix did I add to my batch of onion, tomato, and peppers, which I then serve with rice?"</p>
 
-<p><strong>Traditional home-cooked organic code</strong> has to be FOSS in general. Proponents tell you how much better it is than the factory stuff, or how this gives you control over what you're consuming, but most people don't care and find this pretentious.</p>
+<p><strong>Traditional home-cooked organic code</strong> has to be FOSS in general. Proponents tell you how much better it is than the factory stuff, or how this gives you control over what you're consuming, but (to the horror of those who love it) most people not only genuinely don't care, they even find this somewhat pretentious.</p>
 
 <p><strong>Coca-coda</strong> — just as soda is almost entirely synthetic, not recommended by dietary experts, and yet still one of the most popular drinks on the planet, so too is AI-generated code almost entirely synthetic, disfavoured by experts, and extremely popular.</p>
+
+<figure style="max-width: 392px;"><img src="Screenshot 2024-07-13 at 18.35.17.png" style="aspect-ratio: 784/558; max-width: 392px;" /><figcaption>This AI-generated image won't put you off AI-generated code any more than the real ingredients list will put you off any real brand of soda.</figcaption></figure>
 
 <p><strong>Allotment code</strong> is where the consumer is also the creator, and they do it more for fun than anything else — personal projects, like everything on my own GitHub page.</p>
 
