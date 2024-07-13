@@ -1,6 +1,10 @@
 
 ## 2024
 
+### July
+
+* [13 - Food-based coding metaphors](2024/07/13-17.10.31.html)
+
 ### May
 
 * [25 - Crypto-[graphy|currency]: two cultures](2024/05/25-12.04.31.html)
