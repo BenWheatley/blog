@@ -3,6 +3,7 @@
 
 * [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Speed of machine intelligence (2018/03/16)](2018/03/16-10.44.18.html)
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
@@ -32,6 +33,7 @@
 
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Hyperinflation in the attention economy: what succeeds adverts? (2017/11/21)](2017/11/21-22.11.35.html)
 * [Musk City, Antarctica (2017/11/18)](2017/11/18-19.07.03.html)

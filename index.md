@@ -1,6 +1,10 @@
 
 ## 2024
 
+### August
+
+* [10 - People are wrong on the internet, AI edition](2024/08/10-13.36.05.html)
+
 ### July
 
 * [13 - Food-based coding metaphors](2024/07/13-17.10.31.html)

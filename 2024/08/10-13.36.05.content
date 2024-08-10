@@ -1,0 +1,114 @@
+<h1>People are wrong on the internet, AI edition</h1>
+
+<p>It's not too surprising that people don't understand AI. The reality is constantly changing, and the only frame of reference most of us have had is fiction, which in addition to being <em>fiction</em> is all over the place.</p>
+
+<p>The specific errors people make? Some of those errors are interesting.</p>
+
+<p>One thing I'm seeing quite often is with confused dismissals of the dangers. I see this from bloggers, and I see it from Yann LeCun — I'm not using "confused" as a euphemism for an insult here, he's one of the top researchers so if we disagree on anything <em>technical</em> then it's safe to say he's right and I'm wrong.</p>
+
+<p>Technical issues aren't the risk.</p>
+
+<h2>Current risks</h2>
+
+<p>LLMs as they currently exist (as of 2024/08/10) are not good enough to be used for anything big or world-changing; indeed, they are barely good enough to be helpers — not to dismiss what help they can provide, but in the sense that before this wave, none were good enough to be much help.</p>
+
+<p>These flaws don't stop people from using the AI; indeed, they are already being treated as a golden hammer:</p>
+
+<blockquote><p>"If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail."</p>
+<footer>— Abraham Maslow, idiom also known as <a href="https://en.wikipedia.org/w/index.php?title=Law_of_the_instrument&oldid=1217910441">"the law of the instrument" or "Maslow's hammer"</a></footer>
+</blockquote>
+
+<p>Why does this matter? Many of the arguments that AI is "safe", including Yann LeCun's, assume that the AI will simply fail one way or another before causing any harm. If only one person was using AI, this would even be reasonable: someone has already made "ChaosGPT" whose purpose is (was) to "destroy humanity", yet the fact we're still here shows it hasn't yet succeeded… but that's the anthropic principle, because if it had destroyed us then we wouldn't be here to discuss it. Everyone having access to AI, that's a game of Russian roulette where we don't even know how many chambers there are let alone how many are loaded. Even despite all the efforts taken so far, the risk is merely "low", not "zero".</p>
+
+<p>But this isn't the only concern. Sure, it will be a concern at some point, but not now: the first AI that's actually capable enough to <em>reliably</em> "destroy humanity" will inevitably be faced with some human parrotting all the existing arguments made by people who can't see the dangers, explicitly tell that AI to destroy all of humanity, and then (unless the AI has been aligned to not do so) this AI will go right ahead and do exactly what it was told to do. Nobody knows when that capability will be developed, which is precisely why <a href="https://openai.com/index/better-language-models/">it's a good idea to be <em>cautious</em> and <em>assume the worst</em></a> even though this results in <a href="https://duckduckgo.com/?q=remember+when+gpt-2+was+too+dangerous+site%3Anews.ycombinator.com&ia=web">people mocking you later</a>.</p>
+
+<p>So, there's not much danger today, the danger comes later: it requires an AI that can accurately model the world to a sufficient degree, and while we don't know what "sufficient" is exactly, the entire problem with misaligned AI is that they're modelling at least one part of the world — what we want — incorrectly.</p>
+
+<h2>Slow take-off</h2>
+
+<p>Slow take-off scenarios are those where the AI gradually gets more competent, and is used for larger tasks where the cost of things going wrong is greater. Here, the danger comes from things which are dangerous, but where neither the user nor the AI knows the danger.</p>
+
+<p>This <em>kind</em> of danger, at a personal rather than extinction level, has of course already happened, for example <a href="https://news.ycombinator.com/item?id=40724283">Google Gemini suggesting a method for making garlic-infused olive oil in a way that cultivates botulism</a> — I wouldn't have known either, if I'd had that response from an LLM. Despite all their safeguards, I would be surprised if bad advice from LLMs has killed fewer than one in a million users since they were released, and at that level the technology would easily be responsible for over 100 deaths worldwide.</p>
+
+<p>But that isn't "destroy humanity". Can it get that bad <em>eventually</em>? Yes. There are already countless examples of humans doing things that are dangerous, that they don't realise are dangerous, and that when they are told are dangerous, instead of stopping the dangerous thing they file SLAPP lawsuits against the people talking about it, or go on a political campaign about how the thing is good and that the opponents are evil for opposing jobs or whatever. This includes fossil fuels and other sources of greenhouse gasses (<a href="https://duckduckgo.com/?q=fossil+fuel+slapp+lawsuit&ia=web">a current search shows Greenpeace boasting they've just defeated one from ENI</a>). Do greenhouse gasses have the potential to be an existential threat? Note that I said "potential" because us switching to renewables is a conditional thing — the right circumstances made us want to, it's not a law of nature that we would have started, and it's not a law of nature we'll even finish this transition.</p>
+
+<p>It may surprise you but yes, greenhouse gasses really do have the potential to be an existential threat. Even just the CO2 emissions of known fossil fuel reserves by themselves would have a measurable impact on human cognition, such that burning all of them would undermine our mental capacity to maintain this world we have built. Likely this cognitive impact would not <em>directly</em> cause a total extinction, but it would undermine everything that makes us special, and we would decay back to the neolithic condition and be as unable to deal with natural disasters as every other animal.</p>
+
+<p>All it takes for an AI to be an existential threat, is to be akin to the fossil fuel industry. And like the fossil fuel industry, it can keep many of us on-board with a dangerous plan for a very long time: it's not like the fossil fuel industry is speaking falsely when they talk about how many jobs it supports, nor are they saying anything untrue when it comes to how dependent all of our progress to date has been on them. If we consider some future AI that acts much like a corporation does today, there are many ways <a href="https://en.wikipedia.org/wiki/Hirohito_surrender_broadcast">it may develop not necessarily to our advantage</a>. Consider, as a purely hypothetical example, if an AI tries to sell us all on the idea of converting Mercury into a Dyson swarm: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0094576513001148">This is already a thing that some people are looking forward to, something many want to see happen</a>; an AI can easily point to all the benefits of the energy from the solar collectors it makes in the process; an AI can promise to use all that mass to give a personal <a href="https://en.wikipedia.org/wiki/O'Neill_cylinder">O'Neill cylinder</a> to <a href="https://www.wolframalpha.com/input?i=%28%28%28planet+mercury+mass%29%2F%288+billion%29%29%2Fdensity+iron%29">each and every human</a>! But would it also file lawsuits against anyone who asks inconvenient questions like <a href="https://en.wikipedia.org/wiki/Kessler_syndrome">"What about Kessler cascades?"</a></p>
+
+<p><em>So far</em> we've managed to prevent corporations from killing us all — but it took an effort, even though those corporations are run by humans and have human customers. As the saying goes:</p>
+
+<blockquote>
+<p>It Is Difficult to Get a Man to Understand Something When His Salary Depends Upon His Not Understanding It</p>
+<footer>— <a href="https://quoteinvestigator.com/2017/11/30/salary/">probably Upton Sinclair, but attributed to many</a></footer>
+</blockquote>
+
+<p>And even then, that's anthropic bias: if corporations had killed us all, we wouldn't be here to discuss it. The danger is visible in many examples.</p>
+
+<h2>Fast take-off</h2>
+
+<p>Fast take-off scenarios are where an AI "suddenly" jumps from barely good enough to destroying everything. These are not ones I worry about — it's not that they're absolutely impossible, it's just that I think we'll get plenty of trouble well before we get AI good enough for a fast take-off, and that trouble will likely force sufficient safety rules on the field to prevent the harm.</p>
+
+<p>Trouble is, the arguments I generally see used to dismiss fast take-off, don't focus on the timeline leading up to it. Instead I generally see a pattern: someone asks for an example of how it might be possible, one is given, then that particular specific example is dismissed. For example, Yudkowsky has suggested an AI may design a gene sequence for "Diamondoid bacteria" (a phrase which he seems to have invented) and send those sequences off to be gene-printed into a living bacteria by some under-supervised lab. Is that specific scenario possible, or the plot of a soft sci-fi film? I'd assume the latter as he's not a molecular biologist and neither am I, <a href="https://www.lesswrong.com/posts/bc8Ssx5ys6zqu3eq9/diamondoid-bacteria-nanobots-deadly-threat-or-dead-end-a">and also nanotech people say no</a>, but to focus on the specific there is to miss the point of the example: if you know all published science, and you have been given a sufficient budget by someone who thought you were their tool, you can find <em>something</em> that will break all of us — natural selection created diseases that are beyond our ability to treat, to say an AI cannot make at least one example of that is not a conclusion you can reach simply by dismissing one off-the-cuff attempt to concretise the idea.</p>
+
+<p>Sometimes the metaphor of chess is used, that if I were to play Kasparov I know he would defeat me without knowing any single move he would take. But again, this leads to a dismissal that misses the point: "Chess is a discrete set of rules, not the open-ended rules of the real world!"</p>
+
+<p>The world is indeed open-ended — not only does this <em>not help</em>, it <em>makes it worse</em>. To fool me, all you need to do is say something <em>plausible</em> about a domain I am not an expert in — a task at which even the first release of ChatGPT, with all its flaws, already excelled. To win an election in a democracy, all you need to do is to scale that up to about half the population, give or take your local electoral system. But you don't need to go that far or wait for the next election: to change the laws and policies and start wars you only need to be good at lobbying, so saying plausible things to the right people within the government.</p>
+
+<p>Don't misunderstand me: LLMs as they currently are won't convince a general to change their strategy or a government economist to change the reserve bank's interest rate — most everyone also knows that LLMs at best only help experts with boring stuff, but aren't good enough to replace the best — what I'm saying here is that the breadth and complexity of the real world means there's plenty of things we've not been doing professionally for a few years, and that is the approximate cross-over point of experience where it's us humans who make mistakes more easily than the AI.</p>
+
+<p>A third point is expressed by a famous quote:</p>
+
+<blockquote><p>In theory, theory and practice are the same. In practice, they are not.</p>
+<footer>— <a href="https://quoteinvestigator.com/2018/04/14/theory/">like all famous quotes this has been attributed to almost every person widely regarded as clever, but was probably originally from Benjamin Brewster, who I'd never heard of before writing this post</a></footer>
+</blockquote>
+
+<p>Or, to put it another way: an AI that learned everything from books, but doesn't have any real world experience, isn't going to be very effective in the real world.</p>
+
+<p>In so far as it goes, this is correct. But — of course there's a but — it's a failure of imagination to think this is the scenario under discussion.</p>
+
+<p>There's a few million Tesla cars on the road, and they have the potential to constantly perform experiments: break a little sooner, how do other vehicles respond. There's buttons under every ChatGPT response, for users to give real-world feedback on the models. There's dedicated research robots in labs, and AI which guide the experiments those robots perform. The entire web/app analytics industry is based around automation of testing real users. The entire field of machine learning is an outgrowth of statistics, which were themselves developed to help us model reality. There are a lot of new robot startups that provide even more real-world learning opportunities for AI than even the Tesla cars (though my gut feeling is that they mostly exist to copy Musk's announcement, and that few are likely to be genuinely useful).</p>
+
+<p>This also tends to tie-in with a dismissal of the idea that intelligence is sufficient, which a few times even leads to people pointing at orcas (no, really) <em>straight up asserting without justification that orcas are smarter than humans</em>(!), and then asking why orcas have not taken over the world. As the orca argument has been given more than once, I guess I need to say this explicitly: even if orcas were smarter (prove it), orcas don't have opposable thumbs, and because they live in water they can't make fire to create ceramics or refine metals. Robots do not have these limits, orca-based arguments do not apply.</p>
+
+<h2>AI motivation</h2>
+
+<p>Many people also have a hard time understanding why an AI might even want to take over. This is, I think, one of the better arguments, or it could be: many smart people don't care about ultimate power, just about having enough to be happy.</p>
+
+<p>Unfortunately, the actual arguments by those un-worried by AI don't go like that; instead they more often point to the most powerful people in the world and dismiss their intelect.</p>
+
+<p>One problem with this is that most of us tend to dismiss the intellect of leaders (and groups) we don't approve of while overestimating those we like — I'm seeing this at the moment with Trump's IQ being 73 in the mouths of his enemies and 156 in the mouths of his allies, despite neither having a published test to justify the claim. I'm highly confident that neither extreme is true, which is the point.</p>
+
+<p>A second point, which is as much of a problem for the original claim as for the counter argument, is that there's a small number of leadership posts compared to the number of people who seek to fill them — you therefore need more than <em>just</em> high intelligence, you also need resources and luck.</p>
+
+<p>A brief aside from motivation to resources: an AI planning to take over quickly, could for example be able to get a lot of resources quickly by straight up stealing/hacking those resources. In the present world, that looks more like bitcoin-enabled blackmail or password sniffing than <a href="https://arxiv.org/pdf/2007.01114">suborning insecure industrial equipment</a> — but the world is rapidly changing, and <a href="../03/23-17.24.34.html">the only thing I can be confident claiming about 2034</a> is that it won't look like today. For example, if Musk were to actually sell those humanoid robots for $10k each, and — just as our society was transformed to fit around cars and later smartphones — our society was shaped to assume and then require each family had one… and then they all got hacked into on the same day (<a href="https://en.wikipedia.org/w/index.php?title=2024_CrowdStrike_incident&oldid=1239550852">don't say that won't happen, critical software SNAFUs are as common as Tsunamis</a>). And if the hypothetical AI that is doing this, is the AI Musk is trying to have built, then it's likely to not even need a hack to gain control: a simple software update, like the ones Tesla already uses for the car's self-drive AI, is sufficient.</p>
+
+<p>But, motivation? The fear amongst safety researchers is predominantly "instrumental goals": goals which are useful no matter what else you're doing. Being powerful is one of them. It's not that an AI specifically wants power for its own right, it's just that power gets you basically everything else: Do you want to end the hunting of whales? Better have an navy to be able to sink the whaling ships; Do you want all the stamps? You need the power to send in the police to search and seize the private collections that weren't for sale; <a href="https://en.wikipedia.org/wiki/Bhopal_disaster">Do you want to build a chemical plant to create a pesticide by reacting methylamine with phosgene to produce methyl isocyanate that is then reacted with 1-naphthol to produce the end product</a>? Oh, but what to do about all those protestors…</p>
+
+<p>I don't seek power. But perhaps I should, for without power I can't <a href="https://en.wikipedia.org/wiki/Stop_the_War_Coalition">Stop the War</a> because nobody starting one will listen to me; without power, I can't <a href="https://www.wfp.org/ending-hunger">end world hunger</a> because I can't order the creation of the roads to deliver the food, much less ship the food itself; I can't eradicate <a href="https://en.wikipedia.org/wiki/Eradication_of_infectious_diseases">even one disease</a> because I don't have ultimate control over world-wide healthcare.</p>
+
+<p>But an AI doesn't need such grand goals to benefit from power-seeking behaviour: if a board of directors wants to save money by using an AI instead of a human CEO, that only works if the AI seeks to do things that accord with the goals of the directors — for the most famous brands, this is necessarily "make ever increasing profits", though this time the anthropic principle cautions that corporations without this are the ones you've never heard of, and you've not heard of most corporations.</p>
+
+<p>But we don't see this with ChatGPT at least, so it's fair to ask "why not?" — it's trained to not be like that. Not only is it limited in scope to "assistant", the people behind it <em>actively don't want it to seek power and included this in their safety analysis</em>:</p>
+
+<blockquote>
+<p>More specifically, power-seeking is optimal for most reward functions and many types of agents;[69, 70, 71] and there is evidence that existing models can identify power-seeking as an instrumentally useful strategy.[29] We are thus particularly interested in evaluating power-seeking behavior due to the high risks it could present.[72, 73]</p>
+<footer>— <a href="https://cdn.openai.com/papers/gpt-4-system-card.pdf">GPT-4 System Card  OpenAI March 23, 2023, page 15</a></footer>
+</blockquote>
+
+<hr />
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags.html#AGI'>AGI</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#AI'>AI</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Artificial intelligence
+'>Artificial intelligence</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#black swan'>black swan</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Futurology'>Futurology</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#machine learning'>machine learning</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#misaligned incentives'>misaligned incentives</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#outside context problem'>outside context problem</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#paperclip optimiser'>paperclip optimiser</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Technological Singularity'>Technological Singularity</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#x-risk'>x-risk</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories.html#AI'>AI</a>, <a href='https://benwheatley.github.io/blog/categories.html#Futurology'>Futurology</a></p>
