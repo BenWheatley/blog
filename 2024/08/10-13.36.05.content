@@ -20,7 +20,7 @@
 
 <p>Why does this matter? Many of the arguments that AI is "safe", including Yann LeCun's, assume that the AI will simply fail one way or another before causing any harm. If only one person was using AI, this would even be reasonable: someone has already made "ChaosGPT" whose purpose is (was) to "destroy humanity", yet the fact we're still here shows it hasn't yet succeeded… but that's the anthropic principle, because if it had destroyed us then we wouldn't be here to discuss it. Everyone having access to AI, that's a game of Russian roulette where we don't even know how many chambers there are let alone how many are loaded. Even despite all the efforts taken so far, the risk is merely "low", not "zero".</p>
 
-<p>But this isn't the only concern. Sure, it will be a concern at some point, but not now: the first AI that's actually capable enough to <em>reliably</em> "destroy humanity" will inevitably be faced with some human parrotting all the existing arguments made by people who can't see the dangers, explicitly tell that AI to destroy all of humanity, and then (unless the AI has been aligned to not do so) this AI will go right ahead and do exactly what it was told to do. Nobody knows when that capability will be developed, which is precisely why <a href="https://openai.com/index/better-language-models/">it's a good idea to be <em>cautious</em> and <em>assume the worst</em></a> even though this results in <a href="https://duckduckgo.com/?q=remember+when+gpt-2+was+too+dangerous+site%3Anews.ycombinator.com&ia=web">people mocking you later</a>.</p>
+<p>But this isn't the only concern. Sure, it will be a concern at some point, but not now: the first AI that's actually capable enough to <em>reliably</em> "destroy humanity" will inevitably be faced with some human parroting all the existing arguments made by people who can't see the dangers, explicitly tell that AI to destroy all of humanity, and then (unless the AI has been aligned to not do so) this AI will go right ahead and do exactly what it was told to do. Nobody knows when that capability will be developed, which is precisely why <a href="https://openai.com/index/better-language-models/">it's a good idea to be <em>cautious</em> and <em>assume the worst</em></a> even though this results in <a href="https://duckduckgo.com/?q=remember+when+gpt-2+was+too+dangerous+site%3Anews.ycombinator.com&ia=web">people mocking you later</a>.</p>
 
 <p>So, there's not much danger today, the danger comes later: it requires an AI that can accurately model the world to a sufficient degree, and while we don't know what "sufficient" is exactly, the entire problem with misaligned AI is that they're modelling at least one part of the world — what we want — incorrectly.</p>
 
@@ -75,7 +75,7 @@
 
 <p>Many people also have a hard time understanding why an AI might even want to take over. This is, I think, one of the better arguments, or it could be: many smart people don't care about ultimate power, just about having enough to be happy.</p>
 
-<p>Unfortunately, the actual arguments by those un-worried by AI don't go like that; instead they more often point to the most powerful people in the world and dismiss their intelect.</p>
+<p>Unfortunately, the actual arguments by those un-worried by AI don't go like that; instead they more often point to the most powerful people in the world and dismiss their intellect.</p>
 
 <p>One problem with this is that most of us tend to dismiss the intellect of leaders (and groups) we don't approve of while overestimating those we like — I'm seeing this at the moment with Trump's IQ being 73 in the mouths of his enemies and 156 in the mouths of his allies, despite neither having a published test to justify the claim. I'm highly confident that neither extreme is true, which is the point.</p>
 
@@ -92,7 +92,7 @@
 <p>But we don't see this with ChatGPT at least, so it's fair to ask "why not?" — it's trained to not be like that. Not only is it limited in scope to "assistant", the people behind it <em>actively don't want it to seek power and included this in their safety analysis</em>:</p>
 
 <blockquote>
-<p>More specifically, power-seeking is optimal for most reward functions and many types of agents;[69, 70, 71] and there is evidence that existing models can identify power-seeking as an instrumentally useful strategy.[29] We are thus particularly interested in evaluating power-seeking behavior due to the high risks it could present.[72, 73]</p>
+<p>More specifically, power-seeking is optimal for most reward functions and many types of agents;[69, 70, 71] and there is evidence that existing models can identify power-seeking as an instrumentally useful strategy.[29] We are thus particularly interested in evaluating power-seeking behaviour due to the high risks it could present.[72, 73]</p>
 <footer>— <a href="https://cdn.openai.com/papers/gpt-4-system-card.pdf">GPT-4 System Card  OpenAI March 23, 2023, page 15</a></footer>
 </blockquote>
 
