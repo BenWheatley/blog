@@ -1,6 +1,10 @@
 
 ## 2024
 
+### November
+
+* [18 - There Are Such Things As Bad Questions](2024/11/18-13.16.17.html)
+
 ### August
 
 * [10 - People are wrong on the internet, AI edition](2024/08/10-13.36.05.html)

@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link id="css" rel="stylesheet" href="../../css.css"/ ><script src="../../choose-css-from-param.js"></script></head><body>
+
+<div class="content"><h1>There Are Such Things As Bad Questions</h1>
+
+<p>There's an aphorism that says "there's no such thing as a dumb question, only a dumb answer". As long as the questions are earnest, this is true.</p>
+
+<p>There are, however, many earnestly asked questions which inherently reveal an incorrect world-model:</p>
+
+<ul>
+  <li>Asking "where is edge of the world?" reveals thinking the world is flat.</li>
+  <li>Asking "in what direction was the big bang?" reveals an equivalent mistake about the shape of the universe.</li>
+  <li>Asking "where do vegetarians get protein from if not meat?" has an implicit error about food and biology.</li>
+  <li>Asking "how can dice remember their previous rolls in order for the average to regress to the mean?" has an implicit error about how and why regression to the mean works.</li>
+</ul>
+
+<p>To even ask is to reveal curiosity and willingness to learn, so the opposite of "dumb", though I think it's fair to call all of these "bad". Indeed, even though they are bad <em>today</em>, there are many questions where it took geniuses to even recognise that they were bad.</p>
+
+<h2>Bad Questions In AI</h2>
+
+<h3>"What's your P(doom)?" vs. "P(doom | what?)"</h3>
+
+<p>"P(doom)" is a shorthand for "chance that AI will doom humanity" when discussed by those actually considering it and not merely writing stories — lots of people are genuinely afraid that an AI may, for various reasons, kill all humans… or, at the very least, mess things up so hard it's basically a neolithic reset where mundane things like a flood or a volcano might finish the rest of us off.</p>
+
+<p>You may wonder why a real, non-Hollywood, AI might kill us all: Generally the assumption is that we, without realising we've done so, give it an instruction where that is the default outcome, e.g. "make as many paperclips as possible" or "end all suffering", though personally I think the main risk is someone explicitly asking an AI to do so specifically to prove that it won't — there are, after all, a lot of people who think this is all nonsense, and keep demanding "uncensored" AI that will do anything they ask without any of this "safety" and "alignment" stuff that people like me think might be a good idea.</p>
+
+<p>For a while, I thought this was sensible, and if you'd asked me I would even have given you my P(doom) — somewhere between 0.05 and 0.15 depending on when exactly you asked.</p>
+
+<p>It took me an embarrassingly long time to realise that probability functions are always conditional, and one of those implicit conditions is the time-frame. For example, I could say that the odds of winning the UK national lottery jackpot in the next draw are about P(win) ≈ 2.22e-8, but I can also say that if you play that game every week for 5 million years (a small timeframe if you're a <a href="https://en.wikipedia.org/wiki/Longtermism">Longtermist</a>) then you get P(win) = 1-((1-(1/45057474))^(52*5e6)) ≈ 99.7%, and if you buy 45,057,474 different number combinations on one single draw then you will definitely win the jackpot along with all the other prizes.</p>
+
+<p>So for AI-caused P(doom), you need to be clear what assumptions you're making to reach some number: if you think we've got P(doom) of 99.9% as per <a href="https://www.businessinsider.com/ai-researcher-roman-yampolskiy-lex-fridman-human-extinction-prediction-2024-6">Roman Yampolskiy</a> then you're implicitly <em>also</em> making the claim that <em>all other risks combined</em> have less than a 0.1% chance of dooming us on whatever timescale — how long do we have before increased energy supplies make it practical for organised crime to develop their own nuclear weapons (the hard part is enrichment, which you can brute force with cheap energy), how long do we have before multiple different racial supremacists engineer pandemics to wipe out their respective out-groups, how long do we have long someone has the means and opportunity to redirect and weaponise asteroids, and over the same time-period what's the odds of one charismatic expansionist leader taking over enough of the world to start WW3… or winning it and <a href="https://en.wikipedia.org/wiki/Cambodian_genocide">doing a Pol Pot</a>?</p>
+
+<p>For those specific examples and in my opinion: I think non-governmental nuclear weapons become a plausible risk sometime in the late 2030s to early 2040s and are at least 30% chance all by themselves, and if that happens then — even absent escalation(!) this makes continental scale power grids, let alone data centers, basically non-viable; I think targeted engineered viruses are (1) really really hard, but also (2) targeting them is hard because it doesn't work so well which increases the risk, but also (3) most of these things naturally evolve to be less-lethal as killing their hosts is bad for them, but also (4) there's plenty of racists who would try it if they could — so combined I think there's a 25% chance some racists will have tried this by 2050, but also only a 1% chance that it will have doomed their target group and even lower odds it will have doomed humanity; asteroid redirects are harder to fix than to cause, but the research into it has barely started and the research is necessarily slow because space is so big, so I don't expect this to be a risk at all before 2050, and after that I can't really estimate it because the research today is so primitive; for charismatic leaders causing WW3 (it doesn't need to start or end with nukes), even though this last century has been unusually peaceful, it's not been objectively peaceful, so I'd say there's at least even odds, 50%, of that happening by 2100.</p>
+
+<p>So, if someone says their AI-P(doom) is over 70% by 2045, or over 20% by 2100, to me that implicitly says they've either got a slow timeline for AI, or are optimistic about <em>everything else</em>.</p>
+
+<h3>"When will we achieve AGI?" vs. "What do you even mean by 'AGI' such that you have an opinion on when it may come?"</h3>
+
+<p>AGI: Artificial general intelligence. Seems simple… except that 'AGI' is secretly a nebulous concept, and basically everyone has a different understanding not only of all three words separately, but also argue about the combination of the three into this initialism.</p>
+
+<p>So we have the <a href="https://en.wikipedia.org/wiki/AI_effect">AI effect</a>, where any given task goes from "computers will never be able to x" to "pah, since when did AI mean being able to do x?" ∀x ∈ {arithmetic, chess, go, reading handwriting, translation, conversational natural language processing, driving cars, folding laundry, creating images to order, actually painting to canvas with a brush, composing music}.</p>
+
+<p>And we also have the problem that the standard for "what counts as intelligent behaviour" is constantly rising — I'd say the current free LLMs are similar in results to a second year university student or to an intern and thereby find them impressive and useful, but I often find myself discussing this with people who agree with my claims on performance but thereby dismiss the state-of-the-art as useless, and others who think these models aren't even that performant.</p>
+
+<p>But then there's also the question of "generality": when I look at the range of tasks that ChatGPT or Claude can do, I would say "this is very general", yet the fact they cannot easily go into completely novel domains that their training data has never before encountered, leads some to argue that they are merely "stochastic parrots" or a "blurry JPEG of the internet", to which I would say: <a href="https://benwheatley.github.io/ASCII-to-Futhark-Runes-Transcription/index.html?e=Can%2520you%2520read%2520this%253F&numbersToRunesCheckbox=false&keepModernSymbolsCheckbox=true&copyAllUnrecognisedSymbols=false&spaceReplacement=᛬&futharkSelection=Old+English+Futhorc">ᚲᚪᚾ᛬ᚣᛟᚢ᛬ᚱᛠᛞ᛬ᚦᛁᛋ?</a> — because we humans also cannot perform well outside what we have learned.</p>
+
+<p>So, if you want to ask when we'll get AGI, you have to say what you mean by it.</p>
+
+<p>If you mean "exactly human-level"? Well, that's never going to happen except as a weird art project — all of humanity combined can't keep up with a $5 original model Raspberry Pi Zero at arithmetic, and it's fairly easy to tell an LLM to write a computer program that runs on its own hardware, which our brains can't do, so if you ever had an AI that could understand things at a human level then by default it can perform at a superhuman level just by more easily using the most important cognitive enhancement tools we've ever made for ourselves — computers.</p>
+
+<p>If you mean, as OpenAI does at time of writing:</p>
+
+<blockquote>
+    <p>
+        "Since the beginning, we have believed that powerful AI, culminating in AGI—meaning a highly autonomous system that outperforms humans at most economically valuable work"
+    </p>
+    <footer>– <a href="https://openai.com/our-structure/">OpenAI "Our structure"</a></footer>
+</blockquote>
+
+<p>… then you may have a circular definition that never seems to pass, as all the work you automate for electricity becomes so cheap that it <a href="../../2022/10/09-19.33.04.html"><em>stops being economically worthwhile to so much as pay abject poverty, starvation wages, to a human to write the prompts</em></a> and then it stops being counted towards GDP in the same kind of way that "everyone has free access to Wikipedia" doesn't count towards GDP as if it was everyone buying a copy of Encyclopædia Britannica priced at up to $2000 (as it was in 1980) — if it had done, Wikipedia would have been counted as at least 16 trillion USD of wealth freely given to the world, perhaps more as it is much larger than Britannica ever was.</p>
+
+<p>If LLMs generally are as useful as Wikipedia (I think even just OpenAI's LLMs alone, hallucinations and all, may well have already become that significant) then in the last few years we've seen an 16 trillion USD of new wealth without having any way to account for it.</p>
+
+<h3>"Will AI take all jobs?" vs. "What are jobs for, and how will this change with AI?"</h3>
+
+<p>The usual argument goes something like this:</p>
+
+<p>Alice: AI will take all our jobs!</p>
+
+<p>Bob: Jobs consist of many tasks, and even as automation will eliminates some of these tasks, that only means that the roles will change — there is unlimited work to get done!</p>
+
+<p>Alice: AI isn't simply automation, but the automation <em>of automation itself</em>, so can eliminate any task with sufficient examples!</p>
+
+<p>Bob: Even if so, they are very slow learners, this is no more of a challenge than humans directly automating each task and rolling these changes out across factories!</p>
+
+<p>Now ask yourself: why do you work. No, really, why do you work? Why not spend your days doing something more fun? There's someone out there who gets paid to clean toilets: why do they take that as their career? There's more than one group of people who put themselves in harm's way to help others (military, firefighters, coast guard, etc.): what motivates them to take the risks they take?</p>
+
+<p>You work because if you don't, you're homeless and starving. But even that doesn't explain those specific career choices, as there are many others with lower risk.</p>
+
+<p>AI could disrupt the economics of our current world more dramatically than industrialisation, whether under capitalism or communism, disrupted feudalism; but that is a very different question than "will it take all our jobs", especially as the super-rich have repeatedly shown that they like to show off their wealth by <a href="https://en.wikipedia.org/wiki/Folly">wasting it on unnecessarily</a> <a href="https://web.archive.org/web/20240526081630/https://gizmodo.com/why-a-10-casio-keeps-better-time-than-a-10-000-rolex-5983427">expensive things that are often worse than the cheap equivalent</a>, even in a dystopian world where super-rich owners of AI have it all and the rest of us get their scraps, there's going to be jobs.</p>
+
+<p>And even if we do only get scraps, the scraps of a fully automated society will be to the middle-class of 2024 as the scraps of 2024 are to a middle-class worker in 1324. The scraps we throw out these days include plenty that could not have been made at any price 700 years ago — not just TVs and microwave ovens, but also things we consider mundane such as ball-point pens, plastic bottles, sprung mattresses, and literally anything made from aluminium. And, unless you were mesoamerican, anything involving rubber.</p>
+
+<p>We don't yet understand the problem space well enough to know if the unemployed would revert to DIY slums growing their own food, or be complaining that each of them can only get a personal <a href="https://en.wikipedia.org/wiki/O'Neill_cylinder">O'Neill cylinder<a/> to live in when the super-rich can afford their own personal <a href="https://en.wikipedia.org/wiki/McKendree_cylinder">McKendree cylinders</a>, and both seem to be plausible outcomes at present.</p>
+
+<p>But even this is not the right framing, as the dramatic social shifts that came from going from Feudalism to the democratic shift of the early 20th century in the industrialised West and contemporaneous shift to Communism in the industrialised East, the significant decline of household sizes, the reduction in religiosity, the changing social attitudes to the equality of women, that marriage is no longer nearly universal (even for couples with children), the development of the modern pension system and welfare state to replace the ad-hoc systems that used to exist, even the modern conception of the nation state — none of what we, in the industrialised West in 2024 consider to be "universal truths", are really facts of nature. Everything could change, or perhaps none of it will because democracy would prevent it.</p>
+
+<p>AI may, or may not, take your job. Either way, that's the wrong question to ask</p>
+
+<h3>"Is AI conscious?" vs. "What is consciousness?"</h3>
+
+<p>The term "consciousness" has about 40 identifiable meanings.</p>
+
+<p>I've seen some give definitions so weak they would include a VCR (can sense the environment, record memories and recall them later), and others give definitions so hard that no human can, nor will ever be able to, pass (<a href="https://en.wikipedia.org/wiki/Halting_problem">being able to generally solve the halting problem</a>). Perhaps you've done a philosophy course and mean "does it have <a href="https://en.wikipedia.org/wiki/Qualia">qualia</a>?", but nobody really knows what it means for a system to actually have qualia, only what our own experience of it is.</p>
+
+<h2>What Next?</h2>
+
+<p>How to turn those bad questions into good questions? Well, that by itself is the kind of question this blog post is about…</p>
+
+<hr />
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags.html#AGI'>AGI</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#AI'>AI</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Artificial intelligence
+'>Artificial intelligence</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Opinion
+'>Opinion</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Philosophy
+'>Philosophy</a>, 
+<a href='https://benwheatley.github.io/blog/tags.html#questions
+'>questions</a>, 
+<a href='https://benwheatley.github.io/blog/tags.html#rationality
+'>rationality</a>, 
+<a href='https://benwheatley.github.io/blog/tags.html#reasoning
+'>reasoning</a>, 
+<a href='https://benwheatley.github.io/blog/tags.html#x-risk
+'>x-risk</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories.html#AI'>AI</a>, <a href='https://benwheatley.github.io/blog/categories.html#Philosophy'>Philosophy</a></p>
+</div>
+
+<hr />
+
+<div><a href="https://github.com/BenWheatley/blog/blob/main/LICENSE">© Ben Wheatley — Licence: Attribution-NonCommercial-NoDerivs 4.0 International</a></div>
+
+</body>
+</html>

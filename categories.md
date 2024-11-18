@@ -3,6 +3,7 @@
 
 * [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Speed of machine intelligence (2018/03/16)](2018/03/16-10.44.18.html)
@@ -125,6 +126,7 @@
 
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [Dot product morality (2019/05/25)](2019/05/25-15.09.10.html)
 * [Memetic monocultures (2019/12/30)](2019/12/30-18.46.50.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
