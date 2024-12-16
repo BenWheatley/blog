@@ -1,6 +1,10 @@
 
 ## 2024
 
+### December
+
+* [16 - One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them](2024/12/16-17.47.07.html)
+
 ### November
 
 * [18 - There Are Such Things As Bad Questions](2024/11/18-13.16.17.html)
