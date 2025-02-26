@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link id="css" rel="stylesheet" href="../../css.css"/ ><script src="../../choose-css-from-param.js"></script></head><body>
+
+<div class="content"><h1>It was the best of code, it was the worst of code</h1>
+
+<p>What really matters, in the world of coding mobile app? Obviously you know I'm going to say something surprising, nobody writes blog posts to confirm the status quo was right all along. So, I've spent most of the last 15 years writing iPhone apps — would you like to guess the most surprising conclusion I might reach, before you skip ahead?</p>
+
+<p>Here's some case studies from my career. I will not name either place, nor the people there. No, you can't cheat and look things up on my CV, I've had too many roles in too many places — unless you've already seen the code I'm talking about, you won't be able to figure it out from these descriptions.</p>
+
+<hr />
+
+<p>The "best" code, had all the things we're supposed to do. It had code review on every commit, it had tools to help us write unit tests, it had continuous integration so we couldn't accidentally commit breaking changes, the team had regular sessions to learn from each other, and the lead developer actually listened to my concerns that the architecture we'd chosen was too complicated.</p>
+
+<p>When I write this blog, SOLID principles, Clean Code, etc. are as much a zeitgeist as Java's <code>AbstractFactoryBean</code> was when I did my degree, and will likely age poorly in the same way. Consider these things in that light — the point is not which specific methods we were following, but that it was well regarded and seen as sensible, to the extent that what we did is the kind of thing you'd expect to see written into job adverts, university courses, and long-form ranty blog posts (like this one) trying to sell you on the idea that <code>$BUZZWORD</code> is silver bullet which will solve all your problems.</p>
+
+<hr />
+
+<p>The "worst" code, was a 120,000 line copy-pasted disaster area. In multiple cases there was a single file that defined not just one particular UI element, not even one single ViewController in the UIKit sense, but some entire subsection of the app. Each time a new view in that subsection was needed, the whole thing was instantiated; each instance had a fixed length array large enough to hold every UI element on all possible views within the subsection, the array was indexed by named constants, and the init function took an argument which then actually constructed only the specific subset of views needed.</p>
+
+<p>Something like this:</p>
+
+<pre>
+class SettingsUI {
+private:
+    // Constants for UI elements
+    static const int TEXT_TITLE = 0;
+    static const int TEXT_USERNAME = 1;
+    static const int TEXTBOX_USERNAME = 2;
+    static const int TEXT_PASSWORD = 3;
+    static const int TEXTBOX_PASSWORD = 4;
+    // ... imagine loads more
+    
+    static const int MAX_ELEMENTS = 100;
+
+    UIView *elements[MAX_ELEMENTS];
+
+public:
+    SettingsUI(int viewType) {
+        switch (viewType) {
+            case 0:
+                elements[TEXT_TITLE] = UILabel("Account settings");
+                elements[TEXT_USERNAME] = UILabel("User name:");
+                elements[TEXTBOX_USERNAME] = UITextField();
+                elements[TEXT_PASSWORD] = UILabel("Password:");
+                elements[TEXTBOX_PASSWORD] = UITextField();
+                break;
+            case 1:
+                elements[TEXT_TITLE] = UILabel("Payment details");
+                elements[TEXT_BALANCE] = UILabel("Balance:");
+                // ... etc.
+        }
+        // ... etc.
+    }
+</pre>
+
+<p>(Purely illustrative, created by ChatGPT to be awful in the right kind of way and then manually made even worse to match my memories; it would take a greater fool than me to publish the real source code).</p>
+
+<p>Even just using the named constants to access a fixed size array was case of "tell me you don't know how properties work without telling me you don't know how properties work". Crushing all of the views together into one file was a case of "tell me you don't know how to make code reusable…". And it gets worse: when I began finding duplicated functionality and adding comments saying <code>// TODO: deduplicate this</code>, I quickly found the developer responsible for this nonsense was also copy-pasting entire files rather than subclassing. When questioned, their excuse was properties marked as private — a trivially easy thing to change.</p>
+
+<p>Oh, and those 120,000 lines of code? Even aside from the copy-pasta, a lot of it was just plain unused, and overall about 20-25% of the lines were blank comments — really blank, just for decoration:</p>
+
+<pre>
+   int foo = 3;
+   //
+   printf("%d", foo);
+</pre>
+
+<p>That kind of blank comment.</p>
+
+<p>There was a single if-statement whose block was a thousand lines long, and the conditional was always true. There were no unit tests. There was no code review. There were O(n^2) functions that I was able to convert into O(n).</p>
+
+<p>The developer responsible for all this horror didn't know about major language/library changes of the preceding decade and a half; and worse than that, they had mistaken pride in manually doing things that the compiler could do for them — my example code above is in C++, for that language in particular imagine someone not knowing about the Boost libraries or the Standard Template Library and how <code>shared_ptr</code> could save effort and headaches; for iOS development, your go-to example may be the transition to Automated Reference Counting early in the Objective-C days, or it may be reaching 2025 without ever having used Swift; if you're a web developer, imaging thinking in 2017 that you could get away without knowing JavaScript because it was only a nice-to-have back in 2001.</p>
+
+<hr />
+
+<p>Guess which one of these won awards, and which was quietly dropped by the investor?</p>
+
+<p>No, you can't cheat and look things up on my CV — thanks to the places I've worked, I've had multiple examples of awards and of silent disappearance, I've witnessed that how a product is seen by the market is unrelated to the quality of the code.</p>
+
+<p>And that's the point: business success — I guess I should limit that statement, bound it only to my own experience — business success <em>in the world of mobile apps</em> is unrelated to the quality of the code.</p>
+
+<p>(To be explicitly clear: I say <em>un</em>-related, I do not say <em>negatively</em> related — I have also been tasked with a "fix this up ASAP so we can finally be rid of this contract" job involving some terrible code for a product that then quietly disappeared from the market, and I've also seen some excellent code that made some people very rich).</p>
+
+<p>I assume there's many important domains in which high quality code is genuinely business-critical — for all that people dunking on Apple has remained a constant for as long as I can remember, Mac OS today is <em>vastly</em> more stable today than it was with than <a href="https://en.wikipedia.org/wiki/System_7#System_7.5">System 7.5.5</a> on the <a href="https://en.wikipedia.org/wiki/Power_Macintosh_5200_LC">Performa 5200</a> I had as a teenager, and I can only assume that's because operating system developers have genuinely benefitted from OO, CI, SOLID, and all the other things.</p>
+
+<p>But, apps? Nah.</p>
+
+<p>Compare and constrast <a href="https://chadnauseam.com/coding/random/calculator-app">the effort that went into the Android calculator app</a>, versus <a href="https://duckduckgo.com/?q=apple+calculator+123+bug">Apple's calculator app having a bug where tapping faster than the UI animations meant input was ignored</a> — and then consider that even though this was painfully obvious and easily reproducible, and didn't meaningfully hurt Apple's market share or brand.</p>
+
+<p>Apps, in the market today, <em>don't</em> need to be well written. They <em>don't</em> need fantastic engineering behind them. The databases that serve them may need to be well written, but the apps themselves… don't. They're mostly <a href="https://en.wikipedia.org/wiki/Create%2C_read%2C_update_and_delete">CRUD ("create, read, update and delete")</a> and CRUD is fundamentally a programming problem that was already solved even back when we had Visual Basic on machines that would be lucky to run at 200 MHz on a good day. They are UI wrappers for a JSON API which itself is a wrapper for a SQL query. The underlying database is the performance constraint, everything else in the app lifecycle should be a fully automated by, at this point, Figma. Or VB. Or <a href="https://www.xojo.com/">Xojo</a>. If Apple's developer tools were cross-platform, or if you only support Apple devices, by this point Interface Builder should also be essentially a fully automated no-code solution, where drag-and-drop connects and binds data sources to and their views.</p>
+
+<p>If anything, the bells and whistles we software engineers want to add, only serve to slow down development, and gift the market opportunities to those who ignored the "right way" in favour of the "fast way". Mobile apps are <a href="https://en.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small">"programming in the small"</a> — badly written hack-jobs from a single developer working alone, without any peer-to-peer knowledge sharing, with an ego problem that stops them listening to or learning from others (the 120kloc horror-developer above isn't even the worst offender I've had to work with in that regard), none of these stop an app from being extremely well regarded by the users, nor does it prevent the app and the company from winning significant awards and praise, nor does it preclude the beneficence of investors.</p>
+
+<p>So, that surprising conclusion. Did you guess right? Most businesses probably only need one iOS developer for their app. Likely the same for Android. And even then, only if you can't skip the app entirely by having a website that works fine on mobile devices — a conclusion one of my previous employer's investors realised in the middle of the pandemic.</p>
+
+<p>But there's no silver bullet. Don't mistake a bunch of anecdotes in one limited domain of software development for a universal truth, for this will not apply everywhere. And if you find your boss quoting this blog post to try to skip unit tests in anything outside of mobile apps, tell them to read this last paragraph, where I call them out as being just as much a bunch of cargo-culters as the very same developers who failed in the business domain despite doing everything "by the book". Not needing so many <em>app</em> developers doesn't mean you've got too many testers (honestly, most apps clearly need more), it doesn't mean you can skimp on customer support with a chatbot (I've been on the receiving end of that), it doesn't mean backend, database, or ops teams can be replaced (if anything, they should drive the rest of the engineering).</p>
+
+<hr />
+
+<p>Tags: <a href='https://benwheatley.github.io/blog/tags.html#business'>business</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Coding'>Coding</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Opinion'>Opinion</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#Programming'>Programming</a>,
+<a href='https://benwheatley.github.io/blog/tags.html#software engineers'>software engineers</a></p>
+
+<p>Categories: <a href='https://benwheatley.github.io/blog/categories.html#Opinion'>Opinion</a>, <a href='https://benwheatley.github.io/blog/categories.html#Professional'>Professional</a>, <a href='https://benwheatley.github.io/blog/categories.html#Software'>Software</a></p></div>
+
+<hr />
+
+<div><a href="https://github.com/BenWheatley/blog/blob/main/LICENSE">© Ben Wheatley — Licence: Attribution-NonCommercial-NoDerivs 4.0 International</a></div>
+
+</body>
+</html>

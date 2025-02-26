@@ -105,6 +105,7 @@
 
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
 * [Oh no (2019/10/25)](2019/10/25-16.51.33.html)
@@ -172,6 +173,7 @@
 
 ### Professional
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Finding the smallest value in a Swift array of Integers (2018/10/26)](2018/10/26-21.05.33.html)
 * [Utility function of meetings (2018/01/29)](2018/01/29-13.27.12.html)
@@ -235,6 +237,7 @@
 
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [Executable images (2017/04/10)](2017/04/10-22.55.43.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Hyperinflation in the attention economy: what succeeds adverts? (2017/11/21)](2017/11/21-22.11.35.html)
