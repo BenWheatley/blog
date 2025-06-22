@@ -38,7 +38,7 @@
 
 <li>Alarm noises ignore bluetooth. Set alarm, connect to bluetooth headphones, play podcast. When alarm goes off, alarm plays out of device and silences audio from headphones.</li>
 
-<li><img style="float: right;" width="20%" height="20%" src="share-translation.jpeg" alt="Share sheet showing mixed languages" />Share sheet is mixed language depending on the app. My system is set to English, even though I live in Berlin. Some of my apps are German-language-only, e.g. Obi. I share an item, the apps that Apple suggests are labelled "AirDrop" (en), "Nachrichten" (de), "Mail" (en) etc., while the options are "Kopieren" (de), "Neue Schnellnotiz" (de), "Save to Files" (en), and then a list of my custom shortcuts whose names only exist in English anyway.</li>
+<li><img style="float: right; clear: both;" width="20%" height="20%" src="share-translation.jpeg" alt="Share sheet showing mixed languages" />Share sheet is mixed language depending on the app. My system is set to English, even though I live in Berlin. Some of my apps are German-language-only, e.g. Obi. I share an item, the apps that Apple suggests are labelled "AirDrop" (en), "Nachrichten" (de), "Mail" (en) etc., while the options are "Kopieren" (de), "Neue Schnellnotiz" (de), "Save to Files" (en), and then a list of my custom shortcuts whose names only exist in English anyway.</li>
 </ul>
 
 <h2>MacOS itself</h2>
@@ -60,7 +60,9 @@ Only phone numbers, but (for me) <em>every</em> phone number. Websites often com
 <h2>Safari.app, MacOS</h2>
 
 <ul>
-<li>Select multiple items from history based on search results. Instead of deleting all selected items in one go, it acts like it's deleting one item, spending 100ms or so creating the list from scratch with one fewer item, then repeating this process. <video width="1029" height="734" controls><source src="slow-delete-safari.mp4" type="video/mp4"></video></li>
+<li>Select multiple items from history based on search results. Instead of deleting all selected items in one go, it acts like it's deleting one item, spending 100ms or so creating the list from scratch with one fewer item, then repeating this process.</li>
+
+<video width="1029" height="734" controls><source src="slow-delete-safari.mp4" type="video/mp4"></video></li>
 
 <li>Translation button. Default location is on the left of the omni-box. However, clicking it in this position causes it to instantly jump to the right side of the omni-box and the popup menu shown is for the "hide distracting items" button that was hidden by the translation button.</li>
 
@@ -68,11 +70,15 @@ Only phone numbers, but (for me) <em>every</em> phone number. Websites often com
 
 <li>Translation. German ⇒ English. Noticed with lists, not clear if limited to lists. Some content deleted by act of translation.</li>
 
-<li>Mouse over link. Right click to open context window. Hold down alt key to change options. Choose "Open Link in New Private Window". Result: <em>empty</em> new private window, it does not open the link, just a private window. <video width="734" height="447" controls><source src="new-private-window-fail.mp4" type="video/mp4"></video></li>
+<li>Mouse over link. Right click to open context window. Hold down alt key to change options. Choose "Open Link in New Private Window". Result: <em>empty</em> new private window, it does not open the link, just a private window.</li>
+
+<video width="734" height="447" controls><source src="new-private-window-fail.mp4" type="video/mp4"></video></li>
 
 <li>Keeps forgetting that permission has been granted for websites (in my case specifically babbel.com) to use the microphone — including in the middle of a lesson, not just when leaving the site and returning, which is what I'd expect from "ask" option in system settings.</li>
 
-<li>When opening private browsing windows for the first time, right after using password to unlock them, anything you type into the omni-bar is invisible. The second time, it works. <video width="630" height="398" controls><source src="invisible-omni-bar-content.mp4"></video></li>
+<li>When opening private browsing windows for the first time, right after using password to unlock them, anything you type into the omni-bar is invisible. The second time, it works.</li>
+
+<video width="630" height="398" controls><source src="invisible-omni-bar-content.mp4"></video></li>
 
 </ul>
 
