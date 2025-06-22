@@ -6,6 +6,7 @@ import sys
 import errno
 from datetime import datetime
 import argparse
+import rebuild_indexes
 
 def main(template_path, output_dir, no_warn = False, verbose = False, force_update = False):
     # Read the template file
@@ -68,3 +69,5 @@ if __name__ == "__main__":
         sys.exit(1)
     
     main(template_path, output_dir, no_warn = args.no_warn, verbose = args.verbose, force_update = args.force_update)
+    
+    rebuild_indexes.main()
