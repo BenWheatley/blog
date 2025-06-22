@@ -1,6 +1,11 @@
 
 ## 2025
 
+### June
+
+* [22 - "It isn't magic"](2025/06/22-13.21.36.html)
+* [19 - Testing](2025/06/19-15.56.44.html)
+
 ### February
 
 * [26 - It was the best of code, it was the worst of code](2025/02/26-14.04.07.html)

@@ -1,6 +1,7 @@
 
 ### AI
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)

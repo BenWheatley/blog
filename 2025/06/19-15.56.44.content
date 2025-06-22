@@ -1,0 +1,104 @@
+<h1>Testing</h1>
+
+<p>Testing is important. Today, in 2025, just as Apple has announced yet another change to their UI that I am rolling my eyes at (having last been interested when MacOS versions were still named after cats), I'd like to share some of the bugs I've personally seen in Apple software:</p>
+
+<h2>iPad OS itself</h2>
+
+<ul>
+<li>Sometimes randomly forgets the background, sets it to solid black.</li>
+</ul>
+
+<h2>Mail.app, iOS</h2>
+
+<ul>
+  <li>One device is persistently out of sync with others, with no obvious way to force synchronisation. I had to manually mark as read each email incorrectly marked as unread, despite them having been read months ago on other devices.</li>
+</ul>
+
+<h2>Calculator.app, macOS and iOS</h2>
+
+<p>In "maths notes" mode, decimal points will only be interpreted correctly when they match your locale. If you put a "." in a locale where "," is expected, it <em>strips the separator without warning of syntax errors</em>, while the other way around it deletes everything to the left of the separator:</p>
+
+<div class="image-collection">
+  <img src="note-calc-iphone.jpg" alt="Calculator on iPhone" />
+  <img src="note-calc-mac.png" alt="Calculator on Mac" />
+</div>
+
+<h2>Photos.app, iOS</h2>
+
+<ul>
+<li>Text selection sometimes works, sometimes doesn't.</li>
+
+<li>At least on small screen iPhone SE, the text highlight button is always located in bottom left corner of image, while the carousel of other images always shown just above the lower toolbar. When the image is full-screen, e.g. a screenshot, the text highlight button is <em>underneath</em> the carousel — attempts to tap on the text icon are usually intercepted by the carousel. There is no obvious way to disable the carousel.</li>
+</ul>
+
+<h2>iOS itself</h2>
+
+<ul>
+<li>Accidentally enters "do not disturb" mode without warning, I have missed expected calls because of this; my work-around is to change the background for this mode so I spot it, and it keeps happening and I have to keep turning off "do not disturb". I want to permanently disable "do not disturb".</li>
+
+<li>Alarm noises ignore bluetooth. Set alarm, connect to bluetooth headphones, play podcast. When alarm goes off, alarm plays out of device and silences audio from headphones.</li>
+
+<li><img style="float: right;" width="20%" height="20%" src="share-translation.jpeg" alt="Share sheet showing mixed languages" />Share sheet is mixed language depending on the app. My system is set to English, even though I live in Berlin. Some of my apps are German-language-only, e.g. Obi. I share an item, the apps that Apple suggests are labelled "AirDrop" (en), "Nachrichten" (de), "Mail" (en) etc., while the options are "Kopieren" (de), "Neue Schnellnotiz" (de), "Save to Files" (en), and then a list of my custom shortcuts whose names only exist in English anyway.</li>
+</ul>
+
+<h2>MacOS itself</h2>
+
+<ul>
+<li>Multi-monitor setup, auto-changing backgrounds. Sometimes one monitor will entirely lose its background — just the background becomes black, nothing else. Trivial interactions with display settings brings the background back, but the automatic change of backgrounds does not.</li>
+
+<li>Sometimes copy command doesn't change contents of clipboard.</li>
+</ul>
+
+<h2>Contacts.app, MacOS</h2>
+
+<ul>
+<li>Even though automatic entry puts correct phone number into a web form, if I select the value in the Contacts app and copy it, the value in the clipboard — confirmed via BBEdit — has additional unicode "left-to-right override" (U+202D codepoint: E2 80 AD in UTF-8 contexts, 20 2D in UTF-16 contexts) before the first digit, and "pop directional formatting" (U+202C codepoint: E2 80 AC in UTF-8 contexts, 20 2C in UTF-16 contexts) after the last digit. <a href="https://apple.stackexchange.com/questions/337101/zero-width-characters-embedded-in-phone-number-whenever-they-are-copied-from-the">And has done for over 6 years now</a>
+
+Only phone numbers, but (for me) <em>every</em> phone number. Websites often complain about these additional characters, which are normally zero-length and thus invisible.</li>
+</ul>
+
+<h2>Safari.app, MacOS</h2>
+
+<ul>
+<li>Select multiple items from history based on search results. Instead of deleting all selected items in one go, it acts like it's deleting one item, spending 100ms or so creating the list from scratch with one fewer item, then repeating this process. <video width="1029" height="734" controls><source src="slow-delete-safari.mp4" type="video/mp4"></video></li>
+
+<li>Translation button. Default location is on the left of the omni-box. However, clicking it in this position causes it to instantly jump to the right side of the omni-box and the popup menu shown is for the "hide distracting items" button that was hidden by the translation button.</li>
+
+<video width="646" height="283" controls><source src="translation-button-jump.mp4" type="video/mp4"></video>
+
+<li>Translation. German ⇒ English. Noticed with lists, not clear if limited to lists. Some content deleted by act of translation.</li>
+
+<li>Mouse over link. Right click to open context window. Hold down alt key to change options. Choose "Open Link in New Private Window". Result: <em>empty</em> new private window, it does not open the link, just a private window. <video width="734" height="447" controls><source src="new-private-window-fail.mp4" type="video/mp4"></video></li>
+
+<li>Keeps forgetting that permission has been granted for websites (in my case specifically babbel.com) to use the microphone — including in the middle of a lesson, not just when leaving the site and returning, which is what I'd expect from "ask" option in system settings.</li>
+
+<li>When opening private browsing windows for the first time, right after using password to unlock them, anything you type into the omni-bar is invisible. The second time, it works. <video width="630" height="398" controls><source src="invisible-omni-bar-content.mp4"></video></li>
+
+</ul>
+
+<h2>Notes.app, MacOS</h2>
+
+<ul>
+<li>Scroll position randomly jumps</li>
+
+<li>If you quit and restart the app, even when the first note is too long to fit, you can't scroll down until you select a different note and then go back to the first note.</li>
+
+<li>If I have the following block of text, my ability to use {shift + down-arrow} to select blocks of text with the keyboard, stops before selecting the last line — <em>unless</em> I'm starting at lest one character into the first line:</li>
+</ul>
+
+<blockquote><code>
+- [x] Next podcast or continue audio book ("Sherlock Holmes: The Definitive Collection" (Arthur Conan Doyle); Langsam gesprochene Nachrichten | Audios | DW Deutsch lernen (1 item); Easy German: Learn German with native speakers | Deutsch lernen mit Muttersprachlern (
+- [ ] 
+
+</code></blockquote>
+
+<ul>
+<li>Checklists. Select one item <em>without</em> any text (spaces count as text) by going backwards, copy-paste within app to confirm that this works, try pasting in BBEdit and it's just a newline. Add a space in Notes, repeat, and you get the markdown for an un-checked checklist. Select by going forwards, copy-paste within the app still works, but pasting to BBEdit <em>does</em> get the markdown.</li></ul>
+
+<h2>Mail.app, MacOS</h2>
+
+<ul>
+<li>Unread emails do not always appear in the "Unread" Smart Mailbox</li>
+
+<li>Flagged emails do not always appear in the "Flagged" Smart Mailbox</li>
+</ul>
