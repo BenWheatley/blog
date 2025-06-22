@@ -93,7 +93,7 @@ table {
     margin-bottom: 20px;
 }
 
-iframe, img {
+iframe, img, video {
     max-width: min(80vw, 100%);
 }
 
@@ -123,4 +123,17 @@ pre {
 	padding: 5px;
 	border: 5px solid green;
 	border-radius: 10px;
+}
+
+.image-collection {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.image-collection img {
+	height: 200px;
+	width: auto;
+	object-fit: cover;
+	flex: none;
 }
