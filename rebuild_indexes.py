@@ -4,6 +4,7 @@
 def main():
 	import os
 	import re
+	import html
 	
 	entries = []
 	categories = {}
@@ -32,26 +33,26 @@ def main():
 						index_link = (html_link, md_link)
 						
 						categories_here = []
-						categories_match = re.search(r'<p>Categories: (.+?)</p>', content)
+						categories_match = re.search(r'<p>Categories:\s*(.+?)</p>', content, re.DOTALL)
 						if categories_match:
-							categories_here = categories_match.group(1).split(', ')
-							for category in categories_here:
-								if category in categories:
-									categories[category] += [index_link]
-								else:
-									categories[category] = [index_link]
+							category_links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", categories_match.group(1), re.DOTALL)
+							categories_here = []
+							for fragment_id, visible_text in category_links:
+								key = html.unescape(visible_text.strip())
+								categories_here.append(key)
+								categories.setdefault(key, []).append(index_link)
 						else:
 							print(f"didn't find categories for {path}")
 						
 						tags_here = []
-						tags_match = re.search(r'<p>Tags: (.+?)</p>', content)
+						tags_match = re.search(r'<p>Tags:\s*(.+?)</p>', content, re.DOTALL)
 						if tags_match:
-							tags_here = tags_match.group(1).split(', ')
-							for tag in tags_here:
-								if tag in tags:
-									tags[tag] += [index_link]
-								else:
-									tags[tag] = [index_link]
+							tag_links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", tags_match.group(1), re.DOTALL)
+							tags_here = []
+							for fragment_id, visible_text in tag_links:
+								key = html.unescape(visible_text.strip())
+								tags_here.append(key)
+								tags.setdefault(key, []).append(index_link)
 						else:
 							print(f"didn't find tags for {path}")
 						
@@ -98,15 +99,11 @@ def main():
 	def create_collection(file_name, data, html_template_file_name):
 		with open(f"{file_name}.md", "w") as index_file_md, open(f"{file_name}.html", "w") as index_file_html, open(html_template_file_name, "r") as html_template_file:
 			index_content_html = ""
-			sorted_links = sorted(data.keys(), key=lambda x: x.lower())
-			for link in sorted_links:
-				search_result = re.search(r'>(.*)<', link)
-				if not search_result:
-					continue
-				keyword = search_result.group(1)
+			sorted_links = sorted(data.items(), key=lambda x: x[0].lower())
+			for keyword, entries in sorted_links:
 				index_file_md.write(f"\n### {keyword}\n\n")
 				index_content_html += f"<h3 id='{keyword}'>{keyword}</h3>\n\n<ul>\n"
-				for item in data[link]:
+				for item in entries:
 					index_file_md.write(f"* {item[1]}\n")
 					index_content_html += f"<li>{item[0]}</li>\n"
 				index_content_html += f"</ul>\n\n"
