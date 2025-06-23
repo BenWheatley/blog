@@ -20,6 +20,9 @@
 
 ### AGI
 
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### AI
@@ -28,8 +31,14 @@
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
+* [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [The end of human labour is inevitable, here's why (2017/11/17)](2017/11/17-11.36.34.html)
 * [Why do people look by touching? (2017/07/27)](2017/07/27-16.12.35.html)
@@ -48,6 +57,10 @@
 * [Homeopathic solutions to the Fermi paradox (2019/01/07)](2019/01/07-21.22.07.html)
 * [Memetic monocultures (2019/12/30)](2019/12/30-18.46.50.html)
 
+### Alignment
+
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
+
 ### Alzheimer's
 
 * [Alzheimer's (2018/01/31)](2018/01/31-11.26.08.html)
@@ -62,12 +75,17 @@
 
 ### arguments
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 
 ### Artificial intelligence
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### Asperger’s
@@ -87,6 +105,7 @@
 ### Bayesian
 
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 * [Dynamic range of Bayesian thought (2018/08/05)](2018/08/05-05.24.51.html)
 
@@ -124,12 +143,14 @@
 
 ### bitcoin
 
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [Hyperinflation in the attention economy: what succeeds adverts? (2017/11/21)](2017/11/21-22.11.35.html)
 * [Anatomy of a scam, and LiveJournal's lost passwords (2018/08/09)](2018/08/09-15.24.47.html)
 
 ### black swan
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [Morality, thy discount is hyperbolic (2020/01/08)](2020/01/08-21.46.38.html)
 
 ### Boltzmann brains
@@ -153,6 +174,7 @@
 
 ### brains
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
 * [Ohne Kaffee (2020/03/17)](2020/03/17-16.23.52.html)
 * [Hypothesise first, test later (2020/03/02)](2020/03/02-09.29.34.html)
@@ -170,6 +192,7 @@
 
 ### business
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [Utility function of meetings (2018/01/29)](2018/01/29-13.27.12.html)
 
 ### Bussard
@@ -207,7 +230,9 @@
 
 ### Coding
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Being embarrassed by your old work is a sign you've learned things (2017/09/15)](2017/09/15-22.58.06.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
@@ -222,6 +247,7 @@
 
 ### cognitive bias
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
 
 ### cognitive dissonance
@@ -234,6 +260,8 @@
 
 ### comparisons
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
+* [Eiron Merton (2024/04/07)](2024/04/07-12.47.14.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
 
 ### conditional probability
@@ -247,6 +275,10 @@
 * [Hypothesise first, test later (2020/03/02)](2020/03/02-09.29.34.html)
 * [How would you know whether an A.I. was a person or not? (2018/06/17)](2018/06/17-23.09.28.html)
 
+### Copyright
+
+* [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
+
 ### crime
 
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
@@ -254,7 +286,12 @@
 
 ### cryptocurrency
 
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [Hyperinflation in the attention economy: what succeeds adverts? (2017/11/21)](2017/11/21-22.11.35.html)
+
+### cryptography
+
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 
 ### debate
 
@@ -288,9 +325,14 @@
 
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [Mistakes (2020/05/31)](2020/05/31-20.56.15.html)
 * [Post-scarcity (2020/06/10)](2020/06/10-20.30.07.html)
 * [Open borders (2018/08/28)](2018/08/28-11.02.41.html)
+
+### Education
+
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
 
 ### electrically confined fusion reactor
 
@@ -361,14 +403,14 @@
 
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
 
+### fusion
+
+* [SciFi: The unexpected problems with gravity (2021/07/17)](2021/07/17-12.04.34.html)
+
 ### fusion reactors
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [Electrodynamic Lagrange points and fusion reactors (2019/05/31)](2019/05/31-12.31.17.html)
-
-### fusion
-
-* [SciFi: The unexpected problems with gravity (2021/07/17)](2021/07/17-12.04.34.html)
 
 ### future of humanity
 
@@ -392,6 +434,7 @@
 * [No, a black hole can’t be used as a rocket (2022/05/14)](2022/05/14-17.06.59.html)
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 
 ### gender
 
@@ -468,6 +511,10 @@
 
 * [How big might real wormholes be? (2021/07/31)](2021/07/31-13.37.34.html)
 
+### Interpretability
+
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
+
 ### iOS
 
 * [iOS or Android? (2017/06/15)](2017/06/15-00.03.36.html)
@@ -504,6 +551,10 @@
 
 * [Self-teaching | Selbstlernen (2018/10/16)](2018/10/16-17.00.58.html)
 
+### Learning
+
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
+
 ### leave
 
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
@@ -511,6 +562,7 @@
 ### links
 
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [History, according to the British (2019/07/12)](2019/07/12-10.51.01.html)
 * [Homeopathic solutions to the Fermi paradox (2019/01/07)](2019/01/07-21.22.07.html)
 * [Memetic monocultures (2019/12/30)](2019/12/30-18.46.50.html)
@@ -518,6 +570,7 @@
 
 ### list
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [History, according to the British (2019/07/12)](2019/07/12-10.51.01.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
 
@@ -531,7 +584,13 @@
 
 ### machine learning
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
+
+### Machine learning
+
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 
 ### Markov chain
 
@@ -588,12 +647,18 @@
 
 ### Minds
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Hypocrisy (2020/06/09)](2020/06/09-22.21.25.html)
 
 ### misaligned incentives
 
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
+
+### MOOC
+
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
 
 ### Moore's Law
 
@@ -619,6 +684,7 @@
 
 ### Notes
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [XKCD-2152 (2019/05/28)](2019/05/28-07.59.38.html)
 * [The 1950s (ish) according to my mother (2019/02/14)](2019/02/14-21.56.58.html)
@@ -639,18 +705,27 @@
 
 ### Opinion
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Eiron Merton (2024/04/07)](2024/04/07-12.47.14.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Mistakes (2020/05/31)](2020/05/31-20.56.15.html)
 
 ### outside context problem
 
+* ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [Morality, thy discount is hyperbolic (2020/01/08)](2020/01/08-21.46.38.html)
 
 ### paperclip optimiser
 
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [A.I. safety with Democracy? (2018/08/11)](2018/08/11-18.39.44.html)
 
 ### parody
@@ -667,6 +742,9 @@
 
 ### Philosophy
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Dynamic range of Bayesian thought (2018/08/05)](2018/08/05-05.24.51.html)
 * [Unlearnable (2018/06/26)](2018/06/26-11.32.27.html)
 
@@ -689,6 +767,7 @@
 ### Politics
 
 * [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
@@ -718,7 +797,9 @@
 
 ### Programming
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Being embarrassed by your old work is a sign you've learned things (2017/09/15)](2017/09/15-22.58.06.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
@@ -735,6 +816,7 @@
 
 ### Psychology
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
 
 ### puerile
@@ -752,6 +834,8 @@
 
 ### questions
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [Baryon asymmetry (2021/02/09)](2021/02/09-21.42.43.html)
 * [How big might real wormholes be? (2021/07/31)](2021/07/31-13.37.34.html)
 * [To believe falsely (2020/04/15)](2020/04/15-07.34.01.html)
@@ -764,14 +848,22 @@
 
 ### rationality
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 
+### Rationality
+
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
+
 ### reasoning
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
 
 ### reblogging
@@ -815,15 +907,6 @@
 * [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
 * [Falcon 9 to scale (2017/06/06)](2017/06/06-11.42.15.html)
 
-### Science Fiction
-
-* [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
-* [Megastructures (2017/01/03)](2017/01/03-14.50.50.html)
-* [Sapiens Plurum contest entry (2019/07/30)](2019/07/30-16.27.32.html)
-* [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
-* [Trek head-cannon (2020/06/27)](2020/06/27-22.51.46.html)
-* [Mote of smartdust (2018/02/16)](2018/02/16-12.30.04.html)
-
 ### Science
 
 * [Not a Singularity but an Event Horizon (2022/09/20)](2022/09/20-18.35.10.html)
@@ -834,6 +917,15 @@
 * [Dynamic range of Bayesian thought (2018/08/05)](2018/08/05-05.24.51.html)
 * [Mathematical Universe v. Boltzmann Brains (2018/08/26)](2018/08/26-08.28.24.html)
 * [Alzheimer's (2018/01/31)](2018/01/31-11.26.08.html)
+
+### Science Fiction
+
+* [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
+* [Megastructures (2017/01/03)](2017/01/03-14.50.50.html)
+* [Sapiens Plurum contest entry (2019/07/30)](2019/07/30-16.27.32.html)
+* [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
+* [Trek head-cannon (2020/06/27)](2020/06/27-22.51.46.html)
+* [Mote of smartdust (2018/02/16)](2018/02/16-12.30.04.html)
 
 ### SETI
 
@@ -860,7 +952,9 @@
 
 ### software engineers
 
+* [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
 
 ### space
@@ -890,6 +984,10 @@
 * [Trek head-cannon (2020/06/27)](2020/06/27-22.51.46.html)
 * [Headcannon (2018/06/27)](2018/06/27-14.38.35.html)
 
+### STEM
+
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
+
 ### stories
 
 * [Hieroglyphic poetry, modern and ancient (2022/05/31)](2022/05/31-18.46.16.html)
@@ -918,6 +1016,7 @@
 ### Technocracy
 
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
+* [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [The worst form of government except for all the others (2020/01/16)](2020/01/16-15.06.16.html)
 
 ### Technological Singularity
@@ -927,6 +1026,7 @@
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
@@ -971,6 +1071,7 @@
 
 ### theory of mind
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 * [Sufficient technology (2020/03/06)](2020/03/06-09.03.06.html)
 * [Hypothesise first, test later (2020/03/02)](2020/03/02-09.29.34.html)
@@ -978,6 +1079,7 @@
 
 ### thought
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Dynamic range of Bayesian thought (2018/08/05)](2018/08/05-05.24.51.html)
 
 ### UK
@@ -1022,16 +1124,17 @@
 
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 
-### withdrawal symptoms
+### withdrawal
 
 * [Ohne Kaffee (2020/03/17)](2020/03/17-16.23.52.html)
 
-### withdrawal
+### withdrawal symptoms
 
 * [Ohne Kaffee (2020/03/17)](2020/03/17-16.23.52.html)
 
 ### word2vec
 
+* [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Automated detection of propaganda and cultural bias (2017/06/23)](2017/06/23-16.21.26.html)
 
 ### wormhole
@@ -1048,6 +1151,9 @@
 
 ### x-risk
 
+* [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Morality, thy discount is hyperbolic (2020/01/08)](2020/01/08-21.46.38.html)
 
 ### xkcd

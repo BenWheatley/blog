@@ -3,9 +3,12 @@
 
 * ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
 * [Newspapers, copyright, artists, and GenAI (2024/03/19)](2024/03/19-14.53.05.html)
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
+* [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
 * [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Would this be a solution to the problem of literal-Genie omniscient AIs? (2017/08/09)](2017/08/09-19.21.27.html)
 * [Speed of machine intelligence (2018/03/16)](2018/03/16-10.44.18.html)
 * [Thought crime in 2084 (2018/09/22)](2018/09/22-22.10.09.html)
@@ -66,6 +69,7 @@
 ### Humour
 
 * [AGI to match open tags except XHTML self-contained tags (2022/12/13)](2022/12/13-20.26.24.html)
+* [Eiron Merton (2024/04/07)](2024/04/07-12.47.14.html)
 * [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
 * [Tasteless humour (2017/05/30)](2017/05/30-23.46.24.html)
 * [The Totally Credible Heroes (2019/08/12)](2019/08/12-18.32.01.html)
@@ -80,6 +84,7 @@
 
 ### mathematics
 
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
 * [SciFi: The unexpected problems with gravity (2021/07/17)](2021/07/17-12.04.34.html)
 
 ### Minds
@@ -107,7 +112,10 @@
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
+* [Eiron Merton (2024/04/07)](2024/04/07-12.47.14.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Head cannon: Wallace &amp; Grommit (2023/02/20)](2023/02/20-19.25.29.html)
 * [Oh no (2019/10/25)](2019/10/25-16.51.33.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
@@ -129,6 +137,7 @@
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Dot product morality (2019/05/25)](2019/05/25-15.09.10.html)
 * [Memetic monocultures (2019/12/30)](2019/12/30-18.46.50.html)
 * [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
@@ -150,6 +159,7 @@
 
 ### Politics
 
+* [Eiron Merton (2024/04/07)](2024/04/07-12.47.14.html)
 * [Spendable votes (2024/04/24)](2024/04/24-10.42.51.html)
 * [Crypto-[graphy|currency]: two cultures (2024/05/25)](2024/05/25-12.04.31.html)
 * [Andrew Neil interviews Theresa Maykov-bot (2017/05/23)](2017/05/23-13.23.15.html)
@@ -176,6 +186,7 @@
 
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Finding the smallest value in a Swift array of Integers (2018/10/26)](2018/10/26-21.05.33.html)
 * [Utility function of meetings (2018/01/29)](2018/01/29-13.27.12.html)
 
@@ -239,6 +250,8 @@
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
+* [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Executable images (2017/04/10)](2017/04/10-22.55.43.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
 * [Hyperinflation in the attention economy: what succeeds adverts? (2017/11/21)](2017/11/21-22.11.35.html)
@@ -257,6 +270,7 @@
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [The conservative-radical split over AI (2023/11/19)](2023/11/19-19.53.55.html)
 * [Railgun notes (2017/04/10)](2017/04/10-18.16.20.html)
 * [You won't believe how fast transistors are (2017/11/26)](2017/11/26-22.25.50.html)
