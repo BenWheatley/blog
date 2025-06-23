@@ -190,9 +190,14 @@
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
 * [Brexit RPG (2018/12/12)](2018/12/12-21.27.56.html)
 
+### bugs
+
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
+
 ### business
 
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [Utility function of meetings (2018/01/29)](2018/01/29-13.27.12.html)
 
 ### Bussard
@@ -231,6 +236,7 @@
 ### Coding
 
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
@@ -517,6 +523,7 @@
 
 ### iOS
 
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [iOS or Android? (2017/06/15)](2017/06/15-00.03.36.html)
 
 ### iPhone
@@ -571,6 +578,7 @@
 ### list
 
 * ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [History, according to the British (2019/07/12)](2019/07/12-10.51.01.html)
 * [Medical-Computer analogies (2019/08/26)](2019/08/26-18.21.39.html)
 
@@ -586,11 +594,8 @@
 
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
-* [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
-
-### Machine learning
-
 * [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
+* [Arguments, hill climbing, the wisdom of the crowds (2021/12/27)](2021/12/27-11.48.06.html)
 
 ### Markov chain
 
@@ -685,6 +690,8 @@
 ### Notes
 
 * ["It isn't magic" (2025/06/22)](2025/06/22-13.21.36.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [Timeline of the near future (2024/03/23)](2024/03/23-17.24.34.html)
 * [XKCD-2152 (2019/05/28)](2019/05/28-07.59.38.html)
 * [The 1950s (ish) according to my mother (2019/02/14)](2019/02/14-21.56.58.html)
@@ -798,6 +805,7 @@
 ### Programming
 
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Just because you can, doesn't mean you should (2017/05/19)](2017/05/19-23.09.23.html)
@@ -851,13 +859,10 @@
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
 * [There Are Such Things As Bad Questions (2024/11/18)](2024/11/18-13.16.17.html)
+* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 * [Blasphemy, LARPing, mandatory vaccination (2021/11/11)](2021/11/11-14.32.26.html)
 * [Baysean Brexit (2018/09/18)](2018/09/18-09.25.28.html)
 * [One person's nit is another's central pillar (2018/09/21)](2018/09/21-11.29.23.html)
-
-### Rationality
-
-* [One AI to Rule Them All / One AI to Bind Them / One AI to Bring Them All / And in the Algorithm Bind Them (2024/12/16)](2024/12/16-17.47.07.html)
 
 ### reasoning
 

@@ -185,6 +185,7 @@
 ### Professional
 
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [The More they Overthink the Plumbing… (2024/04/07)](2024/04/07-21.31.19.html)
 * [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Finding the smallest value in a Swift array of Integers (2018/10/26)](2018/10/26-21.05.33.html)
@@ -250,6 +251,7 @@
 * [An end to copyright? (2022/10/09)](2022/10/09-19.33.04.html)
 * [LaMDA, Turing Test, sentience (2022/06/18)](2022/06/18-18.00.15.html)
 * [It was the best of code, it was the worst of code (2025/02/26)](2025/02/26-14.04.07.html)
+* [Testing (2025/06/19)](2025/06/19-15.56.44.html)
 * [A Brilliant end (2024/03/11)](2024/03/11-12.00.16.html)
 * [Food-based coding metaphors (2024/07/13)](2024/07/13-17.10.31.html)
 * [Executable images (2017/04/10)](2017/04/10-22.55.43.html)
