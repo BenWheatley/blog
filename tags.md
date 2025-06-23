@@ -590,7 +590,7 @@
 
 * [Headcannon (2018/06/27)](2018/06/27-14.38.35.html)
 
-### machine learning
+### Machine learning
 
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [People are wrong on the internet, AI edition (2024/08/10)](2024/08/10-13.36.05.html)
@@ -854,7 +854,7 @@
 * [Railgun notes (2017/04/10)](2017/04/10-18.16.20.html)
 * [Railgun notes #2 (2017/08/05)](2017/08/05-19.27.26.html)
 
-### rationality
+### Rationality
 
 * [Unthinkable thoughts (2024/04/30)](2024/04/30-13.54.02.html)
 * [Binary humans, nuanced AI (2024/04/29)](2024/04/29-14.44.44.html)
