@@ -27,15 +27,23 @@ def main():
 		
 		for _, visible_text in links:
 			raw_key = html.unescape(visible_text.strip())
-			normalized_key = raw_key.lower()
-			canonical_key = raw_key
+			
+			# Normalization key: lowercase + strip + replace common dividers
+			normalized_key = re.sub(r'[\s_-]+', ' ', raw_key.strip().lower())
+			
+			# Store raw version to preserve original capitalisation
+			canonical_display = (
+				raw_key if re.match(r'^[A-Z0-9 ]+$', raw_key.strip())  # likely an initialism
+				else raw_key.strip().capitalize()
+			)
 			
 			if normalized_key not in storage_dict:
-				storage_dict[normalized_key] = (canonical_key, [index_link])
-			else:
-				storage_dict[normalized_key][1].append(index_link)
+				storage_dict[normalized_key] = (set(), [])  # set of visible variants, list of index links
 			
-			results.append(canonical_key)
+			storage_dict[normalized_key][0].add(raw_key.strip())
+			storage_dict[normalized_key][1].append(index_link)
+			
+			results.append(raw_key.strip())  # return the original tag as used
 		
 		return results
 	
@@ -61,7 +69,6 @@ def main():
 						
 						categories_here = extract_metadata(content, "Categories", index_link, categories, path)
 						tags_here = extract_metadata(content, "Tags", index_link, tags, path)
-						print("Tags found:", tags)
 						
 						entries.append({'link': link, 'date': date, 'title': title, 'categories': categories_here, 'tags': tags_here})
 	
@@ -109,20 +116,30 @@ def main():
 			 open(html_template_file_name, "r") as html_template_file:
 			
 			index_content_html = ""
-			sorted_keys = sorted(data.keys())
 			
-			for key in sorted_keys:
-				canonical_name, posts = data[key]
-				anchor = canonical_name.lower().replace(" ", "_")
+			for normalized_key in sorted(data.keys()):
+				variants, entries = data[normalized_key]
+				# Pick a display label: use the first variant that looks like an initialism if present, else sentence-case
+				def choose_display_label(vs):
+					for v in vs:
+						if re.match(r'^[A-Z0-9 ]+$', v):  # all caps → initialism
+							return v
+					return sorted(vs)[0].capitalize()
 				
-				index_file_md.write(f"\n### {canonical_name}\n\n")
-				index_content_html += f"<h3 id='{anchor}'>{canonical_name}</h3>\n\n<ul>\n"
+				display_label = choose_display_label(variants)
 				
-				for html_link, md_link in posts:
-					index_file_md.write(f"* {md_link}\n")
-					index_content_html += f"<li>{html_link}</li>\n"
+				# Add HTML anchors — reserve normalized_key for header
+				alternate_anchors = sorted(set(variants) - {normalized_key})
+				for anchor_id in alternate_anchors:
+					index_content_html += f"<a id='{anchor_id}'></a>\n"
 				
-				index_content_html += "</ul>\n\n"
+				index_file_md.write(f"\n### {display_label}\n\n")
+				index_content_html += f"<h3 id='{normalized_key}'>{display_label}</h3>\n<ul>\n"
+			
+				for item in entries:
+					index_file_md.write(f"* {item[1]}\n")
+					index_content_html += f"<li>{item[0]}</li>\n"
+				index_content_html += f"</ul>\n\n"
 			
 			template_content = html_template_file.read()
 			html_out = template_content.replace(
