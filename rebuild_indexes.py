@@ -5,6 +5,10 @@ def main():
 	import os
 	import re
 	import html
+	import logging
+	
+	logging.basicConfig(level=logging.INFO)
+	logger = logging.getLogger(__name__)
 	
 	entries = []
 	categories = {}
@@ -15,7 +19,7 @@ def main():
 	def extract_metadata(content, label, index_link, storage_dict, path):
 		match = re.search(rf"<p>{label}:(.*?)</p>", content, re.DOTALL | re.IGNORECASE)
 		if not match:
-			print(f"didn't find {label.lower()} in content for {path}")
+			logger.warning(f"didn't find {label.lower()} in content for {path}")
 			return []
 		
 		links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", match.group(1), re.DOTALL)
