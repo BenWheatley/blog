@@ -12,6 +12,29 @@ def main():
 	
 	month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 	
+	def extract_metadata(content, label, index_link, storage_dict, path):
+		match = re.search(rf"<p>{label}:(.*?)</p>", content, re.DOTALL | re.IGNORECASE)
+		if not match:
+			print(f"didn't find {label.lower()} in content for {path}")
+			return []
+		
+		links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", match.group(1), re.DOTALL)
+		results = []
+		
+		for _, visible_text in links:
+			raw_key = html.unescape(visible_text.strip())
+			normalized_key = raw_key.lower()
+			canonical_key = raw_key
+			
+			if normalized_key not in storage_dict:
+				storage_dict[normalized_key] = (canonical_key, [index_link])
+			else:
+				storage_dict[normalized_key][1].append(index_link)
+			
+			results.append(canonical_key)
+		
+		return results
+	
 	for root, dirs, files in os.walk('./'):
 		for file in files:
 			if file.endswith('.html'):
@@ -32,29 +55,9 @@ def main():
 						md_link = f"[{title} ({date})]({link})"
 						index_link = (html_link, md_link)
 						
-						categories_here = []
-						categories_match = re.search(r'<p>Categories:\s*(.+?)</p>', content, re.DOTALL)
-						if categories_match:
-							category_links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", categories_match.group(1), re.DOTALL)
-							categories_here = []
-							for fragment_id, visible_text in category_links:
-								key = html.unescape(visible_text.strip())
-								categories_here.append(key)
-								categories.setdefault(key, []).append(index_link)
-						else:
-							print(f"didn't find categories for {path}")
-						
-						tags_here = []
-						tags_match = re.search(r'<p>Tags:\s*(.+?)</p>', content, re.DOTALL)
-						if tags_match:
-							tag_links = re.findall(r"<a [^>]*?href=['\"](?:.*?)#(.*?)['\"][^>]*?>(.*?)</a>", tags_match.group(1), re.DOTALL)
-							tags_here = []
-							for fragment_id, visible_text in tag_links:
-								key = html.unescape(visible_text.strip())
-								tags_here.append(key)
-								tags.setdefault(key, []).append(index_link)
-						else:
-							print(f"didn't find tags for {path}")
+						categories_here = extract_metadata(content, "Categories", index_link, categories, path)
+						tags_here = extract_metadata(content, "Tags", index_link, tags, path)
+						print("Tags found:", tags)
 						
 						entries.append({'link': link, 'date': date, 'title': title, 'categories': categories_here, 'tags': tags_here})
 	
@@ -97,18 +100,31 @@ def main():
 		output_file_html.write(html_out)
 	
 	def create_collection(file_name, data, html_template_file_name):
-		with open(f"{file_name}.md", "w") as index_file_md, open(f"{file_name}.html", "w") as index_file_html, open(html_template_file_name, "r") as html_template_file:
+		with open(f"{file_name}.md", "w") as index_file_md, \
+			 open(f"{file_name}.html", "w") as index_file_html, \
+			 open(html_template_file_name, "r") as html_template_file:
+			
 			index_content_html = ""
-			sorted_links = sorted(data.items(), key=lambda x: x[0].lower())
-			for keyword, entries in sorted_links:
-				index_file_md.write(f"\n### {keyword}\n\n")
-				index_content_html += f"<h3 id='{keyword}'>{keyword}</h3>\n\n<ul>\n"
-				for item in entries:
-					index_file_md.write(f"* {item[1]}\n")
-					index_content_html += f"<li>{item[0]}</li>\n"
-				index_content_html += f"</ul>\n\n"
+			sorted_keys = sorted(data.keys())
+			
+			for key in sorted_keys:
+				canonical_name, posts = data[key]
+				anchor = canonical_name.lower().replace(" ", "_")
+				
+				index_file_md.write(f"\n### {canonical_name}\n\n")
+				index_content_html += f"<h3 id='{anchor}'>{canonical_name}</h3>\n\n<ul>\n"
+				
+				for html_link, md_link in posts:
+					index_file_md.write(f"* {md_link}\n")
+					index_content_html += f"<li>{html_link}</li>\n"
+				
+				index_content_html += "</ul>\n\n"
+			
 			template_content = html_template_file.read()
-			html_out = template_content.replace('<div class="content"></div>', f'<div class="content">{index_content_html}</div>')
+			html_out = template_content.replace(
+				'<div class="content"></div>',
+				f'<div class="content">{index_content_html}</div>'
+			)
 			index_file_html.write(html_out)
 	
 	# Writing unique categories and tags to files
