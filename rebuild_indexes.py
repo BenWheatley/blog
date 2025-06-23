@@ -119,12 +119,9 @@ def main():
 			
 			for normalized_key in sorted(data.keys()):
 				variants, entries = data[normalized_key]
-				# Pick a display label: use the first variant that looks like an initialism if present, else sentence-case
 				def choose_display_label(vs):
-					for v in vs:
-						if re.match(r'^[A-Z0-9 ]+$', v):  # all caps → initialism
-							return v
-					return sorted(vs)[0].capitalize()
+					# Pick a display label: the one with the most capital letters, to catch both "SpaceX" and "Artificial Intelligence", prefer "NASA" over "Nasa" etc.
+					return max(vs, key=lambda v: (sum(1 for c in v if c.isupper()), v.lower()))
 				
 				display_label = choose_display_label(variants)
 				
