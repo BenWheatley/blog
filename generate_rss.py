@@ -124,7 +124,14 @@ def main():
 	import io
 	output = io.BytesIO()
 	tree.write(output, encoding='utf-8', xml_declaration=True)
-	new_content = output.getvalue().decode('utf-8')
+	xml_content = output.getvalue().decode('utf-8')
+
+	# Add CSS stylesheet reference after XML declaration
+	xml_lines = xml_content.split('\n', 1)
+	if len(xml_lines) == 2:
+		new_content = xml_lines[0] + '\n<?xml-stylesheet type="text/css" href="rss.css"?>\n' + xml_lines[1]
+	else:
+		new_content = xml_content
 
 	# Calculate hash of new content
 	new_hash = hashlib.sha256(new_content.encode('utf-8')).hexdigest()
