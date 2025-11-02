@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/css" href="rss.css"?>
 <rss version="2.0">
   <channel>
     <title>Ben Wheatley's Blog</title>
     <link>https://benwheatley.github.io/blog/</link>
     <description>A blog about technology, AI, and various other topics</description>
-    <language>en-us</language>
+    <language>en-gb</language>
     <lastBuildDate>Sun, 22 Jun 2025 13:21:36 +0000</lastBuildDate>
     <item>
       <title>"It isn't magic"</title>
