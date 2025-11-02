@@ -9,7 +9,7 @@ def main():
 	import hashlib
 
 	# RSS feed metadata
-	FEED_TITLE = "Ben Wheatley's Blog"
+	FEED_TITLE = "Blog - Kitsune Software"
 	FEED_LINK = "https://benwheatley.github.io/blog/"
 	FEED_DESCRIPTION = "A blog about technology, AI, and various other topics"
 	FEED_LANGUAGE = "en-gb"
