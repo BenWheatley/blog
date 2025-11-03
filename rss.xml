@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type="text/css" href="rss.css"?>
-<rss version="2.0">
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ben Wheatley's Blog</title>
+    <title>Blog - Kitsune Software</title>
     <link>https://benwheatley.github.io/blog/</link>
     <description>A blog about technology, AI, and various other topics</description>
     <language>en-gb</language>
+    <ns0:link href="https://benwheatley.github.io/blog/rss.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>Sun, 22 Jun 2025 13:21:36 +0000</lastBuildDate>
     <item>
       <title>"It isn't magic"</title>
@@ -16,7 +17,7 @@
 People keep saying "AI isn't magic, it's just maths" like this is some kind of gotcha.
 &lt;/p&gt;
 
-&lt;img src="it-is-not-magic.jpg" alt="Triptych in style of Hieronymus Bosch's 'The Garden of Earthly Delights', the left showing a wizard raining fireballs down upon a medieval army, the right showing a Predator drone firing a missile while being remotely operated. Between them are geometric shapes representing magical sigils from the Key of Solomon contrasted with circuit boards" /&gt;
+&lt;img src="https://benwheatley.github.io/blog/2025/06/it-is-not-magic.jpg" alt="Triptych in style of Hieronymus Bosch's 'The Garden of Earthly Delights', the left showing a wizard raining fireballs down upon a medieval army, the right showing a Predator drone firing a missile while being remotely operated. Between them are geometric shapes representing magical sigils from the Key of Solomon contrasted with circuit boards" /&gt;
 
 &lt;p&gt;
 Turning lead into gold isn't the magic of alchemy, it's just &lt;a href="https://en.wikipedia.org/wiki/Nucleosynthesis"&gt;nucleosynthesis&lt;/a&gt;.
@@ -139,8 +140,8 @@ The end of famine in the industrialised world wasn't magic, it was just &lt;a hr
 &lt;p&gt;In "maths notes" mode, decimal points will only be interpreted correctly when they match your locale. If you put a "." in a locale where "," is expected, it &lt;em&gt;strips the separator without warning of syntax errors&lt;/em&gt;, while the other way around it deletes everything to the left of the separator:&lt;/p&gt;
 
 &lt;div class="image-collection"&gt;
-  &lt;img src="note-calc-iphone.jpg" alt="Calculator on iPhone" /&gt;
-  &lt;img src="note-calc-mac.png" alt="Calculator on Mac" /&gt;
+  &lt;img src="https://benwheatley.github.io/blog/2025/06/note-calc-iphone.jpg" alt="Calculator on iPhone" /&gt;
+  &lt;img src="https://benwheatley.github.io/blog/2025/06/note-calc-mac.png" alt="Calculator on Mac" /&gt;
 &lt;/div&gt;
 
 &lt;h2&gt;Photos.app, iOS&lt;/h2&gt;
@@ -158,7 +159,7 @@ The end of famine in the industrialised world wasn't magic, it was just &lt;a hr
 
 &lt;li&gt;Alarm noises ignore bluetooth. Set alarm, connect to bluetooth headphones, play podcast. When alarm goes off, alarm plays out of device and silences audio from headphones.&lt;/li&gt;
 
-&lt;li&gt;&lt;img style="float: right; clear: both;" width="20%" height="20%" src="share-translation.jpeg" alt="Share sheet showing mixed languages" /&gt;Share sheet is mixed language depending on the app. My system is set to English, even though I live in Berlin. Some of my apps are German-language-only, e.g. Obi. I share an item, the apps that Apple suggests are labelled "AirDrop" (en), "Nachrichten" (de), "Mail" (en) etc., while the options are "Kopieren" (de), "Neue Schnellnotiz" (de), "Save to Files" (en), and then a list of my custom shortcuts whose names only exist in English anyway.&lt;/li&gt;
+&lt;li&gt;&lt;img style="float: right; clear: both;" width="20%" height="20%" src="https://benwheatley.github.io/blog/2025/06/share-translation.jpeg" alt="Share sheet showing mixed languages" /&gt;Share sheet is mixed language depending on the app. My system is set to English, even though I live in Berlin. Some of my apps are German-language-only, e.g. Obi. I share an item, the apps that Apple suggests are labelled "AirDrop" (en), "Nachrichten" (de), "Mail" (en) etc., while the options are "Kopieren" (de), "Neue Schnellnotiz" (de), "Save to Files" (en), and then a list of my custom shortcuts whose names only exist in English anyway.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;MacOS itself&lt;/h2&gt;
@@ -182,23 +183,23 @@ Only phone numbers, but (for me) &lt;em&gt;every&lt;/em&gt; phone number. Websit
 &lt;ul&gt;
 &lt;li&gt;Select multiple items from history based on search results. Instead of deleting all selected items in one go, it acts like it's deleting one item, spending 100ms or so creating the list from scratch with one fewer item, then repeating this process.&lt;/li&gt;
 
-&lt;video width="1029" height="734" controls&gt;&lt;source src="slow-delete-safari.mp4" type="video/mp4"&gt;&lt;/video&gt;&lt;/li&gt;
+&lt;video width="1029" height="734" controls&gt;&lt;source src="https://benwheatley.github.io/blog/2025/06/slow-delete-safari.mp4" type="video/mp4"&gt;&lt;/video&gt;&lt;/li&gt;
 
 &lt;li&gt;Translation button. Default location is on the left of the omni-box. However, clicking it in this position causes it to instantly jump to the right side of the omni-box and the popup menu shown is for the "hide distracting items" button that was hidden by the translation button.&lt;/li&gt;
 
-&lt;video width="646" height="283" controls&gt;&lt;source src="translation-button-jump.mp4" type="video/mp4"&gt;&lt;/video&gt;
+&lt;video width="646" height="283" controls&gt;&lt;source src="https://benwheatley.github.io/blog/2025/06/translation-button-jump.mp4" type="video/mp4"&gt;&lt;/video&gt;
 
 &lt;li&gt;Translation. German ⇒ English. Noticed with lists, not clear if limited to lists. Some content deleted by act of translation.&lt;/li&gt;
 
 &lt;li&gt;Mouse over link. Right click to open context window. Hold down alt key to change options. Choose "Open Link in New Private Window". Result: &lt;em&gt;empty&lt;/em&gt; new private window, it does not open the link, just a private window.&lt;/li&gt;
 
-&lt;video width="734" height="447" controls&gt;&lt;source src="new-private-window-fail.mp4" type="video/mp4"&gt;&lt;/video&gt;&lt;/li&gt;
+&lt;video width="734" height="447" controls&gt;&lt;source src="https://benwheatley.github.io/blog/2025/06/new-private-window-fail.mp4" type="video/mp4"&gt;&lt;/video&gt;&lt;/li&gt;
 
 &lt;li&gt;Keeps forgetting that permission has been granted for websites (in my case specifically babbel.com) to use the microphone — including in the middle of a lesson, not just when leaving the site and returning, which is what I'd expect from "ask" option in system settings.&lt;/li&gt;
 
 &lt;li&gt;When opening private browsing windows for the first time, right after using password to unlock them, anything you type into the omni-bar is invisible. The second time, it works.&lt;/li&gt;
 
-&lt;video width="630" height="398" controls&gt;&lt;source src="invisible-omni-bar-content.mp4"&gt;&lt;/video&gt;&lt;/li&gt;
+&lt;video width="630" height="398" controls&gt;&lt;source src="https://benwheatley.github.io/blog/2025/06/invisible-omni-bar-content.mp4"&gt;&lt;/video&gt;&lt;/li&gt;
 
 &lt;/ul&gt;
 
@@ -505,7 +506,7 @@ public:
     &lt;footer&gt;– &lt;a href="https://openai.com/our-structure/"&gt;OpenAI "Our structure"&lt;/a&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;… then you may have a circular definition that never seems to pass, as all the work you automate for electricity becomes so cheap that it &lt;a href="../../2022/10/09-19.33.04.html"&gt;&lt;em&gt;stops being economically worthwhile to so much as pay abject poverty, starvation wages, to a human to write the prompts&lt;/em&gt;&lt;/a&gt; and then it stops being counted towards GDP in the same kind of way that "everyone has free access to Wikipedia" doesn't count towards GDP as if it was everyone buying a copy of Encyclopædia Britannica priced at up to $2000 (as it was in 1980) — if it had done, Wikipedia would have been counted as at least 16 trillion USD of wealth freely given to the world, perhaps more as it is much larger than Britannica ever was.&lt;/p&gt;
+&lt;p&gt;… then you may have a circular definition that never seems to pass, as all the work you automate for electricity becomes so cheap that it &lt;a href="https://benwheatley.github.io/blog/2024/11/../../2022/10/09-19.33.04.html"&gt;&lt;em&gt;stops being economically worthwhile to so much as pay abject poverty, starvation wages, to a human to write the prompts&lt;/em&gt;&lt;/a&gt; and then it stops being counted towards GDP in the same kind of way that "everyone has free access to Wikipedia" doesn't count towards GDP as if it was everyone buying a copy of Encyclopædia Britannica priced at up to $2000 (as it was in 1980) — if it had done, Wikipedia would have been counted as at least 16 trillion USD of wealth freely given to the world, perhaps more as it is much larger than Britannica ever was.&lt;/p&gt;
 
 &lt;p&gt;If LLMs generally are as useful as Wikipedia (I think even just OpenAI's LLMs alone, hallucinations and all, may well have already become that significant) then in the last few years we've seen an 16 trillion USD of new wealth without having any way to account for it.&lt;/p&gt;
 
@@ -606,7 +607,7 @@ public:
 
 &lt;p&gt;But that isn't "destroy humanity". Can it get that bad &lt;em&gt;eventually&lt;/em&gt;? Yes. There are already countless examples of humans doing things that are dangerous, that they don't realise are dangerous, and that when they are told are dangerous, instead of stopping the dangerous thing they file SLAPP lawsuits against the people talking about it, or go on a political campaign about how the thing is good and that the opponents are evil for opposing jobs or whatever. This includes fossil fuels and other sources of greenhouse gasses.&lt;/p&gt;
 
-&lt;figure&gt;&lt;img src="Screenshot 2024-08-10 at 20.38.22.png" alt="A screenshot of search engine results" style="aspect-ratio: 1396/791;" /&gt;&lt;figcaption&gt;&lt;a href="https://duckduckgo.com/?q=fossil+fuel+slapp+lawsuit&amp;ia=web"&gt;When I created the first draft, a search showed Greenpeace boasting they've just defeated a SLAPP case from ENI; mere hours later, the results mentioned the case but not the victory&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;figure&gt;&lt;img src="https://benwheatley.github.io/blog/2024/08/Screenshot%202024-08-10%20at%2020.38.22.png" alt="A screenshot of search engine results" style="aspect-ratio: 1396/791;" /&gt;&lt;figcaption&gt;&lt;a href="https://duckduckgo.com/?q=fossil+fuel+slapp+lawsuit&amp;ia=web"&gt;When I created the first draft, a search showed Greenpeace boasting they've just defeated a SLAPP case from ENI; mere hours later, the results mentioned the case but not the victory&lt;/a&gt;.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Do greenhouse gasses have the potential to be an existential threat? Note that I said "potential" because us switching to renewables is a conditional thing — the right circumstances made us want to, it's not a law of nature that we would have started, and it's not a law of nature we'll even finish this transition.&lt;/p&gt;
@@ -660,7 +661,7 @@ public:
 
 &lt;p&gt;A second point, which is as much of a problem for the original claim as for the counter argument, is that there's a small number of leadership posts compared to the number of people who seek to fill them — you therefore need more than &lt;em&gt;just&lt;/em&gt; high intelligence, you also need resources and luck.&lt;/p&gt;
 
-&lt;p&gt;A brief aside from motivation to resources: an AI planning to take over quickly, could for example be able to get a lot of resources quickly by straight up stealing/hacking those resources. In the present world, that looks more like bitcoin-enabled blackmail or password sniffing than &lt;a href="https://arxiv.org/pdf/2007.01114"&gt;suborning insecure industrial equipment&lt;/a&gt; — but the world is rapidly changing, and &lt;a href="../03/23-17.24.34.html"&gt;the only thing I can be confident claiming about 2034&lt;/a&gt; is that it won't look like today. For example, if Musk were to actually sell those humanoid robots for $10k each, and — just as our society was transformed to fit around cars and later smartphones — our society was shaped to assume and then require each family had one… and then they all got hacked into on the same day (&lt;a href="https://en.wikipedia.org/w/index.php?title=2024_CrowdStrike_incident&amp;oldid=1239550852"&gt;don't say that won't happen, critical software SNAFUs are as common as Tsunamis&lt;/a&gt;). And if the hypothetical AI that is doing this, is the AI Musk is trying to have built, then it's likely to not even need a hack to gain control: a simple software update, like the ones Tesla already uses for the car's self-drive AI, is sufficient.&lt;/p&gt;
+&lt;p&gt;A brief aside from motivation to resources: an AI planning to take over quickly, could for example be able to get a lot of resources quickly by straight up stealing/hacking those resources. In the present world, that looks more like bitcoin-enabled blackmail or password sniffing than &lt;a href="https://arxiv.org/pdf/2007.01114"&gt;suborning insecure industrial equipment&lt;/a&gt; — but the world is rapidly changing, and &lt;a href="https://benwheatley.github.io/blog/2024/08/../03/23-17.24.34.html"&gt;the only thing I can be confident claiming about 2034&lt;/a&gt; is that it won't look like today. For example, if Musk were to actually sell those humanoid robots for $10k each, and — just as our society was transformed to fit around cars and later smartphones — our society was shaped to assume and then require each family had one… and then they all got hacked into on the same day (&lt;a href="https://en.wikipedia.org/w/index.php?title=2024_CrowdStrike_incident&amp;oldid=1239550852"&gt;don't say that won't happen, critical software SNAFUs are as common as Tsunamis&lt;/a&gt;). And if the hypothetical AI that is doing this, is the AI Musk is trying to have built, then it's likely to not even need a hack to gain control: a simple software update, like the ones Tesla already uses for the car's self-drive AI, is sufficient.&lt;/p&gt;
 
 &lt;p&gt;But, motivation? The fear amongst safety researchers is predominantly "instrumental goals": goals which are useful no matter what else you're doing. Being powerful is one of them. It's not that an AI specifically wants power for its own right, it's just that power gets you basically everything else: Do you want to end the hunting of whales? Better have an navy to be able to sink the whaling ships; Do you want all the stamps? You need the power to send in the police to search and seize the private collections that weren't for sale; &lt;a href="https://en.wikipedia.org/wiki/Bhopal_disaster"&gt;Do you want to build a chemical plant to create a pesticide by reacting methylamine with phosgene to produce methyl isocyanate that is then reacted with 1-naphthol to produce the end product&lt;/a&gt;? Oh, but what to do about all those protestors…&lt;/p&gt;
 
@@ -736,7 +737,7 @@ public:
 
 &lt;p&gt;&lt;strong&gt;Coca-coda&lt;/strong&gt; — just as soda is almost entirely synthetic, not recommended by dietary experts, and yet still one of the most popular drinks on the planet, so too is AI-generated code almost entirely synthetic, disfavoured by experts, and extremely popular.&lt;/p&gt;
 
-&lt;figure style="max-width: 392px;"&gt;&lt;img src="Screenshot 2024-07-13 at 18.35.17.png" style="aspect-ratio: 784/558; width: 100%;" /&gt;&lt;figcaption&gt;This AI-generated image won't put you off AI-generated code any more than the real ingredients list will put you off any real brand of soda.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure style="max-width: 392px;"&gt;&lt;img src="https://benwheatley.github.io/blog/2024/07/Screenshot%202024-07-13%20at%2018.35.17.png" style="aspect-ratio: 784/558; width: 100%;" /&gt;&lt;figcaption&gt;This AI-generated image won't put you off AI-generated code any more than the real ingredients list will put you off any real brand of soda.&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;Allotment code&lt;/strong&gt; is where the consumer is also the creator, and they do it more for fun than anything else — personal projects, like everything on my own GitHub page.&lt;/p&gt;
 
@@ -836,8 +837,7 @@ public:
       <link>https://benwheatley.github.io/blog/2024/04/29-14.44.44.html</link>
       <description>&lt;h1&gt;Binary humans, nuanced AI&lt;/h1&gt;
 
-&lt;p&gt;For my whole life, the meme was that computers had to be literal, and that only humans could be subtle and nuanced. It is therefore somewhat ironic (or, to go back to the ancient Greek origin of the word "irony", &lt;a href="https://en.wikipedia.org/wiki/Alazon"&gt;Alazṓnic&lt;/a&gt;) that now we have an AI so good that &lt;a href='
-https://www.google.com/search?client=safari&amp;rls=en&amp;q="was+this+written+by+chatgpt?"'&gt;we're becoming increasingly unsure if the words we see were written by human or machine&lt;/a&gt;, that the question of AI &lt;em&gt;safety&lt;/em&gt; is one where so many people have so much less nuance than even the existing large language models.&lt;/p&gt;
+&lt;p&gt;For my whole life, the meme was that computers had to be literal, and that only humans could be subtle and nuanced. It is therefore somewhat ironic (or, to go back to the ancient Greek origin of the word "irony", &lt;a href="https://en.wikipedia.org/wiki/Alazon"&gt;Alazṓnic&lt;/a&gt;) that now we have an AI so good that &lt;a href="https://benwheatley.github.io/blog/2024/04/%0Ahttps%3A//www.google.com/search%3Fclient%3Dsafari%26rls%3Den%26q%3D"was+this+written+by+chatgpt?"'&gt;we're becoming increasingly unsure if the words we see were written by human or machine&lt;/a&gt;, that the question of AI &lt;em&gt;safety&lt;/em&gt; is one where so many people have so much less nuance than even the existing large language models.&lt;/p&gt;
 
 &lt;p&gt;"Is AI safe?" isn't even a well-formed question when asked in isolation. Indeed, for all X, "[is/are] ${X} safe?" are not well-formed questions: "Are cars safe?" depends on the car, the driver, the roads themselves, and the other road users. "Are planes safe?" depends on the plane, the pilot, the weather, the maintenance, if you're flying too close to a warship where either you or they have the wrong kind of IFF system, and if you get hijacked. "Are chemicals safe?" depends on the chemical (&lt;a href="https://en.wikipedia.org/wiki/Hydrogen_peroxide"&gt;water is one atom away from being bleach!&lt;/a&gt;), the temperature, how it's being handled, and &lt;a href="https://en.wikipedia.org/wiki/Water_intoxication"&gt;how much there is&lt;/a&gt;.&lt;/p&gt;
 
@@ -1400,7 +1400,7 @@ if not finished, go to #marker&lt;/pre&gt;
       <link>https://benwheatley.github.io/blog/2024/03/11-12.00.16.html</link>
       <description>&lt;h1&gt;A Brilliant end&lt;/h1&gt;
 
-&lt;img src="Brilliant_progress.png" style="aspect-ratio: 168/1193; float:right"&gt;
+&lt;img src="https://benwheatley.github.io/blog/2024/03/Brilliant_progress.png" style="aspect-ratio: 168/1193; float:right"&gt;
 
 &lt;p&gt;I was gifted a Brilliant.org subscription for 2019's Christmas, and for a time it was good. I worked through the courses and learned many new things. Hat puzzles, formal logic, contest maths. Group theory, applied statistics, machine learning. All good stuff.&lt;/p&gt;
 
@@ -1412,7 +1412,7 @@ if not finished, go to #marker&lt;/pre&gt;
 
 &lt;p&gt;Now, though… well, now I'm stopping. My subscription has run out, and I won't be renewing it, at least not for some time. The new courses I've been seeing recently have been focussing on the low end — I absolutely do not benefit from yet another "here's how triangles work!" course, such content is an absolute waste of my time at this point. Where I'm stuck now is the hard stuff — abelian groups, curls, wedge products, Hessians and Laplacians — which seem as hard now as it ever was. I've reached the point where I don't understand the notation, and without &lt;em&gt;those specific courses&lt;/em&gt; being expanded, just re-reading the existing content isn't going to help me understand.&lt;/p&gt;
 
-&lt;img src="Screenshot_2024-03-11_at_11.36.26.png" style="aspect-ratio: 646/345; width: min(100% - 168px, 646px);" /&gt;
+&lt;img src="https://benwheatley.github.io/blog/2024/03/Screenshot_2024-03-11_at_11.36.26.png" style="aspect-ratio: 646/345; width: min(100% - 168px, 646px);" /&gt;
 
 &lt;p&gt;Actually, it's worse than that. At this point, ChatGPT — the free tier — knows more than I do about these topics. This isn't to claim the LLM is in any objective sense good at this level (some of the problems are such that it's possible for me to verify the AI is wrong even though I can't generate any answers in the first place, kinda like P!=NP), I'm just asserting a relative performance between it and me: it knows more than I, personally, know. And this is the worst the AI will ever be.&lt;/p&gt;
 
@@ -1457,7 +1457,7 @@ if not finished, go to #marker&lt;/pre&gt;
 
 &lt;p&gt;Architecture:&lt;/p&gt;
 
-&lt;img src="Meta-learning_AI.png" style="aspect-ratio: 750/397; width: min(100%, 750px);" /&gt;
+&lt;img src="https://benwheatley.github.io/blog/2023/12/Meta-learning_AI.png" style="aspect-ratio: 750/397; width: min(100%, 750px);" /&gt;
 
 &lt;p&gt;
 &lt;ul&gt;
@@ -1526,7 +1526,7 @@ if not finished, go to #marker&lt;/pre&gt;
       <guid isPermaLink="true">https://benwheatley.github.io/blog/2023/11/19-19.53.55.html</guid>
     </item>
     <item>
-      <title>Head cannon: Wallace &amp;amp; Grommit</title>
+      <title>Head cannon: Wallace &amp; Grommit</title>
       <link>https://benwheatley.github.io/blog/2023/02/20-19.25.29.html</link>
       <description>&lt;h1&gt;Head cannon: Wallace &amp;amp; Grommit&lt;/h1&gt;
 &lt;p&gt;New head cannon: Wallace &amp;amp; Grommit, far from the 1970s it appears to be set in, is a wildly transhumanist future. This is why they could build a moon rocket and go to the moon over the course of a bank holiday weekend, and why when they got there they could breathe, eat the ground, and why they found a discarded sentient cleaning robot that dreamed of skiing. Also, Grommit himself is a furry.&lt;/p&gt;

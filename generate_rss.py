@@ -7,12 +7,38 @@ def main():
 	import xml.etree.ElementTree as ET
 	from datetime import datetime
 	import hashlib
+	import html
+	from urllib.parse import quote
 
 	# RSS feed metadata
 	FEED_TITLE = "Blog - Kitsune Software"
 	FEED_LINK = "https://benwheatley.github.io/blog/"
 	FEED_DESCRIPTION = "A blog about technology, AI, and various other topics"
 	FEED_LANGUAGE = "en-gb"
+
+	def clean_title(title_text):
+		"""Remove HTML entities and tags from title"""
+		# Decode HTML entities
+		cleaned = html.unescape(title_text)
+		# Remove any HTML tags
+		cleaned = re.sub(r'<[^>]+>', '', cleaned)
+		return cleaned
+
+	def fix_relative_urls(content_html, base_path):
+		"""Convert relative URLs to absolute URLs"""
+		# Fix relative image sources
+		content_html = re.sub(
+			r'src=["\'](?!http)([^"\']+)["\']',
+			lambda m: f'src="{base_path}{quote(m.group(1))}"',
+			content_html
+		)
+		# Fix relative hrefs
+		content_html = re.sub(
+			r'href=["\'](?!http|#|mailto:)([^"\']+)["\']',
+			lambda m: f'href="{base_path}{quote(m.group(1))}"',
+			content_html
+		)
+		return content_html
 
 	entries = []
 
@@ -74,14 +100,19 @@ def main():
 					else:
 						post_content = title
 
-					# Build absolute link
+					# Build absolute link and base path for this post
 					link = f"{FEED_LINK}{year}/{month}/{filename}"
+					base_path = f"{FEED_LINK}{year}/{month}/"
+
+					# Clean title and fix URLs in content
+					clean_title_text = clean_title(title)
+					fixed_content = fix_relative_urls(post_content, base_path)
 
 					# Store entry
 					entries.append({
-						'title': title,
+						'title': clean_title_text,
 						'link': link,
-						'description': post_content,
+						'description': fixed_content,
 						'pub_date': pub_date,
 						'guid': link
 					})
@@ -92,8 +123,9 @@ def main():
 	# Limit to most recent 20 entries (standard RSS practice)
 	entries = entries[:20]
 
-	# Build RSS feed
+	# Build RSS feed with atom namespace
 	rss = ET.Element('rss', version='2.0')
+	rss.set('xmlns:atom', 'http://www.w3.org/2005/Atom')
 	channel = ET.SubElement(rss, 'channel')
 
 	# Channel metadata
@@ -101,6 +133,12 @@ def main():
 	ET.SubElement(channel, 'link').text = FEED_LINK
 	ET.SubElement(channel, 'description').text = FEED_DESCRIPTION
 	ET.SubElement(channel, 'language').text = FEED_LANGUAGE
+
+	# Add atom:link for self-reference (required for validation)
+	atom_link = ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link')
+	atom_link.set('href', f'{FEED_LINK}rss.xml')
+	atom_link.set('rel', 'self')
+	atom_link.set('type', 'application/rss+xml')
 
 	if entries:
 		# lastBuildDate is the most recent post date
