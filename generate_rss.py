@@ -10,6 +10,9 @@ def main():
 	import html
 	from urllib.parse import quote
 
+	# Register atom namespace to avoid ns0 prefix
+	ET.register_namespace('atom', 'http://www.w3.org/2005/Atom')
+
 	# RSS feed metadata
 	FEED_TITLE = "Blog - Kitsune Software"
 	FEED_LINK = "https://benwheatley.github.io/blog/"
@@ -24,12 +27,39 @@ def main():
 		cleaned = re.sub(r'<[^>]+>', '', cleaned)
 		return cleaned
 
-	def fix_relative_urls(content_html, base_path):
-		"""Convert relative URLs to absolute URLs"""
+	def encode_text_entities(text):
+		"""Encode quotes and apostrophes everywhere (text content and attributes)"""
+		# Simply encode all quotes and apostrophes
+		text = text.replace('"', '&quot;')
+		text = text.replace("'", '&#39;')
+		return text
+
+	def fix_relative_urls(content_html, base_path, post_url):
+		"""Convert relative URLs to absolute URLs and clean up problematic HTML"""
+		# Replace non-standard strikethrough tag with standard del tag
+		content_html = content_html.replace('<strikethrough>', '<del>')
+		content_html = content_html.replace('</strikethrough>', '</del>')
+
+		# Remove dangerous CSS properties from style attributes
+		content_html = re.sub(
+			r'style="([^"]*?)overflow-wrap:[^;"]*(;?)',
+			lambda m: f'style="{m.group(1)}{m.group(2)}"' if m.group(1) or m.group(2) == ';' else '',
+			content_html
+		)
+		# Clean up empty style attributes
+		content_html = re.sub(r'\s*style=""\s*', ' ', content_html)
+		content_html = re.sub(r'\s*style=";\s*"\s*', ' ', content_html)
+
 		# Fix relative image sources
 		content_html = re.sub(
 			r'src=["\'](?!http)([^"\']+)["\']',
 			lambda m: f'src="{base_path}{quote(m.group(1))}"',
+			content_html
+		)
+		# Fix fragment identifiers to absolute URLs
+		content_html = re.sub(
+			r'href=["\']#([^"\']+)["\']',
+			lambda m: f'href="{post_url}#{m.group(1)}"',
 			content_html
 		)
 		# Fix relative hrefs
@@ -38,6 +68,10 @@ def main():
 			lambda m: f'href="{base_path}{quote(m.group(1))}"',
 			content_html
 		)
+
+		# Encode quotes and apostrophes in text content (but not in HTML tags/attributes)
+		content_html = encode_text_entities(content_html)
+
 		return content_html
 
 	entries = []
@@ -106,7 +140,7 @@ def main():
 
 					# Clean title and fix URLs in content
 					clean_title_text = clean_title(title)
-					fixed_content = fix_relative_urls(post_content, base_path)
+					fixed_content = fix_relative_urls(post_content, base_path, link)
 
 					# Store entry
 					entries.append({
@@ -125,7 +159,6 @@ def main():
 
 	# Build RSS feed with atom namespace
 	rss = ET.Element('rss', version='2.0')
-	rss.set('xmlns:atom', 'http://www.w3.org/2005/Atom')
 	channel = ET.SubElement(rss, 'channel')
 
 	# Channel metadata
@@ -163,6 +196,8 @@ def main():
 	output = io.BytesIO()
 	tree.write(output, encoding='utf-8', xml_declaration=True)
 	xml_content = output.getvalue().decode('utf-8')
+
+	# No CDATA needed - content is already double-escaped (HTML entities in XML-escaped content)
 
 	# Add CSS stylesheet reference after XML declaration
 	xml_lines = xml_content.split('\n', 1)
